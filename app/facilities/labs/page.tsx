@@ -1,0 +1,163 @@
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import Image from 'next/image';
+
+export default function Labs() {
+  return (
+    <main>
+      <Header />
+
+      {/* Page Content */}
+      <div className="bg-[#FBF8F3] py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          {/* Main Heading */}
+          <h1 className="text-4xl md:text-5xl font-bold text-[#1B5E20] mb-8">
+            Labs
+          </h1>
+
+          {/* Image Gallery - 3 Images */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            {/* Image 1 */}
+            <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
+              {/* TODO: Add lab image 1 */}
+              {/* <Image
+                src="/images/lab-1.jpg"
+                alt="Dental lab equipment"
+                width={400}
+                height={240}
+                className="w-full h-full object-cover"
+              /> */}
+              <div className="w-full h-full flex items-center justify-center text-gray-500">
+                <p className="text-center px-4">Lab Image 1<br/>(Add lab-1.jpg to public/images/)</p>
+              </div>
+            </div>
+
+            {/* Image 2 */}
+            <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
+              {/* TODO: Add lab image 2 */}
+              {/* <Image
+                src="/images/lab-2.jpg"
+                alt="Student working in lab"
+                width={400}
+                height={240}
+                className="w-full h-full object-cover"
+              /> */}
+              <div className="w-full h-full flex items-center justify-center text-gray-500">
+                <p className="text-center px-4">Lab Image 2<br/>(Add lab-2.jpg to public/images/)</p>
+              </div>
+            </div>
+
+            {/* Image 3 */}
+            <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
+              {/* TODO: Add lab image 3 */}
+              {/* <Image
+                src="/images/lab-3.jpg"
+                alt="Lab work in progress"
+                width={400}
+                height={240}
+                className="w-full h-full object-cover"
+              /> */}
+              <div className="w-full h-full flex items-center justify-center text-gray-500">
+                <p className="text-center px-4">Lab Image 3<br/>(Add lab-3.jpg to public/images/)</p>
+              </div>
+            </div>
+          </div>
+
+          {/* State-of-the-Art Facilities */}
+          <div className="mb-8">
+            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
+              State-of-the-Art Facilities:
+            </h2>
+            <p className="text-base leading-relaxed text-gray-700">
+              <strong>Our world-class dental labs, equipped with cutting-edge technologies, foster a learning environment where innovation and hands-on skills development thrive.</strong>
+            </p>
+          </div>
+
+          {/* Anatomy, Histology, Radiology & Imaging Labs */}
+          <div className="mb-8">
+            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
+              Anatomy, Histology, Radiology & Imaging Labs:
+            </h2>
+            <p className="text-base leading-relaxed text-gray-700">
+              <strong>From exploring the intricate details of oral structures to mastering dental imaging, these labs form the bedrock of clinical expertise. Learn diagnosis and planning through X-rays, 3D scans, and microscopic examinations.</strong>
+            </p>
+          </div>
+
+          {/* Preclinical Simulation & Digital Dentistry */}
+          <div className="mb-8">
+            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
+              Preclinical Simulation & Digital Dentistry:
+            </h2>
+            <p className="text-base leading-relaxed text-gray-700">
+              <strong>Perfect dental techniques on lifelike mannequins and embrace CAD/CAM technologies. Gain experience in design, fabrication, and aesthetics through advanced digital tools.</strong>
+            </p>
+          </div>
+
+          {/* Prosthodontics, Restorative, Orthodontics & Endodontics Labs */}
+          <div className="mb-8">
+            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
+              Prosthodontics, Restorative, Orthodontics & Endodontics Labs:
+            </h2>
+            <p className="text-base leading-relaxed text-gray-700">
+              <strong>Specialized labs focusing on restorative practices, braces, and root canal therapies provide hands-on opportunities to develop proficiency in restoring smiles and correcting malocclusions.</strong>
+            </p>
+          </div>
+
+          {/* Periodontics & Oral Surgery Labs */}
+          <div className="mb-8">
+            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
+              Periodontics & Oral Surgery Labs:
+            </h2>
+            <p className="text-base leading-relaxed text-gray-700">
+              <strong>Venture into periodontal health management and minor surgical procedures. Develop confidence and precision in treatments that enhance oral hygiene and surgical excellence.</strong>
+            </p>
+          </div>
+
+          {/* Interdisciplinary Collaborations */}
+          <div className="mb-8">
+            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
+              Interdisciplinary Collaborations:
+            </h2>
+            <p className="text-base leading-relaxed text-gray-700">
+              <strong>Collaborate with peers across dental specialties for a multidisciplinary approach. Simulate real-world scenarios and learn the value of teamwork in complex cases.</strong>
+            </p>
+          </div>
+
+          {/* Ethical Practices & Infection Control */}
+          <div className="mb-8">
+            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
+              Ethical Practices & Infection Control:
+            </h2>
+            <p className="text-base leading-relaxed text-gray-700">
+              <strong>Uphold the highest standards of professionalism through ethical practices and stringent infection control measures. Prioritize patient safety and integrity.</strong>
+            </p>
+          </div>
+
+          {/* Instructor-Guided Learning & Innovative Research */}
+          <div className="mb-8">
+            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
+              Instructor-Guided Learning & Innovative Research:
+            </h2>
+            <p className="text-base leading-relaxed text-gray-700">
+              <strong>Benefit from our faculty's mentorship and participate in groundbreaking research. Shape the future of dentistry by contributing to advancements in materials, techniques, and treatment modalities.</strong>
+            </p>
+          </div>
+
+          {/* Join Us at the Dental College Labs */}
+          <div className="mb-12">
+            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
+              Join Us at the Dental College Labs:
+            </h2>
+            <p className="text-base leading-relaxed text-gray-700">
+              <strong>Blending theory with practice, our labs empower you to become a skilled and compassionate dental professional. Embrace the challenges and emerge as a proficient practitioner, poised to impact oral health positively.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <Footer />
+      <FloatingWhatsApp />
+    </main>
+  );
+}

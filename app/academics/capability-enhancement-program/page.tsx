@@ -1,0 +1,79 @@
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+
+export default function CapabilityEnhancementProgram() {
+  return (
+    <main>
+      <Header />
+
+      {/* Page Content */}
+      <div className="bg-[#FBF8F3] py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+
+          {/* Breadcrumb */}
+          <div className="mb-6 text-sm text-gray-600">
+            <span>Home</span>
+            <span className="mx-2">›</span>
+            <span>Capability enhancement Program</span>
+          </div>
+
+          {/* Page Title */}
+          <h1 className="text-4xl md:text-5xl font-bold text-black mb-8">
+            Capability enhancement Program
+          </h1>
+
+          {/* Description */}
+          <p className="text-base text-black mb-6">
+            1.2 Capability enhancement and development schemes employed by the Institution for students:
+          </p>
+
+          {/* List of Programs */}
+          <div className="mb-8">
+            <p className="text-base text-gray-700 font-semibold mb-3">
+              1. Soft skill development
+            </p>
+            <p className="text-base text-gray-700 font-semibold mb-3">
+              2. Language and communication skill development
+            </p>
+            <p className="text-base text-gray-700 font-semibold mb-3">
+              3. Yoga and wellness
+            </p>
+            <p className="text-base text-gray-700 font-semibold mb-3">
+              4. Analytical skill development
+            </p>
+            <p className="text-base text-gray-700 font-semibold mb-3">
+              5. Human value development
+            </p>
+            <p className="text-base text-gray-700 font-semibold mb-3">
+              6. Personality and professional development
+            </p>
+            <p className="text-base text-gray-700 font-semibold mb-8">
+              7. Employability skill development
+            </p>
+          </div>
+
+          {/* Buttons */}
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="/view-capability-enhancement-document"
+              className="inline-block bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-3 px-6 rounded transition-colors duration-200"
+            >
+              View Document
+            </a>
+            <a
+              href="/neet-qualifiers"
+              className="inline-block bg-gray-200 hover:bg-gray-300 text-gray-700 font-semibold py-3 px-6 rounded transition-colors duration-200"
+            >
+              Neet Qualifiers
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <Footer />
+      <FloatingWhatsApp />
+    </main>
+  );
+}

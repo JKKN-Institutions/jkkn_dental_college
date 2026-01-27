@@ -1,0 +1,116 @@
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import Image from 'next/image';
+
+export default function BankPostOffice() {
+  return (
+    <main>
+      <Header />
+
+      {/* Page Content */}
+      <div className="bg-[#FBF8F3] py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          {/* Main Heading */}
+          <h1 className="text-4xl md:text-5xl font-bold text-[#1B5E20] mb-8">
+            BANK & POST OFFICE
+          </h1>
+
+          {/* Image Gallery - 3 Images */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            {/* Image 1 */}
+            <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
+              {/* TODO: Add bank image 1 */}
+              {/* <Image
+                src="/images/bank-1.jpg"
+                alt="Post office on campus"
+                width={400}
+                height={350}
+                className="w-full h-full object-cover"
+              /> */}
+              <div className="w-full h-full flex items-center justify-center text-gray-500">
+                <p className="text-center px-4">Bank Image 1<br/>(Add bank-1.jpg to public/images/)</p>
+              </div>
+            </div>
+
+            {/* Image 2 */}
+            <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
+              {/* TODO: Add bank image 2 */}
+              {/* <Image
+                src="/images/bank-2.jpg"
+                alt="Indian Bank ATM 24 Hours"
+                width={400}
+                height={350}
+                className="w-full h-full object-cover"
+              /> */}
+              <div className="w-full h-full flex items-center justify-center text-gray-500">
+                <p className="text-center px-4">Bank Image 2<br/>(Add bank-2.jpg to public/images/)</p>
+              </div>
+            </div>
+
+            {/* Image 3 */}
+            <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
+              {/* TODO: Add bank image 3 */}
+              {/* <Image
+                src="/images/bank-3.jpg"
+                alt="Indian Bank ATM"
+                width={400}
+                height={350}
+                className="w-full h-full object-cover"
+              /> */}
+              <div className="w-full h-full flex items-center justify-center text-gray-500">
+                <p className="text-center px-4">Bank Image 3<br/>(Add bank-3.jpg to public/images/)</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Introduction Paragraph */}
+          <p className="text-base md:text-lg leading-relaxed text-gray-600 mb-8">
+            At JKKN Institutions, we are committed to providing our students and staff with a range of convenient services to make campus life easier. This includes banking and postal services designed to meet your daily needs without requiring you to step off campus.
+          </p>
+
+          {/* On-Campus ATM Kiosk */}
+          <div className="mb-8">
+            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
+              On-Campus ATM Kiosk:
+            </h2>
+            <p className="text-base leading-relaxed text-gray-600 mb-4">
+              For your immediate banking needs, we have an ATM kiosk right on campus. Whether it's withdrawing cash or checking account balances, you can do it all in a secure environment, without the need to travel off-site.
+            </p>
+            <div className="text-base leading-relaxed text-gray-600 space-y-2">
+              <p>Easy withdrawals and balance checks</p>
+              <p>Conveniently located within the campus</p>
+              <p>Available 24/7 to meet your banking needs</p>
+            </div>
+          </div>
+
+          {/* Campus Post Office */}
+          <div className="mb-8">
+            <h2 className="text-xl md:text-2xl font-bold text-black mb-4">
+              Campus Post Office:
+            </h2>
+            <p className="text-base leading-relaxed text-gray-600 mb-4">
+              Our on-campus post office serves as a one-stop solution for all your postal requirements. From mailing packages to availing savings schemes, everything is just a step away.
+            </p>
+            <div className="text-base leading-relaxed text-gray-600 space-y-2">
+              <p>Domestic and international mail services</p>
+              <p>Speed post and registered post options</p>
+              <p>Additional facilities like savings schemes and postal life insurance</p>
+              <p>Efficient and reliable service to keep you connected</p>
+            </div>
+          </div>
+
+          {/* Final Statement */}
+          <div className="mb-12">
+            <p className="text-base leading-relaxed text-gray-600">
+              By offering these financial and postal services, JKKN Institutions ensures that you can manage your transactions and communications conveniently, allowing you more time to focus on your academic and professional growth.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <Footer />
+      <FloatingWhatsApp />
+    </main>
+  );
+}

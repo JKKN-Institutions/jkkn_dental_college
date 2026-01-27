@@ -1,0 +1,85 @@
+export default function Infrastructure() {
+  const facilities = [
+    {
+      icon: '🏥',
+      title: '200+ Chair Hospital',
+      description: 'Treating 500+ patients daily',
+      bgColor: 'bg-orange-100'
+    },
+    {
+      icon: '💻',
+      title: 'Simulation Labs',
+      description: 'Pre-clinical training',
+      bgColor: 'bg-blue-100'
+    },
+    {
+      icon: '🔬',
+      title: 'Advanced Imaging',
+      description: 'CBCT, OPG, RVG systems',
+      bgColor: 'bg-purple-100'
+    },
+    {
+      icon: '⚙️',
+      title: 'CAD/CAM Lab',
+      description: 'Digital prosthetics',
+      bgColor: 'bg-pink-100'
+    },
+    {
+      icon: '📚',
+      title: 'Digital Library',
+      description: '10,000+ resources',
+      bgColor: 'bg-green-100'
+    },
+    {
+      icon: '🔬',
+      title: 'Research Labs',
+      description: 'Dedicated research facilities',
+      bgColor: 'bg-yellow-100'
+    },
+    {
+      icon: '🏠',
+      title: 'Hostels',
+      description: 'Separate for men & women',
+      bgColor: 'bg-indigo-100'
+    },
+    {
+      icon: '🏃',
+      title: 'Sports Complex',
+      description: 'Indoor & outdoor facilities',
+      bgColor: 'bg-red-100'
+    }
+  ];
+
+  return (
+    <section className="py-16 md:py-24 px-4 bg-white">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-12 md:mb-16">
+          <h3 className="text-[#FF6B35] text-sm md:text-base font-bold uppercase tracking-wider mb-4">Infrastructure</h3>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0A4D5C] mb-6">
+            State-of-the-Art Facilities
+          </h2>
+          <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto">
+            Experience dental education with cutting-edge technology and comprehensive clinical infrastructure.
+          </p>
+        </div>
+
+        {/* Facilities Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {facilities.map((facility, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 text-center"
+            >
+              <div className={`w-16 h-16 ${facility.bgColor} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
+                <span className="text-3xl">{facility.icon}</span>
+              </div>
+              <h4 className="text-lg font-bold text-[#0A4D5C] mb-2">{facility.title}</h4>
+              <p className="text-sm text-gray-600">{facility.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
