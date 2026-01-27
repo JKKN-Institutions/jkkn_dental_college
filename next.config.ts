@@ -48,7 +48,7 @@ const nextConfig: NextConfig = {
       { source: '/orthodontics-and-dentofacial-orthopedics', destination: '/academics/details-of-academic-programs/mds/orthodontics-and-dentofacial-orthopedics' },
       { source: '/prosthodontics-crown-and-bridge', destination: '/academics/details-of-academic-programs/mds/prosthodontics-crown-and-bridge' },
       { source: '/conservative-dentistry-and-endodontics', destination: '/academics/details-of-academic-programs/mds/conservative-dentistry-and-endodontics' },
-      { source: '/oral-medicine-and-radiology', destination: '/academics/details-of-academic-programs/mds/oral-medicine-and-radiology' },
+      { source: '/oral-medicine-and-radiology', destination: '/academics/details-of-academic-programs/mds/oral-medicine' },
       { source: '/oral-and-maxillofacial-surgery', destination: '/academics/details-of-academic-programs/mds/oral-and-maxillofacial-surgery' },
       { source: '/pediatric-and-preventive-dentistry', destination: '/academics/details-of-academic-programs/mds/pediatric-and-preventive-dentistry' },
       { source: '/oral-pathology-and-microbiology', destination: '/academics/details-of-academic-programs/mds/oral-pathology-and-microbiology' },
