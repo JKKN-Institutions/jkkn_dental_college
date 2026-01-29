@@ -185,13 +185,14 @@ export default function Header() {
                 </div>
               </div>
 
-              {/* Search Icon - Right Side (spans both rows) */}
+              {/* Apply Now Button - Right Side (spans both rows) */}
               <div className="flex items-center flex-shrink-0">
-                <button className="p-2 hover:bg-gray-100 rounded-full transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Search">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
-                </button>
+                <Link
+                  href="/admissions/admission-procedure"
+                  className="bg-primary text-white px-6 py-2.5 rounded-md font-semibold hover:opacity-90 transition-opacity min-h-[44px] flex items-center justify-center"
+                >
+                  Apply Now
+                </Link>
               </div>
             </div>
           </div>
@@ -200,8 +201,8 @@ export default function Header() {
 
       {/* Tablet & Mobile Header */}
       <nav className="lg:hidden w-full py-2 sm:py-3 px-3 sm:px-4">
-        <div className="flex items-center gap-3 sm:gap-4">
-          {/* Logo - Left Side */}
+        <div className={`flex items-center ${isMenuOpen ? 'justify-center' : 'justify-between'}`}>
+          {/* Logo */}
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <Image
               src="/images/dental-logo.png"
@@ -213,19 +214,13 @@ export default function Header() {
             />
           </Link>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="p-2 sm:p-2.5 hover:bg-gray-100 active:bg-gray-200 rounded-md ml-auto relative z-[70] min-w-[44px] min-h-[44px] flex items-center justify-center touch-manipulation"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-            aria-expanded={isMenuOpen}
+          {/* Apply Now Button */}
+          <Link
+            href="/admissions/admission-procedure"
+            className="bg-primary text-white px-4 sm:px-6 py-2 sm:py-2.5 rounded-md font-semibold hover:opacity-90 transition-opacity min-h-[44px] flex items-center justify-center touch-manipulation text-sm sm:text-base"
           >
-            <div className="w-6 h-5 flex flex-col justify-between">
-              <span className={`bg-gray-700 h-0.5 w-full transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-              <span className={`bg-gray-700 h-0.5 w-full transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''}`}></span>
-              <span className={`bg-gray-700 h-0.5 w-full transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
-            </div>
-          </button>
+            Apply Now
+          </Link>
         </div>
 
         {/* Mobile Navigation Overlay */}
@@ -339,13 +334,14 @@ export default function Header() {
               </div>
             ))}
 
-            {/* Mobile Search */}
-            <button className="w-full mt-3 sm:mt-4 py-3 px-3 xs:px-4 text-left text-black hover:bg-gray-50 active:bg-gray-100 font-semibold rounded-lg flex items-center gap-2 sm:gap-3 min-h-[44px] touch-manipulation transition-colors text-sm xs:text-base">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-              Search
-            </button>
+            {/* Mobile Apply Now Button */}
+            <Link
+              href="/admissions/admission-procedure"
+              className="w-full mt-3 sm:mt-4 py-3 px-3 xs:px-4 bg-primary text-white font-semibold rounded-lg flex items-center justify-center gap-2 sm:gap-3 min-h-[44px] touch-manipulation hover:opacity-90 transition-opacity text-sm xs:text-base"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Apply Now
+            </Link>
             </div>
           </div>
         )}
