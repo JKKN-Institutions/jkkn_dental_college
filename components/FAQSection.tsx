@@ -37,12 +37,12 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-16 md:py-24 px-4 bg-white">
+    <section className="py-16 md:py-24 px-4 bg-[#FBFBEE]">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
-          <h3 className="text-[#FF6B35] text-sm md:text-base font-bold uppercase tracking-wider mb-4">FAQS</h3>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0A4D5C] mb-6">
+          <h3 className="text-[#7cb983] text-sm md:text-base font-bold uppercase tracking-wider mb-4">FAQS</h3>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#006837] mb-6">
             Frequently Asked Questions
           </h2>
           <p className="text-gray-600 text-base md:text-lg">
@@ -62,16 +62,16 @@ export default function FAQSection() {
                 onClick={() => toggleFAQ(index)}
                 className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors duration-200"
               >
-                <h4 className="text-lg font-bold text-[#0A4D5C] pr-4">
+                <h4 className="text-lg font-bold text-[#006837] pr-4">
                   {faq.question}
                 </h4>
                 <div className="flex-shrink-0">
                   {openIndex === index ? (
-                    <svg className="w-6 h-6 text-[#00B8D4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-[#7cb983]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
                     </svg>
                   ) : (
-                    <svg className="w-6 h-6 text-[#00B8D4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-6 h-6 text-[#7cb983]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   )}

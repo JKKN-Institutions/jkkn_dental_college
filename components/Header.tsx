@@ -167,9 +167,9 @@ export default function Header() {
                 <Image
                   src="/images/dental-logo.png"
                   alt="JKKN Dental College & Hospital"
-                  width={115}
-                  height={56}
-                  className="h-14 w-auto object-contain"
+                  width={192}
+                  height={94}
+                  className="h-24 w-auto object-contain"
                   priority
                 />
               </Link>
@@ -208,9 +208,9 @@ export default function Header() {
             <Image
               src="/images/dental-logo.png"
               alt="JKKN Dental College & Hospital"
-              width={115}
-              height={56}
-              className="h-10 w-auto object-contain"
+              width={154}
+              height={75}
+              className="h-14 w-auto object-contain"
               priority
             />
           </Link>

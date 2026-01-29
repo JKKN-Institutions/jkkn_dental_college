@@ -2,13 +2,13 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="bg-[#0A4D5C] text-white py-12 md:py-20 px-4">
+    <section className="bg-[#006837] text-white py-12 md:py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left Content */}
           <div>
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-[#0D5F6F] px-4 py-2 rounded-full mb-6 md:mb-8">
+            <div className="inline-flex items-center gap-2 bg-[#002309] px-4 py-2 rounded-full mb-6 md:mb-8">
               <span className="text-yellow-400 text-xl">🏆</span>
               <span className="text-white text-sm font-semibold">DCI Approved | NAAC Accredited</span>
             </div>
@@ -16,7 +16,7 @@ export default function Hero() {
             {/* Main Heading */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               Transform Your Future at{' '}
-              <span className="text-[#FF6B35]">Tamil Nadu's Premier Dental College</span>
+              <span className="text-[#7cb983]">Tamil Nadu's Premier Dental College</span>
             </h1>
 
             {/* Description */}
@@ -27,15 +27,15 @@ export default function Hero() {
             {/* Stats */}
             <div className="flex flex-wrap gap-6 md:gap-12 mb-8">
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-[#FF6B35]">500+</div>
+                <div className="text-3xl md:text-4xl font-bold text-[#7cb983]">500+</div>
                 <div className="text-sm text-gray-300 uppercase">Learners</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-[#FF6B35]">200+</div>
+                <div className="text-3xl md:text-4xl font-bold text-[#7cb983]">200+</div>
                 <div className="text-sm text-gray-300 uppercase">Dental Chairs</div>
               </div>
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-[#FF6B35]">100%</div>
+                <div className="text-3xl md:text-4xl font-bold text-[#7cb983]">100%</div>
                 <div className="text-sm text-gray-300 uppercase">Placement</div>
               </div>
             </div>
@@ -44,13 +44,13 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/admissions"
-                className="bg-[#FF6B35] hover:bg-[#FF5722] text-white font-bold py-3 px-8 rounded-full transition-all duration-300 text-center"
+                className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-3 px-8 rounded-full transition-all duration-300 text-center"
               >
                 Start Your Application →
               </Link>
               <Link
                 href="/academics"
-                className="border-2 border-white hover:bg-white hover:text-[#0A4D5C] text-white font-bold py-3 px-8 rounded-full transition-all duration-300 text-center"
+                className="border-2 border-white hover:bg-white hover:text-[#006837] text-white font-bold py-3 px-8 rounded-full transition-all duration-300 text-center"
               >
                 Explore Programs
               </Link>

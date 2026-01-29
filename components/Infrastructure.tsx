@@ -51,12 +51,12 @@ export default function Infrastructure() {
   ];
 
   return (
-    <section className="py-16 md:py-24 px-4 bg-white">
+    <section className="py-16 md:py-24 px-4 bg-[#FBFBEE]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
-          <h3 className="text-[#FF6B35] text-sm md:text-base font-bold uppercase tracking-wider mb-4">Infrastructure</h3>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0A4D5C] mb-6">
+          <h3 className="text-[#7cb983] text-sm md:text-base font-bold uppercase tracking-wider mb-4">Infrastructure</h3>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#006837] mb-6">
             State-of-the-Art Facilities
           </h2>
           <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto">
@@ -74,7 +74,7 @@ export default function Infrastructure() {
               <div className={`w-16 h-16 ${facility.bgColor} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
                 <span className="text-3xl">{facility.icon}</span>
               </div>
-              <h4 className="text-lg font-bold text-[#0A4D5C] mb-2">{facility.title}</h4>
+              <h4 className="text-lg font-bold text-[#006837] mb-2">{facility.title}</h4>
               <p className="text-sm text-gray-600">{facility.description}</p>
             </div>
           ))}

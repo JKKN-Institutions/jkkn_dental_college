@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function AboutInstitution() {
   return (
-    <section className="py-16 md:py-24 px-4 bg-white">
+    <section className="py-16 md:py-24 px-4 bg-[#FBFBEE]">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
           {/* Left - Image */}
@@ -14,7 +14,7 @@ export default function AboutInstitution() {
                 className="w-full h-auto object-cover"
               />
               {/* 100 Years Legacy Badge */}
-              <div className="absolute bottom-6 right-6 bg-[#FF6B35] text-white rounded-2xl p-6 shadow-2xl">
+              <div className="absolute bottom-6 right-6 bg-[#7cb983] text-white rounded-2xl p-6 shadow-2xl">
                 <div className="text-5xl md:text-6xl font-bold text-center">100</div>
                 <div className="text-sm font-bold uppercase tracking-wide text-center">Years Legacy</div>
               </div>
@@ -24,9 +24,9 @@ export default function AboutInstitution() {
           {/* Right - Content */}
           <div>
             <div className="mb-4">
-              <h3 className="text-[#FF6B35] text-sm md:text-base font-bold uppercase tracking-wider">About Our Institution</h3>
+              <h3 className="text-[#7cb983] text-sm md:text-base font-bold uppercase tracking-wider">About Our Institution</h3>
             </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0A4D5C] mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#006837] mb-6">
               A Century of Excellence in Progressive Education
             </h2>
             <p className="text-gray-600 text-base md:text-lg mb-6 leading-relaxed">
@@ -39,34 +39,34 @@ export default function AboutInstitution() {
             {/* Features List */}
             <div className="grid sm:grid-cols-2 gap-4 mb-8">
               <div className="flex items-start gap-3">
-                <div className="text-[#4CAF50] text-xl flex-shrink-0">✓</div>
+                <div className="text-[#7cb983] text-xl flex-shrink-0">✓</div>
                 <div className="text-gray-700 font-medium">DCI & NMC Approved</div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="text-[#4CAF50] text-xl flex-shrink-0">✓</div>
+                <div className="text-[#7cb983] text-xl flex-shrink-0">✓</div>
                 <div className="text-gray-700 font-medium">NAAC Accredited</div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="text-[#4CAF50] text-xl flex-shrink-0">✓</div>
+                <div className="text-[#7cb983] text-xl flex-shrink-0">✓</div>
                 <div className="text-gray-700 font-medium">200+ Dental Chairs</div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="text-[#4CAF50] text-xl flex-shrink-0">✓</div>
+                <div className="text-[#7cb983] text-xl flex-shrink-0">✓</div>
                 <div className="text-gray-700 font-medium">500+ Daily Patients</div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="text-[#4CAF50] text-xl flex-shrink-0">✓</div>
+                <div className="text-[#7cb983] text-xl flex-shrink-0">✓</div>
                 <div className="text-gray-700 font-medium">9 PG Specializations</div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="text-[#4CAF50] text-xl flex-shrink-0">✓</div>
+                <div className="text-[#7cb983] text-xl flex-shrink-0">✓</div>
                 <div className="text-gray-700 font-medium">100% Placement</div>
               </div>
             </div>
 
             <Link
               href="/academics"
-              className="inline-block bg-[#FF6B35] hover:bg-[#FF5722] text-white font-bold py-3 px-8 rounded-full transition-all duration-300"
+              className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-3 px-8 rounded-full transition-all duration-300"
             >
               Explore Programs →
             </Link>
