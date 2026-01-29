@@ -9,7 +9,7 @@ export default function AboutInstitution() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="/images/college-building.jpg"
+                src="/images/Home-About-Our-Institution.png"
                 alt="JKKN Dental College Building"
                 className="w-full h-auto object-cover"
               />

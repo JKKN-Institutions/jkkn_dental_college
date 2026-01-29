@@ -428,7 +428,7 @@ export default function BDSProgram() {
               className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
                 activeYear === 'first'
                   ? 'bg-[#7cb983] text-white shadow-lg'
-                  : 'bg-white/10 text-white hover:bg-white/20'
+                  : 'bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white'
               }`}
             >
               First Year
@@ -438,7 +438,7 @@ export default function BDSProgram() {
               className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
                 activeYear === 'second'
                   ? 'bg-[#7cb983] text-white shadow-lg'
-                  : 'bg-white/10 text-white hover:bg-white/20'
+                  : 'bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white'
               }`}
             >
               Second Year
@@ -448,7 +448,7 @@ export default function BDSProgram() {
               className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
                 activeYear === 'third'
                   ? 'bg-[#7cb983] text-white shadow-lg'
-                  : 'bg-white/10 text-white hover:bg-white/20'
+                  : 'bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white'
               }`}
             >
               Third Year
@@ -458,7 +458,7 @@ export default function BDSProgram() {
               className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
                 activeYear === 'final'
                   ? 'bg-[#7cb983] text-white shadow-lg'
-                  : 'bg-white/10 text-white hover:bg-white/20'
+                  : 'bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white'
               }`}
             >
               Final Year
@@ -468,7 +468,7 @@ export default function BDSProgram() {
               className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
                 activeYear === 'internship'
                   ? 'bg-[#7cb983] text-white shadow-lg'
-                  : 'bg-white/10 text-white hover:bg-white/20'
+                  : 'bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white'
               }`}
             >
               Internship
@@ -478,81 +478,413 @@ export default function BDSProgram() {
           {/* Course Cards - First Year */}
           {activeYear === 'first' && (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
                 <div className="flex items-start gap-3 mb-4">
                   <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
                   <h3 className="text-xl font-bold text-white">General Human Anatomy</h3>
                 </div>
-                <p className="text-gray-200 mb-4">
+                <p className="text-gray-300 mb-4 leading-relaxed">
                   Study of human body structure including gross anatomy, histology, and embryology with emphasis on head and neck.
                 </p>
-                <span className="inline-block bg-cyan-500/20 text-cyan-200 px-3 py-1 rounded-full text-sm">
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
                   Pre-Clinical
                 </span>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
                 <div className="flex items-start gap-3 mb-4">
                   <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
                   <h3 className="text-xl font-bold text-white">General Human Physiology</h3>
                 </div>
-                <p className="text-gray-200 mb-4">
+                <p className="text-gray-300 mb-4 leading-relaxed">
                   Understanding body functions, organ systems, and their coordination essential for dental practice.
                 </p>
-                <span className="inline-block bg-cyan-500/20 text-cyan-200 px-3 py-1 rounded-full text-sm">
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
                   Pre-Clinical
                 </span>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
                 <div className="flex items-start gap-3 mb-4">
                   <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
                   <h3 className="text-xl font-bold text-white">Biochemistry</h3>
                 </div>
-                <p className="text-gray-200 mb-4">
+                <p className="text-gray-300 mb-4 leading-relaxed">
                   Molecular basis of life processes, metabolism, and clinical applications in dentistry.
                 </p>
-                <span className="inline-block bg-cyan-500/20 text-cyan-200 px-3 py-1 rounded-full text-sm">
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
                   Pre-Clinical
                 </span>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
                 <div className="flex items-start gap-3 mb-4">
                   <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
                   <h3 className="text-xl font-bold text-white">Dental Anatomy & Histology</h3>
                 </div>
-                <p className="text-gray-200 mb-4">
+                <p className="text-gray-300 mb-4 leading-relaxed">
                   Detailed study of tooth morphology, dental tissues, and oral structures.
                 </p>
-                <span className="inline-block bg-cyan-500/20 text-cyan-200 px-3 py-1 rounded-full text-sm">
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
                   Core Dental
                 </span>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
                 <div className="flex items-start gap-3 mb-4">
                   <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
                   <h3 className="text-xl font-bold text-white">Dental Materials</h3>
                 </div>
-                <p className="text-gray-200 mb-4">
+                <p className="text-gray-300 mb-4 leading-relaxed">
                   Introduction to materials used in dentistry, their properties, and applications.
                 </p>
-                <span className="inline-block bg-cyan-500/20 text-cyan-200 px-3 py-1 rounded-full text-sm">
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
                   Core Dental
                 </span>
               </div>
 
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6">
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
                 <div className="flex items-start gap-3 mb-4">
                   <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
                   <h3 className="text-xl font-bold text-white">Pre-Clinical Prosthodontics</h3>
                 </div>
-                <p className="text-gray-200 mb-4">
+                <p className="text-gray-300 mb-4 leading-relaxed">
                   Foundation course for artificial teeth and prosthetic devices.
                 </p>
-                <span className="inline-block bg-cyan-500/20 text-cyan-200 px-3 py-1 rounded-full text-sm">
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
                   Core Dental
+                </span>
+              </div>
+            </div>
+          )}
+
+          {/* Course Cards - Second Year */}
+          {activeYear === 'second' && (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">General Pathology</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Study of disease mechanisms, cellular pathology, and systemic pathological conditions.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Para-Clinical
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">General Microbiology</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Bacteria, viruses, fungi, and their role in oral and systemic diseases.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Para-Clinical
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Pharmacology</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Drug actions, therapeutic applications, and prescription writing for dental practice.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Para-Clinical
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Dental Pharmacology</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Drugs specific to dentistry including local anesthetics, analgesics, and antibiotics.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Core Dental
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Pre-Clinical Conservative</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Foundation for tooth restoration and cavity preparation techniques.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Core Dental
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Pre-Clinical Endodontics</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Basics of root canal treatment procedures and techniques.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Core Dental
+                </span>
+              </div>
+            </div>
+          )}
+
+          {/* Course Cards - Third Year */}
+          {activeYear === 'third' && (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Oral Pathology & Microbiology</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Diseases affecting oral cavity, diagnostic pathology, and oral microbiome.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Clinical
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Oral Medicine & Radiology</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Diagnosis of oral diseases, radiographic techniques, and interpretation.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Clinical
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">General Surgery</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Surgical principles, emergency management, and minor surgical procedures.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Allied Medical
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">General Medicine</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Systemic diseases and their oral manifestations, patient assessment.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Allied Medical
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Public Health Dentistry</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Community oral health, epidemiology, and preventive dentistry.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Clinical
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Periodontology</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Gum diseases, periodontal treatment, and maintenance therapy.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Clinical
+                </span>
+              </div>
+            </div>
+          )}
+
+          {/* Course Cards - Final Year */}
+          {activeYear === 'final' && (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Conservative & Endodontics</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Advanced restorative procedures, root canal therapy, and aesthetic dentistry.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Clinical
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Oral & Maxillofacial Surgery</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Extractions, minor oral surgeries, trauma management, and implantology basics.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Clinical
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Prosthodontics</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Complete dentures, removable partial dentures, fixed prosthesis.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Clinical
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Orthodontics</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Malocclusion diagnosis, treatment planning, and orthodontic appliances.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Clinical
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Pediatric Dentistry</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Child dental care, behavior management, and preventive treatments.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Clinical
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Forensic Odontology</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Dental identification, age estimation, and medico-legal aspects.
+                </p>
+                <span className="inline-block bg-[#A78BFA]/20 text-[#A78BFA] px-3 py-1 rounded-md text-sm font-medium">
+                  Specialized
+                </span>
+              </div>
+            </div>
+          )}
+
+          {/* Course Cards - Internship */}
+          {activeYear === 'internship' && (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Comprehensive Clinical Training</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Rotational posting across all dental departments with supervised patient care.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  12 Months
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Community Dental Camps</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Rural and urban outreach programs for community oral health promotion.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Outreach
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Emergency Dental Care</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Training in dental emergencies, trauma management, and acute pain relief.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Essential
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Research Methodology</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Introduction to dental research, evidence-based dentistry, and scientific writing.
+                </p>
+                <span className="inline-block bg-[#FCD34D]/20 text-[#FCD34D] px-3 py-1 rounded-md text-sm font-medium">
+                  Academic
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Practice Management</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Clinic setup, patient management, ethics, and professional development.
+                </p>
+                <span className="inline-block bg-[#22D3EE]/20 text-[#22D3EE] px-3 py-1 rounded-md text-sm font-medium">
+                  Professional
+                </span>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 hover:bg-white/20 transition-all duration-300">
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="w-2 h-2 bg-[#7cb983] rounded-full mt-2"></div>
+                  <h3 className="text-xl font-bold text-white">Case Documentation</h3>
+                </div>
+                <p className="text-gray-300 mb-4 leading-relaxed">
+                  Maintaining complete case records, treatment planning, and follow-up protocols.
+                </p>
+                <span className="inline-block bg-[#FB7185]/20 text-[#FB7185] px-3 py-1 rounded-md text-sm font-medium">
+                  Administrative
                 </span>
               </div>
             </div>

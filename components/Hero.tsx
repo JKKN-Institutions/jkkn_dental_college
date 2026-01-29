@@ -2,55 +2,55 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="bg-[#006837] text-white py-12 md:py-20 px-4">
+    <section className="bg-[#006837] text-white py-10 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center">
           {/* Left Content */}
-          <div>
+          <div className="space-y-6 sm:space-y-8">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-[#002309] px-4 py-2 rounded-full mb-6 md:mb-8">
-              <span className="text-yellow-400 text-xl">🏆</span>
-              <span className="text-white text-sm font-semibold">DCI Approved | NAAC Accredited</span>
+            <div className="inline-flex items-center gap-2 sm:gap-2.5 bg-[#002309] px-3 sm:px-4 py-2 sm:py-2.5 rounded-full">
+              <span className="text-yellow-400 text-lg sm:text-xl">🏆</span>
+              <span className="text-white text-xs sm:text-sm font-semibold">DCI Approved | NAAC Accredited</span>
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            <h1 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
               Transform Your Future at{' '}
               <span className="text-[#7cb983]">Tamil Nadu's Premier Dental College</span>
             </h1>
 
             {/* Description */}
-            <p className="text-gray-200 text-base md:text-lg mb-8 leading-relaxed">
+            <p className="text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed">
               Join J.K.K. Nattraja Dental College — where world-class dental education meets compassionate patient care. Our DCI-approved programs prepare Learners for exceptional careers in dentistry.
             </p>
 
             {/* Stats */}
-            <div className="flex flex-wrap gap-6 md:gap-12 mb-8">
-              <div>
-                <div className="text-3xl md:text-4xl font-bold text-[#7cb983]">500+</div>
-                <div className="text-sm text-gray-300 uppercase">Learners</div>
+            <div className="grid grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
+              <div className="text-center sm:text-left">
+                <div className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-[#7cb983]">500+</div>
+                <div className="text-xs sm:text-sm text-gray-300 uppercase mt-1">Learners</div>
               </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold text-[#7cb983]">200+</div>
-                <div className="text-sm text-gray-300 uppercase">Dental Chairs</div>
+              <div className="text-center sm:text-left">
+                <div className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-[#7cb983]">200+</div>
+                <div className="text-xs sm:text-sm text-gray-300 uppercase mt-1">Dental Chairs</div>
               </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold text-[#7cb983]">100%</div>
-                <div className="text-sm text-gray-300 uppercase">Placement</div>
+              <div className="text-center sm:text-left">
+                <div className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-[#7cb983]">100%</div>
+                <div className="text-xs sm:text-sm text-gray-300 uppercase mt-1">Placement</div>
               </div>
             </div>
 
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link
                 href="/admissions"
-                className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-3 px-8 rounded-full transition-all duration-300 text-center"
+                className="bg-[#7cb983] hover:bg-[#6ba872] active:bg-[#5a9761] text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center text-sm sm:text-base min-h-[44px] flex items-center justify-center touch-manipulation transform hover:scale-105 active:scale-95"
               >
                 Start Your Application →
               </Link>
               <Link
                 href="/academics"
-                className="border-2 border-white hover:bg-white hover:text-[#006837] text-white font-bold py-3 px-8 rounded-full transition-all duration-300 text-center"
+                className="border-2 border-white hover:bg-white hover:text-[#006837] active:bg-gray-100 text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center text-sm sm:text-base min-h-[44px] flex items-center justify-center touch-manipulation"
               >
                 Explore Programs
               </Link>
@@ -58,27 +58,43 @@ export default function Hero() {
           </div>
 
           {/* Right Image */}
-          <div className="relative">
-            <div className="rounded-3xl overflow-hidden shadow-2xl bg-gray-100">
+          <div className="relative order-first md:order-last">
+            <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-gray-100 aspect-[4/3] md:aspect-auto">
               <img
-                src="/images/dental-xray.jpg"
+                src="/images/JKKN-Dental-Main-Banner-Image.png"
                 alt="Dental Professional"
-                className="w-full h-auto object-cover"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
         </div>
 
         {/* Recognized & Approved By Section */}
-        <div className="mt-16 md:mt-20">
-          <div className="text-center mb-8">
-            <h3 className="text-sm md:text-base text-gray-400 uppercase tracking-wider">Recognized & Approved By</h3>
+        <div className="mt-12 sm:mt-16 md:mt-20 lg:mt-24">
+          <div className="text-center mb-6 sm:mb-8">
+            <h3 className="text-xs sm:text-sm md:text-base text-gray-400 uppercase tracking-wider">Recognized & Approved By</h3>
           </div>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70">
-            <img src="/images/affiliations/dci.png" alt="Dental Council of India" className="h-12 md:h-16 w-auto grayscale hover:grayscale-0 transition-all" />
-            <img src="/images/affiliations/nmc.png" alt="National Medical Commission" className="h-12 md:h-16 w-auto grayscale hover:grayscale-0 transition-all" />
-            <img src="/images/affiliations/naac.png" alt="NAAC Accreditation" className="h-12 md:h-16 w-auto grayscale hover:grayscale-0 transition-all" />
-            <img src="/images/affiliations/mgr-university.png" alt="Tamil Nadu Dr. MGR Medical University" className="h-12 md:h-16 w-auto grayscale hover:grayscale-0 transition-all" />
+          <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 opacity-70">
+            <img
+              src="/images/Dental_Council_of_India_logo.png"
+              alt="Dental Council of India"
+              className="h-10 xs:h-12 sm:h-14 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+            />
+            <img
+              src="/images/National_Medical_Commission_logo.jpg"
+              alt="National Medical Commission"
+              className="h-10 xs:h-12 sm:h-14 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+            />
+            <img
+              src="/images/NAAC_LOGO.png"
+              alt="NAAC Accreditation"
+              className="h-10 xs:h-12 sm:h-14 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+            />
+            <img
+              src="/images/Dr.M.G.R.Medical-University-logo.webp"
+              alt="Tamil Nadu Dr. MGR Medical University"
+              className="h-10 xs:h-12 sm:h-14 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+            />
           </div>
         </div>
       </div>

@@ -49,17 +49,17 @@ export default function Header() {
     >
       {item.submenu ? (
         <button
-          className="text-black hover:text-primary font-semibold text-[13px] px-3 py-2 transition-colors whitespace-nowrap flex items-center gap-1"
+          className="text-black hover:text-primary font-semibold text-[11px] lg:text-[12px] xl:text-[13px] px-2 lg:px-2.5 xl:px-3 py-2 transition-colors whitespace-nowrap flex items-center gap-1"
         >
           {item.label}
-          <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12">
+          <svg className="w-2.5 h-2.5 lg:w-3 lg:h-3 fill-current" viewBox="0 0 12 12">
             <path d="M6 9L1 4h10z" />
           </svg>
         </button>
       ) : (
         <Link
           href={item.href}
-          className="text-black hover:text-primary font-semibold text-[13px] px-3 py-2 transition-colors whitespace-nowrap flex items-center gap-1"
+          className="text-black hover:text-primary font-semibold text-[11px] lg:text-[12px] xl:text-[13px] px-2 lg:px-2.5 xl:px-3 py-2 transition-colors whitespace-nowrap flex items-center gap-1"
         >
           {item.label}
         </Link>
@@ -82,15 +82,14 @@ export default function Header() {
                 onMouseLeave={() => !subitem.submenu && setActiveNestedSubmenu(null)}
               >
                 {subitem.submenu ? (
-                  <Link
-                    href={subitem.href}
-                    className="w-full block px-4 py-2.5 text-sm text-gray-600 hover:bg-primary hover:text-white transition-colors flex items-center justify-between"
+                  <button
+                    className="w-full block px-4 py-2.5 text-sm text-gray-600 hover:bg-primary hover:text-white transition-colors flex items-center justify-between text-left"
                   >
                     <span>{subitem.label}</span>
                     <svg className={`w-3 h-3 fill-current ml-2 ${['OTHERS', 'COMMITTEE', 'RESEARCH'].includes(item.label) ? 'rotate-180' : ''}`} viewBox="0 0 12 12">
                       <path d="M4 1l5 5-5 5z" />
                     </svg>
-                  </Link>
+                  </button>
                 ) : (
                   <Link
                     href={subitem.href}
@@ -111,15 +110,14 @@ export default function Header() {
                       onMouseLeave={() => !nestedItem.submenu && setActiveThirdLevelSubmenu(null)}
                     >
                       {nestedItem.submenu ? (
-                        <Link
-                          href={nestedItem.href}
-                          className="block px-4 py-2.5 text-sm text-gray-600 hover:bg-primary hover:text-white transition-colors flex items-center justify-between"
+                        <button
+                          className="w-full block px-4 py-2.5 text-sm text-gray-600 hover:bg-primary hover:text-white transition-colors flex items-center justify-between text-left"
                         >
                           <span>{nestedItem.label}</span>
                           <svg className={`w-3 h-3 fill-current ml-2 ${['OTHERS', 'COMMITTEE', 'RESEARCH'].includes(item.label) ? 'rotate-180' : ''}`} viewBox="0 0 12 12">
                             <path d="M4 1l5 5-5 5z" />
                           </svg>
-                        </Link>
+                        </button>
                       ) : (
                         <Link
                           href={nestedItem.href}
@@ -156,12 +154,12 @@ export default function Header() {
   );
 
   return (
-    <header className="bg-white fixed top-0 left-0 right-0 z-50">
+    <header className="bg-white fixed top-0 left-0 right-0 z-50 shadow-sm">
       {/* Desktop Header - 2 Row Layout */}
-      <div className="hidden xl:block">
+      <div className="hidden lg:block">
         <div className="w-full">
-          <div className="max-w-[1600px] mx-auto px-4 lg:px-8 py-2">
-            <div className="flex items-center gap-1">
+          <div className="max-w-[1600px] mx-auto px-4 lg:px-6 xl:px-8 py-2">
+            <div className="flex items-center gap-1 xl:gap-2">
               {/* Logo - Left Side (spans both rows) */}
               <Link href="/" className="flex items-center gap-2 flex-shrink-0">
                 <Image
@@ -169,7 +167,7 @@ export default function Header() {
                   alt="JKKN Dental College & Hospital"
                   width={192}
                   height={94}
-                  className="h-24 w-auto object-contain"
+                  className="h-20 xl:h-24 w-auto object-contain"
                   priority
                 />
               </Link>
@@ -177,19 +175,19 @@ export default function Header() {
               {/* Navigation Rows Container */}
               <div className="flex-1 flex flex-col gap-0">
                 {/* Top Navigation Row */}
-                <div className="flex items-center justify-center gap-1">
+                <div className="flex items-center justify-center gap-0.5 xl:gap-1">
                   {topMenuItems.map((item) => renderMenuItem(item))}
                 </div>
 
                 {/* Bottom Navigation Row */}
-                <div className="flex items-center justify-center gap-1">
+                <div className="flex items-center justify-center gap-0.5 xl:gap-1">
                   {bottomMenuItems.map((item) => renderMenuItem(item))}
                 </div>
               </div>
 
               {/* Search Icon - Right Side (spans both rows) */}
               <div className="flex items-center flex-shrink-0">
-                <button className="p-2 hover:bg-gray-100 rounded-full transition-colors" aria-label="Search">
+                <button className="p-2 hover:bg-gray-100 rounded-full transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center" aria-label="Search">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
@@ -200,9 +198,9 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Header */}
-      <nav className="xl:hidden w-full py-3 px-4">
-        <div className="flex items-center gap-4">
+      {/* Tablet & Mobile Header */}
+      <nav className="lg:hidden w-full py-2 sm:py-3 px-3 sm:px-4">
+        <div className="flex items-center gap-3 sm:gap-4">
           {/* Logo - Left Side */}
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <Image
@@ -210,40 +208,41 @@ export default function Header() {
               alt="JKKN Dental College & Hospital"
               width={154}
               height={75}
-              className="h-14 w-auto object-contain"
+              className="h-12 xs:h-14 sm:h-16 w-auto object-contain"
               priority
             />
           </Link>
 
           {/* Mobile Menu Button */}
           <button
-            className="p-2 hover:bg-gray-100 rounded-md ml-auto relative z-[70]"
+            className="p-2 sm:p-2.5 hover:bg-gray-100 active:bg-gray-200 rounded-md ml-auto relative z-[70] min-w-[44px] min-h-[44px] flex items-center justify-center touch-manipulation"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
+            aria-expanded={isMenuOpen}
           >
             <div className="w-6 h-5 flex flex-col justify-between">
-              <span className={`bg-gray-700 h-0.5 w-full transition-all ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-              <span className={`bg-gray-700 h-0.5 w-full ${isMenuOpen ? 'opacity-0' : ''}`}></span>
-              <span className={`bg-gray-700 h-0.5 w-full transition-all ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+              <span className={`bg-gray-700 h-0.5 w-full transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+              <span className={`bg-gray-700 h-0.5 w-full transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''}`}></span>
+              <span className={`bg-gray-700 h-0.5 w-full transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
             </div>
           </button>
         </div>
 
         {/* Mobile Navigation Overlay */}
         {isMenuOpen && (
-          <div className="fixed inset-0 bg-white z-[60] overflow-y-auto pt-20">
-            <div className="p-4">
+          <div className="fixed inset-0 bg-white z-[60] overflow-y-auto pt-16 xs:pt-18 sm:pt-20 pb-4 animate-fade-in">
+            <div className="p-3 xs:p-4 sm:p-6 max-w-lg mx-auto">
             {navigationMenu.map((item) => (
-              <div key={item.label} className="mb-2">
+              <div key={item.label} className="mb-1.5 sm:mb-2">
                 <div className="flex items-center justify-between">
                   {item.submenu ? (
                     <button
                       onClick={() => toggleMobileMenu(item.label)}
-                      className="flex-1 py-2.5 px-4 text-black hover:bg-gray-50 hover:text-primary font-semibold rounded text-left flex items-center justify-between"
+                      className="flex-1 py-3 px-3 xs:px-4 text-black hover:bg-gray-50 active:bg-gray-100 hover:text-primary font-semibold rounded-lg text-left flex items-center justify-between min-h-[44px] touch-manipulation transition-colors text-sm xs:text-base"
                     >
                       <span>{item.label}</span>
                       <svg
-                        className={`w-4 h-4 fill-current transition-transform ${mobileOpenMenus.has(item.label) ? 'rotate-180' : ''}`}
+                        className={`w-4 h-4 fill-current transition-transform duration-300 ${mobileOpenMenus.has(item.label) ? 'rotate-180' : ''}`}
                         viewBox="0 0 12 12"
                       >
                         <path d="M6 9L1 4h10z" />
@@ -252,7 +251,7 @@ export default function Header() {
                   ) : (
                     <Link
                       href={item.href}
-                      className={`flex-1 py-2.5 text-black hover:bg-gray-50 hover:text-primary font-semibold rounded flex items-center ${item.label === 'HOME' ? 'px-8' : 'px-4'}`}
+                      className={`flex-1 py-3 text-black hover:bg-gray-50 active:bg-gray-100 hover:text-primary font-semibold rounded-lg flex items-center min-h-[44px] touch-manipulation transition-colors text-sm xs:text-base ${item.label === 'HOME' ? 'px-6 xs:px-8' : 'px-3 xs:px-4'}`}
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {item.label}
@@ -260,18 +259,18 @@ export default function Header() {
                   )}
                 </div>
                 {item.submenu && mobileOpenMenus.has(item.label) && (
-                  <div className="pl-4 mt-1 space-y-1">
+                  <div className="pl-3 xs:pl-4 sm:pl-6 mt-1 space-y-1 animate-slide-down">
                     {item.submenu.map((subitem: SubmenuItem) => (
                       <div key={subitem.label}>
                         <div className="flex items-center justify-between">
                           {subitem.submenu ? (
                             <button
                               onClick={() => toggleMobileMenu(subitem.label)}
-                              className="flex-1 py-2 px-4 text-sm text-gray-600 hover:bg-gray-50 hover:text-primary rounded text-left flex items-center justify-between"
+                              className="flex-1 py-2.5 px-3 xs:px-4 text-xs xs:text-sm text-gray-600 hover:bg-gray-50 active:bg-gray-100 hover:text-primary rounded-lg text-left flex items-center justify-between min-h-[40px] touch-manipulation transition-colors"
                             >
                               <span>{subitem.label}</span>
                               <svg
-                                className={`w-3 h-3 fill-current transition-transform ${mobileOpenMenus.has(subitem.label) ? 'rotate-180' : ''}`}
+                                className={`w-3 h-3 fill-current transition-transform duration-300 ${mobileOpenMenus.has(subitem.label) ? 'rotate-180' : ''}`}
                                 viewBox="0 0 12 12"
                               >
                                 <path d="M6 9L1 4h10z" />
@@ -280,7 +279,7 @@ export default function Header() {
                           ) : (
                             <Link
                               href={subitem.href}
-                              className="flex-1 py-2 px-4 text-sm text-gray-600 hover:bg-gray-50 hover:text-primary rounded"
+                              className="flex-1 py-2.5 px-3 xs:px-4 text-xs xs:text-sm text-gray-600 hover:bg-gray-50 active:bg-gray-100 hover:text-primary rounded-lg min-h-[40px] flex items-center touch-manipulation transition-colors"
                               onClick={() => setIsMenuOpen(false)}
                             >
                               {subitem.label}
@@ -288,18 +287,18 @@ export default function Header() {
                           )}
                         </div>
                         {subitem.submenu && mobileOpenMenus.has(subitem.label) && (
-                          <div className="pl-4 mt-1 space-y-1">
+                          <div className="pl-3 xs:pl-4 mt-1 space-y-1 animate-slide-down">
                             {subitem.submenu.map((nestedItem) => (
                               <div key={nestedItem.label}>
                                 <div className="flex items-center justify-between">
                                   {nestedItem.submenu ? (
                                     <button
                                       onClick={() => toggleMobileMenu(nestedItem.label)}
-                                      className="flex-1 py-2 px-4 text-xs text-gray-600 hover:bg-gray-50 hover:text-primary rounded text-left flex items-center justify-between"
+                                      className="flex-1 py-2 px-3 xs:px-4 text-xs text-gray-600 hover:bg-gray-50 active:bg-gray-100 hover:text-primary rounded-lg text-left flex items-center justify-between min-h-[40px] touch-manipulation transition-colors"
                                     >
                                       <span>{nestedItem.label}</span>
                                       <svg
-                                        className={`w-3 h-3 fill-current transition-transform ${mobileOpenMenus.has(nestedItem.label) ? 'rotate-180' : ''}`}
+                                        className={`w-3 h-3 fill-current transition-transform duration-300 ${mobileOpenMenus.has(nestedItem.label) ? 'rotate-180' : ''}`}
                                         viewBox="0 0 12 12"
                                       >
                                         <path d="M6 9L1 4h10z" />
@@ -308,7 +307,7 @@ export default function Header() {
                                   ) : (
                                     <Link
                                       href={nestedItem.href}
-                                      className="flex-1 py-2 px-4 text-xs text-gray-600 hover:bg-gray-50 hover:text-primary rounded"
+                                      className="flex-1 py-2 px-3 xs:px-4 text-xs text-gray-600 hover:bg-gray-50 active:bg-gray-100 hover:text-primary rounded-lg min-h-[40px] flex items-center touch-manipulation transition-colors"
                                       onClick={() => setIsMenuOpen(false)}
                                     >
                                       {nestedItem.label}
@@ -316,12 +315,12 @@ export default function Header() {
                                   )}
                                 </div>
                                 {nestedItem.submenu && mobileOpenMenus.has(nestedItem.label) && (
-                                  <div className="pl-4 mt-1 space-y-1">
+                                  <div className="pl-3 xs:pl-4 mt-1 space-y-1 animate-slide-down">
                                     {nestedItem.submenu.map((thirdLevelItem) => (
                                       <Link
                                         key={thirdLevelItem.label}
                                         href={thirdLevelItem.href}
-                                        className="block py-2 px-4 text-xs text-gray-600 hover:bg-gray-50 hover:text-primary rounded"
+                                        className="block py-2 px-3 xs:px-4 text-xs text-gray-600 hover:bg-gray-50 active:bg-gray-100 hover:text-primary rounded-lg min-h-[40px] flex items-center touch-manipulation transition-colors"
                                         onClick={() => setIsMenuOpen(false)}
                                       >
                                         {thirdLevelItem.label}
@@ -341,8 +340,8 @@ export default function Header() {
             ))}
 
             {/* Mobile Search */}
-            <button className="w-full mt-2 py-2.5 px-4 text-left text-black hover:bg-gray-50 font-semibold rounded flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <button className="w-full mt-3 sm:mt-4 py-3 px-3 xs:px-4 text-left text-black hover:bg-gray-50 active:bg-gray-100 font-semibold rounded-lg flex items-center gap-2 sm:gap-3 min-h-[44px] touch-manipulation transition-colors text-sm xs:text-base">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
               Search

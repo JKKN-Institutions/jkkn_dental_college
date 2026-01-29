@@ -11,19 +11,22 @@ export default function OurInstitutions() {
       <Header />
 
       {/* Hero Image Section */}
-      <section className="w-full">
-        <div className="w-full h-[400px] md:h-[500px] lg:h-[600px] relative">
-          <div className="absolute inset-0 bg-gray-200">
-            {/* Placeholder for campus image */}
-            <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-300 flex items-center justify-center">
-              <span className="text-gray-400 text-2xl">Campus Image</span>
-            </div>
+      <section className="bg-[#FBF8F3] pt-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="w-full h-[300px] md:h-[350px] relative">
+            <Image
+              src="/images/Our_Institution.webp"
+              alt="Our Institution Campus"
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
         </div>
       </section>
 
       {/* Content Section */}
-      <section className="bg-[#FBF8F3] py-16 px-4">
+      <section className="bg-[#FBF8F3] pb-16 pt-6 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="space-y-6">
             {/* Paragraph 1 */}

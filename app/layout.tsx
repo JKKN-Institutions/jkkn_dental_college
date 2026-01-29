@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ClientLayoutWrapper } from "@/components/ClientLayoutWrapper";
 
 export const metadata: Metadata = {
   title: "JKKN Dental College & Hospital",
@@ -14,8 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased pt-32" suppressHydrationWarning>
-        {children}
+      <body className="antialiased pt-16 xs:pt-18 sm:pt-20 lg:pt-28 xl:pt-32" suppressHydrationWarning>
+        <ClientLayoutWrapper>
+          {children}
+        </ClientLayoutWrapper>
       </body>
     </html>
   );
