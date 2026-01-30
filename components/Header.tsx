@@ -67,7 +67,7 @@ export default function Header() {
 
       {/* First Level Submenu */}
       {item.submenu && activeSubmenu === item.label && (
-        <div className={`absolute top-full mt-0 bg-white shadow-lg py-2 ${['COMMITTEE', 'FACILITIES'].includes(item.label) ? 'min-w-[520px] max-h-[calc(100vh-120px)] overflow-y-auto' : 'min-w-[240px]'} border border-gray-200 z-50 ${['OTHERS', 'RESEARCH'].includes(item.label) ? 'right-0' : 'left-0'}`}>
+        <div className={`absolute top-full mt-0 bg-white shadow-lg py-2 ${item.label === 'COMMITTEE' ? 'min-w-[520px] max-h-[calc(100vh-120px)] overflow-y-auto' : ['FACILITIES'].includes(item.label) ? 'min-w-[520px]' : 'min-w-[240px]'} border border-gray-200 z-50 ${['OTHERS', 'RESEARCH'].includes(item.label) ? 'right-0' : 'left-0'}`}>
           <div className={`${['COMMITTEE', 'FACILITIES'].includes(item.label) ? 'grid grid-cols-2 gap-0 relative' : ''}`}>
             {/* Center divider line for 2-column layouts */}
             {['COMMITTEE', 'FACILITIES'].includes(item.label) && (

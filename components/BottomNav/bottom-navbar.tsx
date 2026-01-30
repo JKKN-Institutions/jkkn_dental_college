@@ -211,7 +211,15 @@ export function BottomNavbar() {
 
   // Handle nav item click
   const handleNavClick = useCallback(
-    (groupId: string) => {
+    (groupId: string, group: BottomNavGroup) => {
+      // If group has only 1 menu item, navigate directly without showing submenu
+      if (group.menus.length === 1) {
+        router.push(group.menus[0].href);
+        setExpanded(false);
+        setMoreMenuOpen(false);
+        return;
+      }
+
       if (isExpanded && activeNavId === groupId) {
         setExpanded(false);
         setMoreMenuOpen(false);
@@ -219,7 +227,7 @@ export function BottomNavbar() {
         switchToNav(groupId);
       }
     },
-    [activeNavId, isExpanded, switchToNav, setExpanded, setMoreMenuOpen]
+    [activeNavId, isExpanded, switchToNav, setExpanded, setMoreMenuOpen, router]
   );
 
   // Handle submenu item click
@@ -327,7 +335,7 @@ export function BottomNavbar() {
               label={group.groupLabel}
               isActive={effectiveActiveNavId === group.id}
               hasSubmenu={group.menus.length > 1}
-              onClick={() => handleNavClick(group.id)}
+              onClick={() => handleNavClick(group.id, group)}
             />
           ))}
 
@@ -339,7 +347,6 @@ export function BottomNavbar() {
               label="More"
               isActive={isMoreMenuOpen}
               hasSubmenu={true}
-              badgeCount={moreNavGroups.length}
               onClick={handleMoreClick}
             />
           )}
