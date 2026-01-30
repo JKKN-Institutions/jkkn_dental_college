@@ -7,7 +7,7 @@ export default function WhyChooseJKKN() {
           <div>
             <h3 className="text-[#7cb983] text-sm md:text-base font-bold uppercase tracking-wider mb-4">Why Choose JKKN</h3>
             <h2 className="text-3xl md:text-4xl font-bold mb-12">
-              Why J.K.K. Nattraja Dental College is Your Best Choice
+              Why JKKN Dental College is Your Best Choice
             </h2>
 
             <div className="space-y-8">
@@ -19,9 +19,9 @@ export default function WhyChooseJKKN() {
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold mb-2">100 Years Legacy</h4>
+                  <h4 className="text-xl font-bold mb-2">70+ Years Legacy</h4>
                   <p className="text-gray-300 leading-relaxed">
-                    Part of JKKN Educational Institutions with a century-long commitment to progressive education. #JKKN100
+                    Part of JKKN Institutions with a century-long commitment to progressive education. #JKKN100
                   </p>
                 </div>
               </div>
@@ -64,7 +64,7 @@ export default function WhyChooseJKKN() {
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold mb-2">100% Placement Assistance</h4>
+                  <h4 className="text-xl font-bold mb-2">92% Placement Assistance</h4>
                   <p className="text-gray-300 leading-relaxed">
                     Strong industry connections with leading dental chains and hospitals.
                   </p>
@@ -78,13 +78,13 @@ export default function WhyChooseJKKN() {
             <div className="grid grid-cols-2 gap-6">
               {/* Stat 1 */}
               <div className="bg-[#002309] rounded-2xl p-8 text-center">
-                <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">15+</div>
+                <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">39+</div>
                 <div className="text-gray-300 text-sm">Years of Excellence</div>
               </div>
 
               {/* Stat 2 */}
               <div className="bg-[#002309] rounded-2xl p-8 text-center">
-                <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">2000+</div>
+                <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">3000+</div>
                 <div className="text-gray-300 text-sm">Alumni Network</div>
               </div>
 

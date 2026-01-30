@@ -30,7 +30,7 @@ export default function Hero() {
 
             {/* Description */}
             <p className="text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed">
-              Join J.K.K. Nattraja Dental College — where world-class dental education meets compassionate patient care. Our DCI-approved programs prepare Learners for exceptional careers in dentistry.
+              Join JKKN Dental College and Hospital — where world-class dental education meets compassionate patient care. Our DCI-approved programs prepare Learners for exceptional careers in dentistry.
             </p>
 
             {/* Stats */}
@@ -44,7 +44,7 @@ export default function Hero() {
                 <div className="text-xs sm:text-sm text-gray-300 uppercase mt-1">Dental Chairs</div>
               </div>
               <div className="text-center sm:text-left">
-                <div className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-[#7cb983]">100%</div>
+                <div className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-[#7cb983]">92%</div>
                 <div className="text-xs sm:text-sm text-gray-300 uppercase mt-1">Placement</div>
               </div>
             </div>

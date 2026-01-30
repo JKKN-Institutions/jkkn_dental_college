@@ -7,7 +7,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
 export default function MDSProsthodontics() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Header />
 
       {/* Hero Section */}
@@ -47,7 +47,10 @@ export default function MDSProsthodontics() {
                 <Link href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-block">
                   Apply Now
                 </Link>
-                <button className="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-[#006837] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300">
+                <button
+                  onClick={() => document.getElementById('curriculum')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-[#006837] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300"
+                >
                   Explore Curriculum
                 </button>
               </div>
@@ -59,18 +62,18 @@ export default function MDSProsthodontics() {
                 <h2 className="text-5xl md:text-6xl font-bold text-white text-center mb-12">Prosthodontics Lab</h2>
 
                 {/* Stats Grid */}
-                <div className="grid grid-cols-3 gap-4">
-                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                    <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">3</div>
-                    <div className="text-sm text-gray-200">Years Duration</div>
+                <div className="grid grid-cols-3 gap-2 sm:gap-4">
+                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 sm:p-6 text-center">
+                    <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">3</div>
+                    <div className="text-[10px] sm:text-sm text-gray-200">Years Duration</div>
                   </div>
-                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                    <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">6</div>
-                    <div className="text-sm text-gray-200">Seats Available</div>
+                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 sm:p-6 text-center">
+                    <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">6</div>
+                    <div className="text-[10px] sm:text-sm text-gray-200">Seats Available</div>
                   </div>
-                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                    <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">100%</div>
-                    <div className="text-sm text-gray-200">Placement Rate</div>
+                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 sm:p-6 text-center">
+                    <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">100%</div>
+                    <div className="text-[10px] sm:text-sm text-gray-200">Placement Rate</div>
                   </div>
                 </div>
               </div>
@@ -229,7 +232,7 @@ export default function MDSProsthodontics() {
       </section>
 
       {/* Course Structure Section */}
-      <section className="bg-[#FBFBEE] py-20 px-4">
+      <section id="curriculum" className="bg-[#FBFBEE] py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-4">
             <span className="text-[#7cb983] font-bold text-sm uppercase tracking-wider">COURSE STRUCTURE</span>

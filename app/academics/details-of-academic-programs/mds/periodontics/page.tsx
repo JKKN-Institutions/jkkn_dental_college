@@ -1,13 +1,14 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
 export default function MDSPeriodontics() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Header />
 
       {/* Hero Section */}
@@ -47,7 +48,10 @@ export default function MDSPeriodontics() {
                 <Link href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg inline-block">
                   Apply Now
                 </Link>
-                <button className="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-[#006837] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300">
+                <button
+                  onClick={() => document.getElementById('curriculum')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-[#006837] font-bold px-8 py-4 rounded-lg text-lg transition-all duration-300"
+                >
                   Explore Curriculum
                 </button>
               </div>
@@ -55,22 +59,31 @@ export default function MDSPeriodontics() {
 
             {/* Right Content - Periodontics Lab Card */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-12 border-4 border-white/20 overflow-hidden">
-                <h2 className="text-5xl md:text-6xl font-bold text-white text-center mb-12">Periodontics Lab</h2>
+              <div className="relative rounded-2xl border-4 border-white/20 overflow-hidden">
+                <Image
+                  src="/images/MDS-Periodontics-hero.png"
+                  alt="Periodontics Lab"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-8">
+                  <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-8">Periodontics Lab</h2>
 
-                {/* Stats Grid */}
-                <div className="grid grid-cols-3 gap-4">
-                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                    <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">3</div>
-                    <div className="text-sm text-gray-200">Years Duration</div>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                    <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">4</div>
-                    <div className="text-sm text-gray-200">Seats Available</div>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-center">
-                    <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">100%</div>
-                    <div className="text-sm text-gray-200">Placement Rate</div>
+                  {/* Stats Grid */}
+                  <div className="grid grid-cols-3 gap-2 sm:gap-4">
+                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-2 sm:p-4 text-center">
+                      <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#7cb983] mb-1">3</div>
+                      <div className="text-[10px] sm:text-xs text-gray-200">Years Duration</div>
+                    </div>
+                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-2 sm:p-4 text-center">
+                      <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#7cb983] mb-1">4</div>
+                      <div className="text-[10px] sm:text-xs text-gray-200">Seats Available</div>
+                    </div>
+                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-2 sm:p-4 text-center">
+                      <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#7cb983] mb-1">100%</div>
+                      <div className="text-[10px] sm:text-xs text-gray-200">Placement Rate</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -218,8 +231,16 @@ export default function MDSPeriodontics() {
 
             {/* Right Content - Image/Graphic */}
             <div className="relative">
-              <div className="bg-[#7cb983] rounded-3xl p-16 flex items-center justify-center min-h-[400px]">
-                <h3 className="text-6xl md:text-7xl font-bold text-white text-center">Periodontal Surgery</h3>
+              <div className="relative rounded-3xl overflow-hidden min-h-[400px]">
+                <Image
+                  src="/images/MDS-Periodontics-surgery-image.png"
+                  alt="Periodontal Surgery"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-12">
+                  <h3 className="text-5xl md:text-6xl font-bold text-white text-center">Periodontal Surgery</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -227,7 +248,7 @@ export default function MDSPeriodontics() {
       </section>
 
       {/* Course Structure Section */}
-      <section className="py-16 px-4 bg-white">
+      <section id="curriculum" className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[#7cb983] font-semibold text-sm uppercase tracking-wide mb-2">COURSE STRUCTURE</p>

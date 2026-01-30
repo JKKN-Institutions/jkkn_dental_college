@@ -59,7 +59,7 @@ export default function PlacementCellCDC() {
             Dear Students, Faculty, and Industry Partners,
           </h3>
           <p className="text-base text-black mb-4 leading-relaxed">
-            At JKKN Educational Institutions, we believe education extends beyond classrooms—it's about equipping students with skills, mindset, and opportunities for real-world success. The Career Development Center (CDC) bridges academic learning with industry needs, fostering career empowerment, entrepreneurship, and leadership.
+            At JKKN Institutions, we believe education extends beyond classrooms—it's about equipping students with skills, mindset, and opportunities for real-world success. The Career Development Center (CDC) bridges academic learning with industry needs, fostering career empowerment, entrepreneurship, and leadership.
           </p>
           <p className="text-base text-black mb-4 leading-relaxed">
             By integrating AI-driven learning, automation, and smart technologies, we aim to transform students into future-ready professionals. AI is not a replacement for human potential but a catalyst for growth, creativity, and innovation. Let's embrace technology and talent to create endless possibilities.
@@ -74,7 +74,7 @@ export default function PlacementCellCDC() {
             Mr. Omm Sharavana
           </p>
           <p className="text-base text-black font-bold mb-8">
-            Managing Director, JKKN Educational Institutions
+            Managing Director, JKKN Institutions
           </p>
 
           {/* MESSAGE BY THE HEAD OF Placement Cell/CDC */}

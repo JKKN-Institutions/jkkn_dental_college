@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
@@ -10,7 +11,7 @@ export default function BDSProgram() {
   const [activeYear, setActiveYear] = useState('first');
 
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Header />
 
       {/* Hero Section */}
@@ -42,22 +43,22 @@ export default function BDSProgram() {
 
               {/* Description */}
               <p className="text-lg text-gray-200 mb-8 leading-relaxed">
-                Embark on a transformative journey in dental education at J.K.K. Nattraja Dental College. Our comprehensive 5-year program prepares Learners for successful careers in dentistry through hands-on clinical training and world-class infrastructure.
+                Embark on a transformative journey in dental education at JKKN Dental College. Our comprehensive 5-year program prepares Learners for successful careers in dentistry through hands-on clinical training and world-class infrastructure.
               </p>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-4 mb-8">
+              <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-8">
                 <div>
-                  <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">5</div>
-                  <div className="text-sm text-gray-200">Years Duration</div>
+                  <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">5</div>
+                  <div className="text-[10px] sm:text-sm text-gray-200">Years Duration</div>
                 </div>
                 <div>
-                  <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">100</div>
-                  <div className="text-sm text-gray-200">Seats Available</div>
+                  <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">100</div>
+                  <div className="text-[10px] sm:text-sm text-gray-200">Seats Available</div>
                 </div>
                 <div>
-                  <div className="text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">95%</div>
-                  <div className="text-sm text-gray-200">Placement Rate</div>
+                  <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">92%</div>
+                  <div className="text-[10px] sm:text-sm text-gray-200">Placement Rate</div>
                 </div>
               </div>
 
@@ -66,20 +67,25 @@ export default function BDSProgram() {
                 <Link href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl inline-block">
                   Apply Now
                 </Link>
-                <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#006837] font-semibold px-8 py-3 rounded-lg transition-all duration-300">
+                <a href="#curriculum" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#006837] font-semibold px-8 py-3 rounded-lg transition-all duration-300 inline-block">
                   Explore Curriculum
-                </button>
+                </a>
               </div>
             </div>
 
             {/* Right Content - Video/Image */}
             <div className="relative">
-              <div className="relative rounded-2xl border-4 border-white/20 overflow-hidden bg-gradient-to-br from-[#7cb983] to-[#006837] aspect-video flex items-center justify-center">
-                <h2 className="text-4xl md:text-5xl font-bold text-white">Dental Education</h2>
+              <div className="relative rounded-2xl border-4 border-white/20 overflow-hidden aspect-video">
+                <Image
+                  src="/images/BDS-hero-image.png"
+                  alt="Dental Education"
+                  fill
+                  className="object-cover"
+                />
               </div>
 
               {/* NAAC Badge */}
-              <div className="absolute bottom-8 -right-4 bg-white rounded-xl shadow-2xl p-4 flex items-center gap-3">
+              <div className="absolute bottom-8 right-4 bg-white rounded-xl shadow-2xl p-4 flex items-center gap-3">
                 <div className="bg-[#7cb983] rounded-lg p-3">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -117,7 +123,7 @@ export default function BDSProgram() {
               </h2>
 
               <p className="text-gray-600 mb-6 leading-relaxed">
-                The Bachelor of Dental Surgery (BDS) at J.K.K. Nattraja Dental College is a prestigious undergraduate program designed to produce competent dental professionals. Approved by the Dental Council of India (DCI) and recognized by the Government of Tamil Nadu, our program combines rigorous academic training with extensive clinical exposure.
+                The Bachelor of Dental Surgery (BDS) at JKKN Dental College is a prestigious undergraduate program designed to produce competent dental professionals. Approved by the Dental Council of India (DCI) and recognized by the Government of Tamil Nadu, our program combines rigorous academic training with extensive clinical exposure.
               </p>
 
               <p className="text-gray-600 mb-8 leading-relaxed">
@@ -179,14 +185,38 @@ export default function BDSProgram() {
 
             {/* Right Content - Image Boxes */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="col-span-2 bg-gradient-to-br from-[#7cb983] to-[#006837] rounded-2xl p-8 h-64 flex items-center justify-center shadow-lg">
-                <h3 className="text-4xl font-bold text-white">Modern Dental Lab</h3>
+              <div className="col-span-2 relative rounded-2xl h-64 overflow-hidden shadow-lg">
+                <Image
+                  src="/images/BDS-Modern-Dental-Lab.png"
+                  alt="Modern Dental Lab"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-6">
+                  <h3 className="text-4xl font-bold text-white">Modern Dental Lab</h3>
+                </div>
               </div>
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-6 h-48 flex items-center justify-center shadow-lg">
-                <h3 className="text-2xl font-bold text-white text-center">Clinical Training</h3>
+              <div className="relative rounded-2xl h-48 overflow-hidden shadow-lg">
+                <Image
+                  src="/images/BDS-Clinical-Training.png"
+                  alt="Clinical Training"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-4">
+                  <h3 className="text-2xl font-bold text-white text-center">Clinical Training</h3>
+                </div>
               </div>
-              <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-6 h-48 flex items-center justify-center shadow-lg">
-                <h3 className="text-2xl font-bold text-white text-center">Campus Life</h3>
+              <div className="relative rounded-2xl h-48 overflow-hidden shadow-lg">
+                <Image
+                  src="/images/BDS-Campus-Life.png"
+                  alt="Campus Life"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-4">
+                  <h3 className="text-2xl font-bold text-white text-center">Campus Life</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -383,7 +413,7 @@ export default function BDSProgram() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-800 mb-2">Choice Filling</h4>
-                    <p className="text-gray-600">Select J.K.K. Nattraja Dental College as your preferred institution</p>
+                    <p className="text-gray-600">Select JKKN Dental College as your preferred institution</p>
                   </div>
                 </div>
 
@@ -415,7 +445,7 @@ export default function BDSProgram() {
             </div>
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
+          <h2 id='curriculum' className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
             Comprehensive BDS Curriculum
           </h2>
           <p className="text-gray-200 text-center mb-12 max-w-3xl mx-auto">

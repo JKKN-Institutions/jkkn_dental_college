@@ -27,7 +27,7 @@ export default function CTASection() {
             className="border-2 border-white hover:bg-white hover:text-[#7cb983] text-white font-bold py-3 px-8 rounded-full transition-all duration-300 text-center inline-flex items-center gap-2"
           >
             <span>📞</span>
-            <span>+91 9345855001</span>
+            <span>Call Us</span>
           </a>
         </div>
       </div>

@@ -9,7 +9,7 @@ export function ClientLayoutWrapper({ children }: { children: React.ReactNode })
 
   return (
     <>
-      <div className={cn(isMobile && 'pb-20')} suppressHydrationWarning>
+      <div suppressHydrationWarning>
         {children}
       </div>
       <BottomNavbar />

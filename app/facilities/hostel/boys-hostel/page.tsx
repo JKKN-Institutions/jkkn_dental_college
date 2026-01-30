@@ -49,7 +49,7 @@ export default function BoysHostel() {
 
           {/* Introduction Paragraph */}
           <p className="text-base leading-relaxed text-gray-700 mb-8">
-            <strong>Situated a mere 5-minute walk from the heart of JKKN campus, our Boys Hostel offers a perfect blend of convenience and comfort. Designed to foster both academics and camaraderie, the hostel embodies the holistic approach of JKKN Educational Institutions.</strong>
+            <strong>Situated a mere 5-minute walk from the heart of JKKN campus, our Boys Hostel offers a perfect blend of convenience and comfort. Designed to foster both academics and camaraderie, the hostel embodies the holistic approach of JKKN Institutions.</strong>
           </p>
 
           {/* Convenience and Comfort */}

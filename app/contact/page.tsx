@@ -45,7 +45,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-800 mb-2">Email</h3>
-                    <p className="text-lg text-gray-700 font-semibold">Dental@jkkn.ac.in</p>
+                    <p className="text-lg text-gray-700 font-semibold">dental@jkkn.ac.in</p>
                   </div>
                 </div>
 
@@ -73,9 +73,6 @@ export default function Contact() {
               </h2>
 
               <div className="mt-8">
-                <p className="text-lg text-gray-600 mb-6">
-                  Required fields are marked.
-                </p>
                 <a
                   href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
                   className="inline-block bg-[#1B5E20] hover:bg-[#145018] text-white font-bold text-lg px-8 py-3 rounded transition-colors"

@@ -24,7 +24,7 @@ export default function AmbulanceServices() {
 
           {/* First Paragraph */}
           <p className="text-base leading-relaxed text-gray-700 mb-6">
-            <strong>JKKN Educational Institutions, we are dedicated to delivering excellent education to our students, staff, and community. In line with our pledge to the community, we take pride in presenting our exceptional ambulance services, available round-the-clock for emergency responses and medical transportation.</strong>
+            <strong>JKKN Institutions, we are dedicated to delivering excellent education to our students, staff, and community. In line with our pledge to the community, we take pride in presenting our exceptional ambulance services, available round-the-clock for emergency responses and medical transportation.</strong>
           </p>
 
           {/* Second Paragraph */}

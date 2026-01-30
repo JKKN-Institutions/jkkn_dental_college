@@ -11,7 +11,7 @@ export default function OurInstitutionsSection() {
         <div className="relative w-full overflow-hidden shadow-lg">
           <img
             src="/images/our-institutions.jpg"
-            alt="JKKN Educational Institutions Campus"
+            alt="JKKN Institutions Campus"
             className="w-full h-auto object-cover"
             style={{ maxHeight: '700px', minHeight: '400px' }}
           />

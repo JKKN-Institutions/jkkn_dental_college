@@ -34,16 +34,16 @@ export default function OurManagement() {
 
               {/* Position */}
               <h3 className="text-lg md:text-xl font-bold text-center mb-6 text-[#006838]">
-                Chairperson - JKKN Educational Institutions
+                Chairperson - JKKN Institutions
               </h3>
 
               {/* Description */}
               <div className="space-y-4">
                 <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">
-                  As the Chairperson of JKKN Educational Institutions, I am honoured to shoulder this immense responsibility, and I take great pride in our exceptional progress. We have earned the status of one of the most prestigious colleges in the region. "Leadership and Excellence" is not merely our motto but the foundation of our values, a testament to our state-of-the-art infrastructure and the exceptional quality of our community.
+                  As the Chairperson of JKKN Institutions, I am honoured to shoulder this immense responsibility, and I take great pride in our exceptional progress. We have earned the status of one of the most prestigious colleges in the region. "Leadership and Excellence" is not merely our motto but the foundation of our values, a testament to our state-of-the-art infrastructure and the exceptional quality of our community.
                 </p>
                 <p className="text-sm md:text-base text-gray-700 leading-relaxed text-justify">
-                  Our institution provides the necessary infrastructure along with a team of qualified and highly motivated faculty all under one roof for the benefit of our students. Beyond offering world-class education, we instil a progressive attitude, fostering innovation for the betterment of society. The synergy of academic excellence and industrial relevance distinguishes JKKN Educational Institutions, setting us apart. I warmly welcome you to our lush, green campus!
+                  Our institution provides the necessary infrastructure along with a team of qualified and highly motivated faculty all under one roof for the benefit of our students. Beyond offering world-class education, we instil a progressive attitude, fostering innovation for the betterment of society. The synergy of academic excellence and industrial relevance distinguishes JKKN Institutions, setting us apart. I warmly welcome you to our lush, green campus!
                 </p>
               </div>
             </div>
@@ -68,7 +68,7 @@ export default function OurManagement() {
 
               {/* Position */}
               <h3 className="text-lg md:text-xl font-bold text-center mb-6 text-[#006838]">
-                Director - JKKN Educational Institutions
+                Director - JKKN Institutions
               </h3>
 
               {/* Description */}

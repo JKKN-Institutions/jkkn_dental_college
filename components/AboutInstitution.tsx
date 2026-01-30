@@ -24,7 +24,7 @@ export default function AboutInstitution() {
               />
               {/* 100 Years Legacy Badge */}
               <div className="absolute bottom-6 right-6 bg-[#7cb983] text-white rounded-2xl p-6 shadow-2xl">
-                <div className="text-5xl md:text-6xl font-bold text-center">100</div>
+                <div className="text-5xl md:text-6xl font-bold text-center">70+</div>
                 <div className="text-sm font-bold uppercase tracking-wide text-center">Years Legacy</div>
               </div>
             </div>
@@ -39,7 +39,7 @@ export default function AboutInstitution() {
               A Century of Excellence in Progressive Education
             </h2>
             <p className="text-gray-600 text-base md:text-lg mb-6 leading-relaxed">
-              J.K.K. Nattraja Dental College is a premier dental institution under J.K.K. Nattraja Educational Institutions (JKKN), founded on the vision of Founder J.K.K. Nataraja Chettiar (1895-1995).
+            JKKN Dental College and Hospital is a premier dental institution under JKKN Institutions, founded on the vision of Founder J.K.K. Nataraja Chettiar (1895-1995).
             </p>
             <p className="text-gray-600 text-base md:text-lg mb-8 leading-relaxed">
               Located in Komarapalayam, Namakkal District, Tamil Nadu, our dental college offers an ideal environment for focused learning. Affiliated with The Tamil Nadu Dr. M.G.R. Medical University and approved by DCI, we produce competent dental professionals.
@@ -65,11 +65,11 @@ export default function AboutInstitution() {
               </div>
               <div className="flex items-start gap-3">
                 <div className="text-[#7cb983] text-xl flex-shrink-0">✓</div>
-                <div className="text-gray-700 font-medium">9 PG Specializations</div>
+                <div className="text-gray-700 font-medium">5 PG Specializations</div>
               </div>
               <div className="flex items-start gap-3">
                 <div className="text-[#7cb983] text-xl flex-shrink-0">✓</div>
-                <div className="text-gray-700 font-medium">100% Placement</div>
+                <div className="text-gray-700 font-medium">92% Placement</div>
               </div>
             </div>
 

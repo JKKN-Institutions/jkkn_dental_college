@@ -5,12 +5,12 @@ export default function AdmissionsSection() {
         <div className="grid md:grid-cols-2 gap-12 md:gap-16">
           {/* Left - Eligibility */}
           <div>
-            <h3 className="text-[#7cb983] text-sm md:text-base font-bold uppercase tracking-wider mb-4">Admissions 2025-26</h3>
+            <h3 className="text-[#7cb983] text-sm md:text-base font-bold uppercase tracking-wider mb-4">Admissions 2026-27</h3>
             <h2 className="text-3xl md:text-4xl font-bold text-[#006837] mb-8">
               Begin Your Journey to Dental Excellence
             </h2>
             <p className="text-gray-600 mb-10 leading-relaxed">
-              Join J.K.K. Nattraja Dental College and embark on a transformative educational journey in dental science.
+              Join JKKN Dental College and embark on a transformative educational journey in dental science.
             </p>
 
             {/* BDS Eligibility */}

@@ -35,14 +35,14 @@ export default function FinanceOfficer() {
               Mr. K. Velayutham, MBA
             </p>
             <p className="text-base md:text-lg font-bold text-black">
-              JKKN Educational Institutions, Kumarapalayam
+              JKKN Institutions, Kumarapalayam
             </p>
           </div>
 
           {/* Description */}
           <div className="max-w-4xl mx-auto mb-8">
             <p className="text-gray-700 text-justify leading-relaxed mb-6">
-              Mr. K. Velayutham, MBA, serves as the Finance Officer of JKKN Educational Institutions, overseeing financial planning, budgeting, and resource allocation to ensure the institution's financial stability and growth. With his extensive expertise in financial management, he plays a crucial role in optimizing financial operations, ensuring compliance with regulations, and supporting the institution's mission of academic excellence.
+              Mr. K. Velayutham, MBA, serves as the Finance Officer of JKKN Institutions, overseeing financial planning, budgeting, and resource allocation to ensure the institution's financial stability and growth. With his extensive expertise in financial management, he plays a crucial role in optimizing financial operations, ensuring compliance with regulations, and supporting the institution's mission of academic excellence.
             </p>
 
             {/* Contact Information */}

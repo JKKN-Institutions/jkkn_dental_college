@@ -408,7 +408,7 @@ Our curriculum emphasizes clinical excellence, research, and community service, 
   // Life @ JKKN
   life: {
     heading: "LIFE @ JKKN",
-    description: `JKKN Educational Institutions boasts a vibrant residential campus that fosters both personal and professional growth. More than just classrooms, libraries, and labs, the campus offers an enriching environment where students can pursue passions, hone skills, and uncover new talents and interests. From academic pursuits to co-curricular engagements and extracurricular adventures, the campus is alive with opportunities and activities that make a dynamic, exciting environment for all.`,
+    description: `JKKN Institutions boasts a vibrant residential campus that fosters both personal and professional growth. More than just classrooms, libraries, and labs, the campus offers an enriching environment where students can pursue passions, hone skills, and uncover new talents and interests. From academic pursuits to co-curricular engagements and extracurricular adventures, the campus is alive with opportunities and activities that make a dynamic, exciting environment for all.`,
     image: "/images/life-at-jkkn.jpg",
   },
 
@@ -454,11 +454,10 @@ NH-544 Salem to Kochi Highway, Kumarapalayam, Namakkal District, Tamil Nadu - 63
     social: {
       title: "FOLLOW US",
       links: [
-        { platform: "Facebook", url: "#" },
-        { platform: "Twitter", url: "#" },
-        { platform: "Instagram", url: "#" },
-        { platform: "LinkedIn", url: "#" },
-        { platform: "YouTube", url: "#" },
+        { platform: "Facebook", url: "https://www.facebook.com/jkkndental" },
+        { platform: "Instagram", url: "https://www.instagram.com/jkkndental/" },
+        { platform: "LinkedIn", url: "https://www.linkedin.com/school/jkkndental/" },
+        { platform: "YouTube", url: "https://www.youtube.com/playlist?list=PL6QsTq-__HhvqQ28WcrDAwPa9jeMSK3AO" },
       ],
     },
   },
