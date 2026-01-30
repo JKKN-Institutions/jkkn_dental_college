@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ClientLayoutWrapper } from "@/components/ClientLayoutWrapper";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "JKKN Dental College & Hospital",
@@ -15,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased pt-16 xs:pt-18 sm:pt-20 lg:pt-24 xl:pt-28" suppressHydrationWarning>
+      <body className={`${poppins.className} antialiased pt-16 xs:pt-18 sm:pt-20 lg:pt-24 xl:pt-28`} suppressHydrationWarning>
         <ClientLayoutWrapper>
           {children}
         </ClientLayoutWrapper>

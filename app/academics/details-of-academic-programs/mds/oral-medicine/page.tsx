@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
@@ -59,22 +60,27 @@ export default function MDSOralMedicine() {
 
             {/* Right Content - Radiology Lab Card */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-12 border-4 border-white/20 overflow-hidden">
-                <h2 className="text-5xl md:text-6xl font-bold text-white text-center mb-12">Radiology Lab</h2>
+              <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl border-4 border-white/20 overflow-hidden relative min-h-[400px] md:min-h-[450px]">
+                <Image
+                  src="/images/MDS-Oral-Medicine-&-Radiology-banner-Image.png"
+                  alt="Radiology Lab"
+                  fill
+                  className="object-cover object-right"
+                />
 
-                {/* Stats Grid */}
-                <div className="grid grid-cols-3 gap-2 sm:gap-4">
-                  <div className="bg-[#FBFBEE] rounded-xl p-3 sm:p-6 text-center">
-                    <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">3</div>
-                    <div className="text-[10px] sm:text-sm text-gray-600">Years Duration</div>
+                {/* Stats Grid - Overlaid on image */}
+                <div className="absolute bottom-0 left-0 right-0 grid grid-cols-3 gap-2 sm:gap-3 p-4">
+                  <div className="bg-[#FBFBEE] rounded-lg p-2 sm:p-4 text-center">
+                    <div className="text-xl sm:text-3xl md:text-4xl font-bold text-[#006837] mb-1">3</div>
+                    <div className="text-[9px] sm:text-xs text-gray-600">Years Duration</div>
                   </div>
-                  <div className="bg-[#FBFBEE] rounded-xl p-3 sm:p-6 text-center">
-                    <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">4</div>
-                    <div className="text-[10px] sm:text-sm text-gray-600">Seats Available</div>
+                  <div className="bg-[#FBFBEE] rounded-lg p-2 sm:p-4 text-center">
+                    <div className="text-xl sm:text-3xl md:text-4xl font-bold text-[#006837] mb-1">4</div>
+                    <div className="text-[9px] sm:text-xs text-gray-600">Seats Available</div>
                   </div>
-                  <div className="bg-[#FBFBEE] rounded-xl p-3 sm:p-6 text-center">
-                    <div className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#7cb983] mb-2">100%</div>
-                    <div className="text-[10px] sm:text-sm text-gray-600">Placement Rate</div>
+                  <div className="bg-[#FBFBEE] rounded-lg p-2 sm:p-4 text-center">
+                    <div className="text-xl sm:text-3xl md:text-4xl font-bold text-[#006837] mb-1">100%</div>
+                    <div className="text-[9px] sm:text-xs text-gray-600">Placement Rate</div>
                   </div>
                 </div>
               </div>
@@ -208,8 +214,13 @@ export default function MDSOralMedicine() {
 
             {/* Right Content - Diagnostic Center Card */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-3xl p-16 h-full flex items-center justify-center">
-                <h2 className="text-6xl md:text-7xl font-bold text-white text-center">Diagnostic Center</h2>
+              <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-3xl overflow-hidden h-full min-h-[400px]">
+                <Image
+                  src="/images/MDS-Oral-Medicine-&-Radiology-diagonic-lab.png"
+                  alt="Diagnostic Center"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>
