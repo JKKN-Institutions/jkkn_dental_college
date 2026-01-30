@@ -124,7 +124,7 @@ export default function AcademicPrograms() {
         <div>
           <h3 className="text-xl xs:text-2xl sm:text-3xl font-bold text-[#006837] text-center mb-8 sm:mb-10 md:mb-12">MDS Specializations Offered</h3>
 
-          <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
             {/* Periodontics */}
             <Link href="/academics/details-of-academic-programs/mds/periodontics" className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-6 shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer">
               <div className="flex items-start gap-3 sm:gap-4">
