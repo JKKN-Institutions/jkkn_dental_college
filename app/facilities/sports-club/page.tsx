@@ -20,47 +20,35 @@ export default function SportsClub() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {/* Image 1 */}
             <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add sports image 1 */}
-              {/* <Image
-                src="/images/sports-1.jpg"
+              <Image
+                src="/images/sports-1.webp"
                 alt="Student with rugby ball"
                 width={400}
                 height={350}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Sports Image 1<br/>(Add sports-1.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 2 */}
             <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add sports image 2 */}
-              {/* <Image
-                src="/images/sports-2.jpg"
+              <Image
+                src="/images/sports-2.webp"
                 alt="Student athlete"
                 width={400}
                 height={350}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Sports Image 2<br/>(Add sports-2.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 3 */}
             <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add sports image 3 */}
-              {/* <Image
-                src="/images/sports-3.jpg"
+              <Image
+                src="/images/sports-3.webp"
                 alt="Sports team"
                 width={400}
                 height={350}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Sports Image 3<br/>(Add sports-3.jpg to public/images/)</p>
-              </div>
+              />
             </div>
           </div>
 

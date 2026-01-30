@@ -19,17 +19,13 @@ export default function Alumni() {
           {/* Alumni Logo/Badge */}
           <div className="flex justify-center mb-8">
             <div className="text-center">
-              {/* TODO: Add alumni logo image here */}
-              {/* <Image
+              <Image
                 src="/images/alumni-logo.png"
                 alt="JKKN Dental College Alumni Association Namaskara"
                 width={500}
                 height={400}
                 className="mx-auto"
-              /> */}
-              <div className="w-[500px] h-[400px] bg-gray-100 flex items-center justify-center mx-auto rounded-lg border-2 border-gray-300">
-                <p className="text-gray-500 text-center px-4">Alumni Logo<br/>(Please add alumni-logo.png to public/images/)</p>
-              </div>
+              />
               <p className="mt-4 text-sm text-gray-600">
                 The Alumni Association of<br />
                 J.K.K.Nattraja Dental College

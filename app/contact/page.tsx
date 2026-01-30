@@ -77,7 +77,7 @@ export default function Contact() {
                   Required fields are marked.
                 </p>
                 <a
-                  href="#"
+                  href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
                   className="inline-block bg-[#1B5E20] hover:bg-[#145018] text-white font-bold text-lg px-8 py-3 rounded transition-colors"
                 >
                   Click Here

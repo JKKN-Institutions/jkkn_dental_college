@@ -1,6 +1,15 @@
+'use client';
+
 import Link from 'next/link';
 
 export default function Hero() {
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const element = document.getElementById('academic-programs');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
   return (
     <section className="bg-[#006837] text-white py-10 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
@@ -43,13 +52,14 @@ export default function Hero() {
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link
-                href="/admissions"
+                href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
                 className="bg-[#7cb983] hover:bg-[#6ba872] active:bg-[#5a9761] text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center text-sm sm:text-base min-h-[44px] flex items-center justify-center touch-manipulation transform hover:scale-105 active:scale-95"
               >
                 Start Your Application →
               </Link>
               <Link
-                href="/academics"
+                href="#academic-programs"
+                onClick={scrollToSection}
                 className="border-2 border-white hover:bg-white hover:text-[#006837] active:bg-gray-100 text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center text-sm sm:text-base min-h-[44px] flex items-center justify-center touch-manipulation"
               >
                 Explore Programs

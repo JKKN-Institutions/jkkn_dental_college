@@ -101,7 +101,11 @@ export default function MOUPage() {
               <h4 className="text-base md:text-lg font-bold text-black mb-4">
                 MEMORUNDUM OF UNDERSTANDING WITH SENTHIL MULTISPECIALITY HOSPITAL
               </h4>
-              <div className="w-full h-64 bg-gray-200"></div>
+              <img
+                src="/images/mou-1.png"
+                alt="MOU with Senthil Multispeciality Hospital"
+                className="w-full h-auto"
+              />
             </div>
 
             {/* Card 2 - Nandha */}
@@ -109,7 +113,11 @@ export default function MOUPage() {
               <h4 className="text-base md:text-lg font-bold text-black mb-4">
                 MEMORUNDUM OF UNDERSTANDING WITH NANDHA DENTAL COLLEGE AND HOSPITAL
               </h4>
-              <div className="w-full h-64 bg-gray-200"></div>
+              <img
+                src="/images/mou-2.png"
+                alt="MOU with Nandha Dental College and Hospital"
+                className="w-full h-auto"
+              />
             </div>
 
             {/* Card 3 - Arokya */}
@@ -117,15 +125,12 @@ export default function MOUPage() {
               <h4 className="text-base md:text-lg font-bold text-black mb-4">
                 MEMORUNDUM OF UNDERSTANDING WITH AROKYA HOSPITAL SALEM
               </h4>
-              <div className="w-full h-64 bg-gray-200"></div>
+              <img
+                src="/images/mou-3.png"
+                alt="MOU with Arokya Hospital Salem"
+                className="w-full h-auto"
+              />
             </div>
-          </div>
-
-          {/* Three Images Row */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="w-full h-56 bg-gray-200"></div>
-            <div className="w-full h-56 bg-gray-200"></div>
-            <div className="w-full h-56 bg-gray-200"></div>
           </div>
 
           {/* Green Buttons */}

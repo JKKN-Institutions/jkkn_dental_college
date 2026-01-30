@@ -20,47 +20,35 @@ export default function FoodCourt() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {/* Image 1 */}
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add food court image 1 */}
-              {/* <Image
-                src="/images/food-court-1.jpg"
+              <Image
+                src="/images/foodcourt-1.webp"
                 alt="Food court exterior"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Food Court Image 1<br/>(Add food-court-1.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 2 */}
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add food court image 2 */}
-              {/* <Image
-                src="/images/food-court-2.jpg"
+              <Image
+                src="/images/foodcourt-2.webp"
                 alt="Food court seating area"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Food Court Image 2<br/>(Add food-court-2.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 3 */}
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add food court image 3 */}
-              {/* <Image
-                src="/images/food-court-3.jpg"
+              <Image
+                src="/images/foodcourt-3.webp"
                 alt="Food court dining area"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Food Court Image 3<br/>(Add food-court-3.jpg to public/images/)</p>
-              </div>
+              />
             </div>
           </div>
 

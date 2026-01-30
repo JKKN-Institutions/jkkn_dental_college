@@ -56,12 +56,7 @@ export default function MentorMenteeProgram() {
             </div>
           </div>
 
-          {/* View Document Button */}
-          <div className="mt-10 mb-12">
-            <button className="bg-[#7CB342] hover:bg-[#689F38] text-white font-bold py-3 px-8 rounded transition-colors">
-              View Document
-            </button>
-          </div>
+         
         </div>
       </div>
 

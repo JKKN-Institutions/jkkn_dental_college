@@ -1,6 +1,15 @@
+'use client';
+
 import Link from 'next/link';
 
 export default function AboutInstitution() {
+  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const element = document.getElementById('academic-programs');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
   return (
     <section className="py-16 md:py-24 px-4 bg-[#FBFBEE]">
       <div className="max-w-7xl mx-auto">
@@ -65,7 +74,8 @@ export default function AboutInstitution() {
             </div>
 
             <Link
-              href="/academics"
+              href="#academic-programs"
+              onClick={scrollToSection}
               className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-3 px-8 rounded-full transition-all duration-300"
             >
               Explore Programs →

@@ -20,47 +20,35 @@ export default function SeminarHall() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {/* Image 1 */}
             <div className="w-full h-[280px] md:h-[320px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add seminar hall image 1 */}
-              {/* <Image
-                src="/images/seminar-hall-1.jpg"
+              <Image
+                src="/images/seminar-hall-1.png"
                 alt="Seminar hall with audience"
                 width={400}
                 height={320}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Seminar Hall Image 1<br/>(Add seminar-hall-1.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 2 */}
             <div className="w-full h-[280px] md:h-[320px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add seminar hall image 2 */}
-              {/* <Image
-                src="/images/seminar-hall-2.jpg"
+              <Image
+                src="/images/seminar-hall-2.png"
                 alt="Seminar hall with brown seats"
                 width={400}
                 height={320}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Seminar Hall Image 2<br/>(Add seminar-hall-2.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 3 */}
             <div className="w-full h-[280px] md:h-[320px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add seminar hall image 3 */}
-              {/* <Image
-                src="/images/seminar-hall-3.jpg"
+              <Image
+                src="/images/seminar-hall-3.png"
                 alt="Seminar hall with green seats"
                 width={400}
                 height={320}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Seminar Hall Image 3<br/>(Add seminar-hall-3.jpg to public/images/)</p>
-              </div>
+              />
             </div>
           </div>
 

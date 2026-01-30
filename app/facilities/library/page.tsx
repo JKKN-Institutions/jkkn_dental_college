@@ -20,47 +20,35 @@ export default function Library() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {/* Image 1 */}
             <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add library image 1 */}
-              {/* <Image
-                src="/images/library-1.jpg"
+              <Image
+                src="/images/library-1.png"
                 alt="Dental students in library"
                 width={400}
                 height={350}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Library Image 1<br/>(Add library-1.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 2 */}
             <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add library image 2 */}
-              {/* <Image
-                src="/images/library-2.jpg"
+              <Image
+                src="/images/library-2.png"
                 alt="Student reading in library"
                 width={400}
                 height={350}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Library Image 2<br/>(Add library-2.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 3 */}
             <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add library image 3 */}
-              {/* <Image
-                src="/images/library-3.jpg"
+              <Image
+                src="/images/library-3.webp"
                 alt="Library interior"
                 width={400}
                 height={350}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Library Image 3<br/>(Add library-3.jpg to public/images/)</p>
-              </div>
+              />
             </div>
           </div>
 

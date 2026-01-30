@@ -20,47 +20,35 @@ export default function Auditorium() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {/* Image 1 */}
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add auditorium image 1 */}
-              {/* <Image
-                src="/images/auditorium-1.jpg"
+              <Image
+                src="/images/Auditorium-1.webp"
                 alt="Auditorium decorated for event"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Auditorium Image 1<br/>(Add auditorium-1.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 2 */}
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add auditorium image 2 */}
-              {/* <Image
-                src="/images/auditorium-2.jpg"
+              <Image
+                src="/images/Auditorium-2.webp"
                 alt="Auditorium event ceremony"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Auditorium Image 2<br/>(Add auditorium-2.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 3 */}
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add auditorium image 3 */}
-              {/* <Image
-                src="/images/auditorium-3.jpg"
+              <Image
+                src="/images/Auditorium-3.webp"
                 alt="Cultural performance in auditorium"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Auditorium Image 3<br/>(Add auditorium-3.jpg to public/images/)</p>
-              </div>
+              />
             </div>
           </div>
 

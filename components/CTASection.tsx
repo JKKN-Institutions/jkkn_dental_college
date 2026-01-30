@@ -17,18 +17,18 @@ export default function CTASection() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link
-            href="/admissions"
+            href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
             className="bg-white hover:bg-gray-100 text-[#006837] font-bold py-3 px-8 rounded-full transition-all duration-300 text-center shadow-lg"
           >
             Apply Now →
           </Link>
-          <Link
-            href="tel:+914288274747"
+          <a
+            href="tel:+919345855001"
             className="border-2 border-white hover:bg-white hover:text-[#7cb983] text-white font-bold py-3 px-8 rounded-full transition-all duration-300 text-center inline-flex items-center gap-2"
           >
             <span>📞</span>
-            <span>+91 4288 274747</span>
-          </Link>
+            <span>+91 9345855001</span>
+          </a>
         </div>
       </div>
     </section>

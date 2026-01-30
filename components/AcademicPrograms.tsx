@@ -1,8 +1,6 @@
-import Link from 'next/link';
-
 export default function AcademicPrograms() {
   return (
-    <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 bg-[#FBFBEE]">
+    <section id="academic-programs" className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 bg-[#FBFBEE]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
@@ -58,12 +56,12 @@ export default function AcademicPrograms() {
                   <div className="text-2xl sm:text-3xl font-bold text-[#006837]">100 Seats</div>
                   <div className="text-xs sm:text-sm text-gray-500 uppercase">Annual Intake</div>
                 </div>
-                <Link
-                  href="/admissions"
+                <a
+                  href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
                   className="block w-full bg-[#7cb983] hover:bg-[#6ba872] active:bg-[#5a9761] text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center text-sm sm:text-base min-h-[44px] flex items-center justify-center touch-manipulation transform hover:scale-105 active:scale-95"
                 >
                   Apply →
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -109,12 +107,12 @@ export default function AcademicPrograms() {
                   <div className="text-2xl sm:text-3xl font-bold text-[#006837]">27+ Seats</div>
                   <div className="text-xs sm:text-sm text-gray-500 uppercase">PG Intake</div>
                 </div>
-                <Link
-                  href="/admissions"
+                <a
+                  href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
                   className="block w-full bg-[#7cb983] hover:bg-[#6ba872] active:bg-[#5a9761] text-white font-bold py-3 sm:py-3.5 px-6 sm:px-8 rounded-full transition-all duration-300 text-center text-sm sm:text-base min-h-[44px] flex items-center justify-center touch-manipulation transform hover:scale-105 active:scale-95"
                 >
                   Apply →
-                </Link>
+                </a>
               </div>
             </div>
           </div>

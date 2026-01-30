@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:dental.jkkn.ac.in)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --eslint)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss init -p)",
+      "Bash(npm run dev)",
+      "Bash(timeout /t 5)",
+      "Bash(findstr:*)",
+      "Bash(dir node_modulesnext /b)",
+      "Bash(taskkill:*)",
+      "Bash(Get-Process)",
+      "Bash(Where-Object {$_ProcessName -eq \"node\"})",
+      "Bash(tree:*)",
+      "Bash(npm run build:*)",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

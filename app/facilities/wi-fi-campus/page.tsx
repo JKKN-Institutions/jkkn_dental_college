@@ -20,47 +20,35 @@ export default function WiFiCampus() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {/* Image 1 */}
             <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add wifi campus image 1 */}
-              {/* <Image
-                src="/images/wifi-campus-1.jpg"
+              <Image
+                src="/images/wifi-1.png"
                 alt="Laptop on campus with WiFi"
                 width={400}
                 height={350}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">WiFi Campus Image 1<br/>(Add wifi-campus-1.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 2 */}
             <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add wifi campus image 2 */}
-              {/* <Image
-                src="/images/wifi-campus-2.jpg"
+              <Image
+                src="/images/wifi-2.png"
                 alt="Campus outdoor WiFi connectivity"
                 width={400}
                 height={350}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">WiFi Campus Image 2<br/>(Add wifi-campus-2.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 3 */}
             <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add wifi campus image 3 */}
-              {/* <Image
-                src="/images/wifi-campus-3.jpg"
+              <Image
+                src="/images/wifi-3.png"
                 alt="Campus corridor with WiFi access"
                 width={400}
                 height={350}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">WiFi Campus Image 3<br/>(Add wifi-campus-3.jpg to public/images/)</p>
-              </div>
+              />
             </div>
           </div>
 

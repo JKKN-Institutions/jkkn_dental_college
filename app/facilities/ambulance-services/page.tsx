@@ -12,18 +12,14 @@ export default function AmbulanceServices() {
       <div className="bg-[#FBF8F3] py-12 px-4">
         <div className="max-w-6xl mx-auto">
           {/* Banner Image */}
-          <div className="w-full h-[300px] md:h-[400px] bg-gray-200 rounded-lg overflow-hidden mb-8">
-            {/* TODO: Add ambulance banner image */}
-            {/* <Image
-              src="/images/ambulance-banner.jpg"
+          <div className="w-full rounded-lg overflow-hidden mb-8">
+            <Image
+              src="/images/ambulance.webp"
               alt="JKKN Free Ambulance Service"
               width={1200}
               height={400}
-              className="w-full h-full object-cover"
-            /> */}
-            <div className="w-full h-full flex items-center justify-center text-gray-500">
-              <p className="text-center px-4">Ambulance Banner Image<br/>(Add ambulance-banner.jpg to public/images/)</p>
-            </div>
+              className="w-full h-auto object-contain"
+            />
           </div>
 
           {/* First Paragraph */}

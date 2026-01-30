@@ -30,32 +30,47 @@ export default function StudentCouncil() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Image 1 */}
             <div className="w-full">
-              <div className="w-full h-64 bg-gray-300 rounded"></div>
+              <img
+                src="/images/student-council-1.jpg"
+                alt="Student Council 1"
+                className="w-full h-64 object-cover rounded"
+              />
             </div>
 
             {/* Image 2 */}
             <div className="w-full">
-              <div className="w-full h-64 bg-gray-300 rounded"></div>
+              <img
+                src="/images/student-council-2.jpg"
+                alt="Student Council 2"
+                className="w-full h-64 object-cover rounded"
+              />
             </div>
 
             {/* Image 3 */}
             <div className="w-full">
-              <div className="w-full h-64 bg-gray-300 rounded"></div>
+              <img
+                src="/images/student-council-3.webp"
+                alt="Student Council 3"
+                className="w-full h-64 object-cover rounded"
+              />
             </div>
 
             {/* Image 4 */}
             <div className="w-full">
-              <div className="w-full h-64 bg-gray-300 rounded"></div>
+              <img
+                src="/images/student-council-4.jpg"
+                alt="Student Council 4"
+                className="w-full h-64 object-cover rounded"
+              />
             </div>
 
             {/* Image 5 */}
             <div className="w-full">
-              <div className="w-full h-64 bg-gray-300 rounded"></div>
-            </div>
-
-            {/* Image 6 */}
-            <div className="w-full">
-              <div className="w-full h-64 bg-gray-300 rounded"></div>
+              <img
+                src="/images/student-council-5.jpeg"
+                alt="Student Council 5"
+                className="w-full h-64 object-cover rounded"
+              />
             </div>
           </div>
 

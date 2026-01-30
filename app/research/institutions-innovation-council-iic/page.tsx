@@ -27,7 +27,7 @@ export default function InstitutionsInnovationCouncilIIC() {
           <div className="mb-8 flex justify-center">
             <div className="w-full max-w-3xl bg-white border-4 border-[#D4A574] p-8 rounded shadow-lg">
               <img
-                src="/images/iic-certificate.jpg"
+                src="/images/INSTITUTIONS-INNOVATION-COUNCIL.png"
                 alt="IIC Certificate of Establishment"
                 className="w-full h-auto"
               />
@@ -91,67 +91,14 @@ export default function InstitutionsInnovationCouncilIIC() {
             TRAINED HUMAN RESOURCES ON IIC
           </h2>
 
-          {/* Resource Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-            {/* Faculty Members Card */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="p-4">
-                <img
-                  src="/images/faculty-illustration.png"
-                  alt="Faculty Member"
-                  className="w-full h-32 object-contain mb-2"
-                />
-              </div>
-              <div className="bg-[#FDD835] p-4 text-center">
-                <p className="font-bold text-lg">Faculty Members</p>
-                <p className="text-3xl font-bold">10</p>
-              </div>
-            </div>
-
-            {/* Student Members Card */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="p-4">
-                <img
-                  src="/images/student-illustration.png"
-                  alt="Student Members"
-                  className="w-full h-32 object-contain mb-2"
-                />
-              </div>
-              <div className="bg-[#5C6BC0] p-4 text-center text-white">
-                <p className="font-bold text-lg">Student Members</p>
-                <p className="text-3xl font-bold">150</p>
-              </div>
-            </div>
-
-            {/* External Experts Card */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="p-4">
-                <img
-                  src="/images/expert-illustration.png"
-                  alt="External Expert"
-                  className="w-full h-32 object-contain mb-2"
-                />
-              </div>
-              <div className="bg-[#66BB6A] p-4 text-center text-white">
-                <p className="font-bold text-lg">External Experts</p>
-                <p className="text-3xl font-bold">5</p>
-              </div>
-            </div>
-
-            {/* IA Trained Card */}
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="p-4">
-                <img
-                  src="/images/training-illustration.png"
-                  alt="Training"
-                  className="w-full h-32 object-contain mb-2"
-                />
-              </div>
-              <div className="bg-[#EF5350] p-4 text-center text-white">
-                <p className="font-bold text-lg">IA Trained</p>
-                <p className="text-lg font-bold">Basic - 5</p>
-                <p className="text-lg font-bold">Advanced - 3</p>
-              </div>
+          {/* Trained Human Resources Image */}
+          <div className="mb-12 flex justify-center">
+            <div className="w-full">
+              <img
+                src="/images/TRAINED-HUMAN-RESOURCES-ON-IIC.png"
+                alt="Trained Human Resources on IIC"
+                className="w-full h-auto"
+              />
             </div>
           </div>
 
@@ -164,7 +111,7 @@ export default function InstitutionsInnovationCouncilIIC() {
           <div className="mb-12 flex justify-center">
             <div className="w-full max-w-4xl">
               <img
-                src="/images/learning-modules-pyramid.png"
+                src="/images/LEARNING-MODULES.png"
                 alt="Learning Modules - Innovation Council Activities"
                 className="w-full h-auto"
               />

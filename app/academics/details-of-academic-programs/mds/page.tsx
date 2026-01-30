@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
@@ -799,12 +800,12 @@ export default function MDSProgram() {
           </p>
 
           <div className="flex flex-wrap justify-center gap-6">
-            <button className="bg-white hover:bg-gray-100 text-[#FF6B35] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2">
+            <Link href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="bg-white hover:bg-gray-100 text-[#FF6B35] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2 inline-flex">
               Apply Now
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
-            </button>
+            </Link>
             <a href="#" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#FF6B35] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 flex items-center gap-2 inline-block">
               Download Brochure
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">

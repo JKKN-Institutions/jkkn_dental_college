@@ -8,7 +8,7 @@ export default function FdpAttended() {
       <Header />
 
       {/* Page Content */}
-      <div className="bg-[#FBF8F3] py-12 px-4 min-h-screen">
+      <div className="bg-[#FBF8F3] py-12 px-4">
         <div className="max-w-7xl mx-auto">
           {/* Title */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-8">

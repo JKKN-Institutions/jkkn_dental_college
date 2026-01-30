@@ -26,17 +26,13 @@ export default function Gallery() {
                   Pongal Celebration
                 </h2>
                 <div className="w-full h-[250px] md:h-[280px] bg-gray-200 rounded-lg overflow-hidden">
-                  {/* TODO: Add image */}
-                  {/* <Image
-                    src="/images/gallery/pongal-celebration.jpg"
+                  <Image
+                    src="/images/Pongal-Celebration-gallery.jpg"
                     alt="Pongal Celebration"
                     width={400}
                     height={280}
                     className="w-full h-full object-cover"
-                  /> */}
-                  <div className="w-full h-full flex items-center justify-center text-gray-500">
-                    <p className="text-center px-4">Pongal Celebration Image</p>
-                  </div>
+                  />
                 </div>
               </div>
 
@@ -46,10 +42,13 @@ export default function Gallery() {
                   Farewell Day
                 </h2>
                 <div className="w-full h-[250px] md:h-[280px] bg-gray-200 rounded-lg overflow-hidden">
-                  {/* TODO: Add image */}
-                  <div className="w-full h-full flex items-center justify-center text-gray-500">
-                    <p className="text-center px-4">Farewell Day Image</p>
-                  </div>
+                  <Image
+                    src="/images/Farewell-Day-gallery.webp"
+                    alt="Farewell Day"
+                    width={400}
+                    height={280}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
 
@@ -59,10 +58,13 @@ export default function Gallery() {
                   Founders Day 2022
                 </h2>
                 <div className="w-full h-[250px] md:h-[280px] bg-gray-200 rounded-lg overflow-hidden">
-                  {/* TODO: Add image */}
-                  <div className="w-full h-full flex items-center justify-center text-gray-500">
-                    <p className="text-center px-4">Founders Day 2022 Image</p>
-                  </div>
+                  <Image
+                    src="/images/Founders-Day-2022-gallery.jpg"
+                    alt="Founders Day 2022"
+                    width={400}
+                    height={280}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -75,10 +77,13 @@ export default function Gallery() {
                   Blood Camp
                 </h2>
                 <div className="w-full h-[250px] md:h-[280px] bg-gray-200 rounded-lg overflow-hidden">
-                  {/* TODO: Add image */}
-                  <div className="w-full h-full flex items-center justify-center text-gray-500">
-                    <p className="text-center px-4">Blood Camp Image</p>
-                  </div>
+                  <Image
+                    src="/images/Blood-Camp-gallery.webp"
+                    alt="Blood Camp"
+                    width={400}
+                    height={280}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
 
@@ -88,10 +93,13 @@ export default function Gallery() {
                   World Hemophilia Day
                 </h2>
                 <div className="w-full h-[250px] md:h-[280px] bg-gray-200 rounded-lg overflow-hidden">
-                  {/* TODO: Add image */}
-                  <div className="w-full h-full flex items-center justify-center text-gray-500">
-                    <p className="text-center px-4">World Hemophilia Day Image</p>
-                  </div>
+                  <Image
+                    src="/images/World-Hemophilia-Day-gallery.jpg"
+                    alt="World Hemophilia Day"
+                    width={400}
+                    height={280}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
 
@@ -101,10 +109,13 @@ export default function Gallery() {
                   World No Tobacco Day
                 </h2>
                 <div className="w-full h-[250px] md:h-[280px] bg-gray-200 rounded-lg overflow-hidden">
-                  {/* TODO: Add image */}
-                  <div className="w-full h-full flex items-center justify-center text-gray-500">
-                    <p className="text-center px-4">World No Tobacco Day Image</p>
-                  </div>
+                  <Image
+                    src="/images/World-No-Tobacco-Day-gallery.webp"
+                    alt="World No Tobacco Day"
+                    width={400}
+                    height={280}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -117,10 +128,13 @@ export default function Gallery() {
                   World Oral Health Day
                 </h2>
                 <div className="w-full h-[250px] md:h-[280px] bg-gray-200 rounded-lg overflow-hidden">
-                  {/* TODO: Add image */}
-                  <div className="w-full h-full flex items-center justify-center text-gray-500">
-                    <p className="text-center px-4">World Oral Health Day Image</p>
-                  </div>
+                  <Image
+                    src="/images/World-Oral-Health-Day-gallery.webp"
+                    alt="World Oral Health Day"
+                    width={400}
+                    height={280}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
 
@@ -130,10 +144,13 @@ export default function Gallery() {
                   Stem Cell
                 </h2>
                 <div className="w-full h-[250px] md:h-[280px] bg-gray-200 rounded-lg overflow-hidden">
-                  {/* TODO: Add image */}
-                  <div className="w-full h-full flex items-center justify-center text-gray-500">
-                    <p className="text-center px-4">Stem Cell Image</p>
-                  </div>
+                  <Image
+                    src="/images/Stem-cell-gallery.webp"
+                    alt="Stem Cell"
+                    width={400}
+                    height={280}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
 
@@ -143,10 +160,13 @@ export default function Gallery() {
                   35th College Day
                 </h2>
                 <div className="w-full h-[250px] md:h-[280px] bg-gray-200 rounded-lg overflow-hidden">
-                  {/* TODO: Add image */}
-                  <div className="w-full h-full flex items-center justify-center text-gray-500">
-                    <p className="text-center px-4">35th College Day Image</p>
-                  </div>
+                  <Image
+                    src="/images/35th-College-Day-gallery.webp"
+                    alt="35th College Day"
+                    width={400}
+                    height={280}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -159,10 +179,13 @@ export default function Gallery() {
                   ANTI RAGGING SEMINAR
                 </h2>
                 <div className="w-full h-[250px] md:h-[280px] bg-gray-200 rounded-lg overflow-hidden">
-                  {/* TODO: Add image */}
-                  <div className="w-full h-full flex items-center justify-center text-gray-500">
-                    <p className="text-center px-4">ANTI RAGGING SEMINAR Image</p>
-                  </div>
+                  <Image
+                    src="/images/ANTI-RAGGING-SEMINAR-gallery.webp"
+                    alt="ANTI RAGGING SEMINAR"
+                    width={400}
+                    height={280}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
 
@@ -172,10 +195,13 @@ export default function Gallery() {
                   26th Graduation Day
                 </h2>
                 <div className="w-full h-[250px] md:h-[280px] bg-gray-200 rounded-lg overflow-hidden">
-                  {/* TODO: Add image */}
-                  <div className="w-full h-full flex items-center justify-center text-gray-500">
-                    <p className="text-center px-4">26th Graduation Day Image</p>
-                  </div>
+                  <Image
+                    src="/images/26th-Graduation-Day-gallery.webp"
+                    alt="26th Graduation Day"
+                    width={400}
+                    height={280}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
 
@@ -185,10 +211,13 @@ export default function Gallery() {
                   Basic Of Cancer and Awareness
                 </h2>
                 <div className="w-full h-[250px] md:h-[280px] bg-gray-200 rounded-lg overflow-hidden">
-                  {/* TODO: Add image */}
-                  <div className="w-full h-full flex items-center justify-center text-gray-500">
-                    <p className="text-center px-4">Basic Of Cancer and Awareness Image</p>
-                  </div>
+                  <Image
+                    src="/images/Basic-Of-Cancer-and-Awareness-gallery.webp"
+                    alt="Basic Of Cancer and Awareness"
+                    width={400}
+                    height={280}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -201,10 +230,13 @@ export default function Gallery() {
                   Fire and safety
                 </h2>
                 <div className="w-full h-[250px] md:h-[280px] bg-gray-200 rounded-lg overflow-hidden">
-                  {/* TODO: Add image */}
-                  <div className="w-full h-full flex items-center justify-center text-gray-500">
-                    <p className="text-center px-4">Fire and safety Image</p>
-                  </div>
+                  <Image
+                    src="/images/Fire-and-safety-gallery.webp"
+                    alt="Fire and safety"
+                    width={400}
+                    height={280}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
 
@@ -214,10 +246,13 @@ export default function Gallery() {
                   Prosthodontist Day
                 </h2>
                 <div className="w-full h-[250px] md:h-[280px] bg-gray-200 rounded-lg overflow-hidden">
-                  {/* TODO: Add image */}
-                  <div className="w-full h-full flex items-center justify-center text-gray-500">
-                    <p className="text-center px-4">Prosthodontist Day Image</p>
-                  </div>
+                  <Image
+                    src="/images/Prosthodontist-Day-gallery.webp"
+                    alt="Prosthodontist Day"
+                    width={400}
+                    height={280}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
 
@@ -227,10 +262,13 @@ export default function Gallery() {
                   Yoga day
                 </h2>
                 <div className="w-full h-[250px] md:h-[280px] bg-gray-200 rounded-lg overflow-hidden">
-                  {/* TODO: Add image */}
-                  <div className="w-full h-full flex items-center justify-center text-gray-500">
-                    <p className="text-center px-4">Yoga day Image</p>
-                  </div>
+                  <Image
+                    src="/images/Yoga-day-gallery.webp"
+                    alt="Yoga day"
+                    width={400}
+                    height={280}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>

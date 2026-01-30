@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function AdmissionsSection() {
   return (
     <section className="py-16 md:py-24 px-4 bg-[#FBFBEE]">
@@ -63,20 +61,20 @@ export default function AdmissionsSection() {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/admissions"
+              <a
+                href="tel:+919345855001"
                 className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-bold py-3 px-8 rounded-full transition-all duration-300 text-center inline-flex items-center justify-center gap-2"
               >
                 <span>📞</span>
                 <span>Talk to Admissions</span>
-              </Link>
-              <Link
-                href="/contact"
+              </a>
+              <a
+                href="mailto:dental@jkkn.ac.in"
                 className="border-2 border-[#006837] hover:bg-[#006837] hover:text-white text-[#006837] font-bold py-3 px-8 rounded-full transition-all duration-300 text-center inline-flex items-center justify-center gap-2"
               >
                 <span>✉️</span>
                 <span>Email Us</span>
-              </Link>
+              </a>
             </div>
           </div>
 

@@ -20,47 +20,35 @@ export default function Transport() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {/* Image 1 */}
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add transport image 1 */}
-              {/* <Image
-                src="/images/transport-1.jpg"
+              <Image
+                src="/images/transport-1.webp"
                 alt="JKKN college buses"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Transport Image 1<br/>(Add transport-1.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 2 */}
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add transport image 2 */}
-              {/* <Image
-                src="/images/transport-2.jpg"
+              <Image
+                src="/images/transport-2.webp"
                 alt="College bus fleet"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Transport Image 2<br/>(Add transport-2.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 3 */}
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add transport image 3 */}
-              {/* <Image
-                src="/images/transport-3.jpg"
+              <Image
+                src="/images/transport-3.webp"
                 alt="JKKN buses parked"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Transport Image 3<br/>(Add transport-3.jpg to public/images/)</p>
-              </div>
+              />
             </div>
           </div>
 

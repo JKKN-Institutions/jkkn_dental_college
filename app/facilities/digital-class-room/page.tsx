@@ -20,47 +20,35 @@ export default function DigitalClassRoom() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {/* Image 1 */}
             <div className="w-full h-[280px] md:h-[320px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add digital classroom image 1 */}
-              {/* <Image
-                src="/images/digital-class-1.jpg"
+              <Image
+                src="/images/digital-class-room-1.webp"
                 alt="Digital classroom with projector"
                 width={400}
                 height={320}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Digital Class Image 1<br/>(Add digital-class-1.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 2 */}
             <div className="w-full h-[280px] md:h-[320px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add digital classroom image 2 */}
-              {/* <Image
-                src="/images/digital-class-2.jpg"
+              <Image
+                src="/images/digital-class-room-2.webp"
                 alt="Interactive classroom session"
                 width={400}
                 height={320}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Digital Class Image 2<br/>(Add digital-class-2.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 3 */}
             <div className="w-full h-[280px] md:h-[320px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add digital classroom image 3 */}
-              {/* <Image
-                src="/images/digital-class-3.jpg"
+              <Image
+                src="/images/digital-class-room-3.png"
                 alt="Students in digital classroom"
                 width={400}
                 height={320}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Digital Class Image 3<br/>(Add digital-class-3.jpg to public/images/)</p>
-              </div>
+              />
             </div>
           </div>
 

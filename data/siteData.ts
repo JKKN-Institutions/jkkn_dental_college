@@ -121,7 +121,6 @@ export const topMenuItems: NavItem[] = [
       { label: "ACADEMIC ATTRIBUTES", href: "/academic-attributes" },
       { label: "LEARNING OUTCOMES", href: "/learning-outcomes" },
       { label: "STUDENT-CENTRIC TEACHING METHODS", href: "/student-centric-teaching-methods" },
-      { label: "SLOW & ADVANCED LEARNERS", href: "/slow-advanced-learners" },
       {
         label: "COURSES",
         href: "/courses",
@@ -132,7 +131,6 @@ export const topMenuItems: NavItem[] = [
         ]
       },
       { label: "CAPABILITY ENHANCEMENT PROGRAM", href: "/capability-enhancement-program" },
-      { label: "CAREER COUNSELLING", href: "/career-counselling" },
       { label: "CURRICULUM FEEDBACK", href: "/curriculum-feedback" },
       {
         label: "FACULTY ACHIEVEMENTS",
@@ -305,7 +303,7 @@ export const bottomMenuItems: NavItem[] = [
     submenu: [
       { label: "DIGITAL CAMPUS", href: "/digital-campus" },
       { label: "PATIENT SAFETY MANUAL", href: "/patient-safety-manual" },
-      { label: "OUTREACH", href: "/outreach" }
+      { label: "OUTREACH", href: "https://outreach.dental.jkkn.ac.in/" }
     ]
   },
   { label: "CONTACT", href: "/contact" },

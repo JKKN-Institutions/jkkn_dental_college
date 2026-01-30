@@ -15,47 +15,35 @@ export default function GirlsHostel() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {/* Image 1 */}
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add girls hostel image 1 */}
-              {/* <Image
+              <Image
                 src="/images/girls-hostel-1.jpg"
                 alt="Girls hostel building exterior"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Girls Hostel Image 1<br/>(Add girls-hostel-1.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 2 */}
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add girls hostel image 2 */}
-              {/* <Image
+              <Image
                 src="/images/girls-hostel-2.jpg"
                 alt="Girls hostel campus view"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Girls Hostel Image 2<br/>(Add girls-hostel-2.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 3 */}
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add girls hostel image 3 */}
-              {/* <Image
+              <Image
                 src="/images/girls-hostel-3.jpg"
                 alt="Girls hostel dining area"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Girls Hostel Image 3<br/>(Add girls-hostel-3.jpg to public/images/)</p>
-              </div>
+              />
             </div>
           </div>
 

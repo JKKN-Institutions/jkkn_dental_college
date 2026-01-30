@@ -14,7 +14,7 @@ export default function PrincipalsMessage() {
           <div className="flex justify-center mb-8">
             <div className="w-full max-w-md">
               <img
-                src="/images/principal.jpg"
+                src="/images/dental-principal-message.png"
                 alt="Dr. Dhanasekar Balakrishnan"
                 className="w-full h-auto rounded-lg shadow-lg"
               />

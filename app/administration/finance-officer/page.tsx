@@ -19,7 +19,7 @@ export default function FinanceOfficer() {
           <div className="flex justify-center mb-8">
             <div className="bg-white p-4 rounded-lg shadow-lg">
               <img
-                src="/images/finance-officer.jpg"
+                src="/images/finance-officer-image.jpg"
                 alt="Mr. K. Velayutham"
                 className="w-full max-w-sm h-auto"
               />

@@ -20,47 +20,35 @@ export default function BankPostOffice() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {/* Image 1 */}
             <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add bank image 1 */}
-              {/* <Image
-                src="/images/bank-1.jpg"
+              <Image
+                src="/images/bank_postoffice-1.webp"
                 alt="Post office on campus"
                 width={400}
                 height={350}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Bank Image 1<br/>(Add bank-1.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 2 */}
             <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add bank image 2 */}
-              {/* <Image
-                src="/images/bank-2.jpg"
+              <Image
+                src="/images/bank_postoffice-2.webp"
                 alt="Indian Bank ATM 24 Hours"
                 width={400}
                 height={350}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Bank Image 2<br/>(Add bank-2.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 3 */}
             <div className="w-full h-[300px] md:h-[350px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add bank image 3 */}
-              {/* <Image
-                src="/images/bank-3.jpg"
+              <Image
+                src="/images/bank_postoffice-3.webp"
                 alt="Indian Bank ATM"
                 width={400}
                 height={350}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Bank Image 3<br/>(Add bank-3.jpg to public/images/)</p>
-              </div>
+              />
             </div>
           </div>
 

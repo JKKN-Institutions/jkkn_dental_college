@@ -20,47 +20,35 @@ export default function Labs() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             {/* Image 1 */}
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add lab image 1 */}
-              {/* <Image
+              <Image
                 src="/images/lab-1.jpg"
                 alt="Dental lab equipment"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Lab Image 1<br/>(Add lab-1.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 2 */}
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add lab image 2 */}
-              {/* <Image
+              <Image
                 src="/images/lab-2.jpg"
                 alt="Student working in lab"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Lab Image 2<br/>(Add lab-2.jpg to public/images/)</p>
-              </div>
+              />
             </div>
 
             {/* Image 3 */}
             <div className="w-full h-[280px] md:h-[240px] bg-gray-200 rounded-lg overflow-hidden">
-              {/* TODO: Add lab image 3 */}
-              {/* <Image
+              <Image
                 src="/images/lab-3.jpg"
                 alt="Lab work in progress"
                 width={400}
                 height={240}
                 className="w-full h-full object-cover"
-              /> */}
-              <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <p className="text-center px-4">Lab Image 3<br/>(Add lab-3.jpg to public/images/)</p>
-              </div>
+              />
             </div>
           </div>
 

@@ -60,13 +60,13 @@ export default function InstitutionalDevelopmentPlan() {
           {/* Download Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <a
-              href="#"
+              href="/pdf/Download-UGC-IDP-Guidelines.pdf"
               className="bg-[#1B5E20] hover:bg-[#0d3d13] text-white font-bold py-3 px-8 rounded transition-all duration-300 text-center uppercase text-sm"
             >
               DOWNLOAD UGC IDP GUIDELINES
             </a>
             <a
-              href="#"
+              href="/pdf/Download-JKKN-IDP-Document.pdf"
               className="bg-[#1B5E20] hover:bg-[#0d3d13] text-white font-bold py-3 px-8 rounded transition-all duration-300 text-center uppercase text-sm"
             >
               DOWNLOAD JKKN IDP DOCUMENT
