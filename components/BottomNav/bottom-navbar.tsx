@@ -55,7 +55,7 @@ function flattenMenuItems(
     label: string;
     icon: LucideIcon;
     active: boolean;
-    submenus: Array<{ href: string; label: string; active: boolean }>;
+    submenus: Array<{ href: string; label: string; icon: LucideIcon; active: boolean }>;
   }>
 ): FlatMenuItem[] {
   const seenHrefs = new Set<string>();
@@ -80,7 +80,7 @@ function flattenMenuItems(
           items.push({
             href: sub.href,
             label: sub.label,
-            icon: menu.icon,
+            icon: sub.icon,
             active: sub.active
           });
         }
