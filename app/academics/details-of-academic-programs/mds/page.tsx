@@ -21,7 +21,7 @@ export default function MDSProgram() {
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
               {/* DCI Badge */}
@@ -70,14 +70,14 @@ export default function MDSProgram() {
               </div>
 
               {/* DCI Recognized Badge */}
-              <div className="absolute bottom-8 -right-4 bg-white rounded-xl shadow-2xl p-4 flex items-center gap-3">
-                <div className="bg-[#7cb983] rounded-lg p-3">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <div className="absolute bottom-2 right-2 sm:bottom-8 sm:right-4 lg:-right-4 bg-white rounded-lg sm:rounded-xl shadow-2xl p-2 sm:p-4 flex items-center gap-2 sm:gap-3 scale-75 sm:scale-100 origin-bottom-right">
+                <div className="bg-[#7cb983] rounded-lg p-2 sm:p-3">
+                  <svg className="w-4 h-4 sm:w-6 sm:h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                 </div>
                 <div>
-                  <div className="font-bold text-gray-800">DCI Recognized Programs</div>
+                  <div className="font-bold text-gray-800 text-xs sm:text-base">DCI Recognized Programs</div>
                 </div>
               </div>
             </div>
@@ -95,7 +95,7 @@ export default function MDSProgram() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left Content - Image Box */}
             <div>
               <div className="bg-gradient-to-br from-[#006837] to-[#7cb983] rounded-2xl p-12 h-full flex items-center justify-center">
