@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function IQAC() {
-  redirect('/pdf/IQAC.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/IQAC.pdf');
+  }, []);
+
+  return null;
 }

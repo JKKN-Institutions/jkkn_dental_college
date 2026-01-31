@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function PlacementCellListOfEvents() {
-  redirect('/pdf/LIST-OF-EVENTS-PLACEMENT-CELL- CDC.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/LIST-OF-EVENTS-PLACEMENT-CELL- CDC.pdf');
+  }, []);
+
+  return null;
 }

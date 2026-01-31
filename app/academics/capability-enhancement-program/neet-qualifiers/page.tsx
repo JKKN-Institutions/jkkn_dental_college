@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function NeetQualifiers() {
-  redirect('/pdf/Capability-Enhancement-Program-NeetQualifiers.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/Capability-Enhancement-Program-NeetQualifiers.pdf');
+  }, []);
+
+  return null;
 }

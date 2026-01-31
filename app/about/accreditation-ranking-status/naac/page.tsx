@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function NAAC() {
-  redirect('/pdf/NAAC.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/NAAC.pdf');
+  }, []);
+
+  return null;
 }

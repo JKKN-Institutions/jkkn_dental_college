@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function AcademicLeadership() {
-  redirect('/pdf/Academic-Leadership.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/Academic-Leadership.pdf');
+  }, []);
+
+  return null;
 }

@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function BarrierFreeEnvironment() {
-  redirect('/pdf/Barrier-free-environment.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/Barrier-free-environment.pdf');
+  }, []);
+
+  return null;
 }

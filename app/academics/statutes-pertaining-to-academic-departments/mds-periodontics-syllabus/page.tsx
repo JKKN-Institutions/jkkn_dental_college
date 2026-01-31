@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function MDSPeriodonticsSyllabus() {
-  redirect('/pdf/MDS-PERIODONTICS-Syllabus.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/MDS-PERIODONTICS-Syllabus.pdf');
+  }, []);
+
+  return null;
 }

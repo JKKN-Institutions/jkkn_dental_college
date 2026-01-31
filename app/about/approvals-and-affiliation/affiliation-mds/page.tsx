@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function AffiliationMDS() {
-  redirect('/pdf/university-provisional-affiliation-letters-mds.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/university-provisional-affiliation-letters-mds.pdf');
+  }, []);
+
+  return null;
 }

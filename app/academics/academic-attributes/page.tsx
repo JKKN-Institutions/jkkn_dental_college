@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function AcademicAttributes() {
-  redirect('/pdf/Academic-Attributes.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/Academic-Attributes.pdf');
+  }, []);
+
+  return null;
 }

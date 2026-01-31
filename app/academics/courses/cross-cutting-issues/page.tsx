@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function CrossCuttingIssues() {
-  redirect('/pdf/cross-cutting-issues.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/cross-cutting-issues.pdf');
+  }, []);
+
+  return null;
 }

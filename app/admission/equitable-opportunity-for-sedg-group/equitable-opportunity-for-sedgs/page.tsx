@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function EquitableOpportunityForSEDGs() {
-  redirect('/pdf/Equitable-Opportunity-for-SEDG.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/Equitable-Opportunity-for-SEDG.pdf');
+  }, []);
+
+  return null;
 }

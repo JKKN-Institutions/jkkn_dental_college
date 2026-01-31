@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function GuidelinesOnPublicDisclosure() {
-  redirect('/pdf/Guidelines-on-Public-Disclosure-by-HEIs-MD.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/Guidelines-on-Public-Disclosure-by-HEIs-MD.pdf');
+  }, []);
+
+  return null;
 }

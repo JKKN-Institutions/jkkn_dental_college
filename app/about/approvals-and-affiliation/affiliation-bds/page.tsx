@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function AffiliationBDS() {
-  redirect('/pdf/university-provisional-affiliation-letters-bds.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/university-provisional-affiliation-letters-bds.pdf');
+  }, []);
+
+  return null;
 }

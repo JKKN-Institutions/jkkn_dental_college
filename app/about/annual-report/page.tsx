@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function AnnualReport() {
-  redirect('/pdf/ANNUAL-REPORT.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/ANNUAL-REPORT.pdf');
+  }, []);
+
+  return null;
 }

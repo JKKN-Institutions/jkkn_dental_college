@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function UGCGuidelines() {
-  redirect('/pdf/EQUITABLE-OPPORTUNITY-FOR-SEDG-UGC-Guidelines.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/EQUITABLE-OPPORTUNITY-FOR-SEDG-UGC-Guidelines.pdf');
+  }, []);
+
+  return null;
 }

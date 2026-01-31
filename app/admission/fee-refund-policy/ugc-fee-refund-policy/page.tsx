@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function UGCFeeRefundPolicy() {
-  redirect('/pdf/UGC-Fee-Refund-Policy.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/UGC-Fee-Refund-Policy.pdf');
+  }, []);
+
+  return null;
 }

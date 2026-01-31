@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function PatientSafetyManual() {
-  redirect('/pdf/PATIENT-SAFETY-MANUAL.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/PATIENT-SAFETY-MANUAL.pdf');
+  }, []);
+
+  return null;
 }

@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function ActStatutes() {
-  redirect('/pdf/acts-and-statutes.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/acts-and-statutes.pdf');
+  }, []);
+
+  return null;
 }

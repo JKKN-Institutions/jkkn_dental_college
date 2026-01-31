@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function StudentGrievanceRedressalCommittee() {
-  redirect('/pdf/Student-Grievance-residencial-committee.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/Student-Grievance-residencial-committee.pdf');
+  }, []);
+
+  return null;
 }

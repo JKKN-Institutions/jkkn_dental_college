@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function InternalCompliantsCommittee() {
-  redirect('/pdf/Internal-Compliance-committee.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/Internal-Compliance-committee.pdf');
+  }, []);
+
+  return null;
 }

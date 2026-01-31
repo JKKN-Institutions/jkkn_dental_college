@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function NIRF2025Overall() {
-  redirect('/pdf/NIRF-2025-OVERALL.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/NIRF-2025-OVERALL.pdf');
+  }, []);
+
+  return null;
 }

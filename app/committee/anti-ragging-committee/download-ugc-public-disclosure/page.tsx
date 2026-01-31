@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function AntiRaggingUGCPublicDisclosure() {
-  redirect('/pdf/ANTI-RAGGING-COMMITTEE-PublicDisclosures.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/ANTI-RAGGING-COMMITTEE-PublicDisclosures.pdf');
+  }, []);
+
+  return null;
 }

@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function AlumniRegistrationCertificate() {
-  redirect('/pdf/ALUMNI-Registration-Certificate.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/ALUMNI-Registration-Certificate.pdf');
+  }, []);
+
+  return null;
 }

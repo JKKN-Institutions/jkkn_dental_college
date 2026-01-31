@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function AntiRaggingCommitteeMembers() {
-  redirect('/pdf/ANTI-RAGGING-COMMITTEE-ViewCommitteeMembers.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/ANTI-RAGGING-COMMITTEE-ViewCommitteeMembers.pdf');
+  }, []);
+
+  return null;
 }

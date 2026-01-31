@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function ViewDocument() {
-  redirect('/pdf/Capability-Enhancement-Program-ViewDocument.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/Capability-Enhancement-Program-ViewDocument.pdf');
+  }, []);
+
+  return null;
 }

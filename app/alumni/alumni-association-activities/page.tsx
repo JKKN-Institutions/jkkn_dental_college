@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function AlumniAssociationActivities() {
-  redirect('/pdf/ALUMNI-ASSOCIATION-ACTIVITIES.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/ALUMNI-ASSOCIATION-ACTIVITIES.pdf');
+  }, []);
+
+  return null;
 }

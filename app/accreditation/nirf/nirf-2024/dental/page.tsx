@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function NIRF2024Dental() {
-  redirect('/pdf/NIRF-2024-Dental.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/NIRF-2024-Dental.pdf');
+  }, []);
+
+  return null;
 }

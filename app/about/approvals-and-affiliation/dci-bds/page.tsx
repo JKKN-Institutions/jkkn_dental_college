@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function DCIBDS() {
-  redirect('/pdf/DCI-Permission-letter-bds.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/DCI-Permission-letter-bds.pdf');
+  }, []);
+
+  return null;
 }

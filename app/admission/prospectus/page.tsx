@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function Prospectus() {
-  redirect('/pdf/Prospectus.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/Prospectus.pdf');
+  }, []);
+
+  return null;
 }

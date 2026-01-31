@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function AnnualAccountStatement() {
-  redirect('/pdf/ANNUAL-ACCOUNTS-STATEMENT.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/ANNUAL-ACCOUNTS-STATEMENT.pdf');
+  }, []);
+
+  return null;
 }

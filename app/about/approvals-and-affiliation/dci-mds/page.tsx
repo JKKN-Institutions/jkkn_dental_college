@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function DCIMDS() {
-  redirect('/pdf/DCI-Permission-letter-mds.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/DCI-Permission-letter-mds.pdf');
+  }, []);
+
+  return null;
 }

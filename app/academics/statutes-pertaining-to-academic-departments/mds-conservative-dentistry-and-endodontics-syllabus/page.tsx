@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function MDSConservativeDentistryAndEndodonticsSyllabus() {
-  redirect('/pdf/CONSERVATIVE-DENTISTRY-AND-ENDODONTICS-Syllabus.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/CONSERVATIVE-DENTISTRY-AND-ENDODONTICS-Syllabus.pdf');
+  }, []);
+
+  return null;
 }

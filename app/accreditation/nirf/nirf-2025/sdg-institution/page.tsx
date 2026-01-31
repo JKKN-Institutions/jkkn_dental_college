@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function SDGInstitution() {
-  redirect('/pdf/NIRF-2025-SDG-INSTITUTIONS.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/NIRF-2025-SDG-INSTITUTIONS.pdf');
+  }, []);
+
+  return null;
 }

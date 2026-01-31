@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function BDSSyllabus() {
-  redirect('/pdf/BDS-syllabus.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/BDS-syllabus.pdf');
+  }, []);
+
+  return null;
 }

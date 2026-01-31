@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+'use client';
+
+import { useEffect } from 'react';
 
 export default function StudentCouncilViewDocument() {
-  redirect('/pdf/Student-Council-ViewDocument.pdf');
+  useEffect(() => {
+    window.location.replace('/pdf/Student-Council-ViewDocument.pdf');
+  }, []);
+
+  return null;
 }
