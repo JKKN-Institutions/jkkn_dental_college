@@ -1209,9 +1209,9 @@ export default function MDSOrthodontics() {
             <button className="bg-[#FBFBEE] text-[#7cb983] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
               Download Prospectus
             </button>
-            <button className="bg-transparent border-2 border-white text-white hover:bg-[#FBFBEE] hover:text-[#7cb983] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300">
+            <a href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="bg-transparent border-2 border-white text-white hover:bg-[#FBFBEE] hover:text-[#7cb983] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300">
               Apply Online
-            </button>
+            </a>
           </div>
         </div>
       </section>
