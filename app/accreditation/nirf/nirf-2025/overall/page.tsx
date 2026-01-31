@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function NIRF2025Overall() {
-  useEffect(() => {
-    window.location.replace('/pdf/NIRF-2025-OVERALL.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/NIRF-2025-OVERALL.pdf" />;
 }

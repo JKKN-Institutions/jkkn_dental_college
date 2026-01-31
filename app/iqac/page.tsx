@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function IQAC() {
-  useEffect(() => {
-    window.location.replace('/pdf/IQAC.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/IQAC.pdf" />;
 }

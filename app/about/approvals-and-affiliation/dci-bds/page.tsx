@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function DCIBDS() {
-  useEffect(() => {
-    window.location.replace('/pdf/DCI-Permission-letter-bds.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/DCI-Permission-letter-bds.pdf" />;
 }

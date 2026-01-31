@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function AcademicLeadership() {
-  useEffect(() => {
-    window.location.replace('/pdf/Academic-Leadership.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/Academic-Leadership.pdf" />;
 }

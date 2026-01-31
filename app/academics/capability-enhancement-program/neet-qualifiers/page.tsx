@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function NeetQualifiers() {
-  useEffect(() => {
-    window.location.replace('/pdf/Capability-Enhancement-Program-NeetQualifiers.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/Capability-Enhancement-Program-NeetQualifiers.pdf" />;
 }

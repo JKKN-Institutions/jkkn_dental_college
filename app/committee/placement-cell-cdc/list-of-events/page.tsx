@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function PlacementCellListOfEvents() {
-  useEffect(() => {
-    window.location.replace('/pdf/LIST-OF-EVENTS-PLACEMENT-CELL- CDC.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/LIST-OF-EVENTS-PLACEMENT-CELL- CDC.pdf" />;
 }

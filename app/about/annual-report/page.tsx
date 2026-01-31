@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function AnnualReport() {
-  useEffect(() => {
-    window.location.replace('/pdf/ANNUAL-REPORT.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/ANNUAL-REPORT.pdf" />;
 }

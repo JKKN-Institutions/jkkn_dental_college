@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function BarrierFreeEnvironment() {
-  useEffect(() => {
-    window.location.replace('/pdf/Barrier-free-environment.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/Barrier-free-environment.pdf" />;
 }

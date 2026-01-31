@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function InternalCompliantsCommittee() {
-  useEffect(() => {
-    window.location.replace('/pdf/Internal-Compliance-committee.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/Internal-Compliance-committee.pdf" />;
 }

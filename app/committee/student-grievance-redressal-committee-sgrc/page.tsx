@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function StudentGrievanceRedressalCommittee() {
-  useEffect(() => {
-    window.location.replace('/pdf/Student-Grievance-residencial-committee.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/Student-Grievance-residencial-committee.pdf" />;
 }

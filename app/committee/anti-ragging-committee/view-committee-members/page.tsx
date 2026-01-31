@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function AntiRaggingCommitteeMembers() {
-  useEffect(() => {
-    window.location.replace('/pdf/ANTI-RAGGING-COMMITTEE-ViewCommitteeMembers.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/ANTI-RAGGING-COMMITTEE-ViewCommitteeMembers.pdf" />;
 }

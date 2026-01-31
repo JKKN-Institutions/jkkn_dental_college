@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function GuidelinesOnPublicDisclosure() {
-  useEffect(() => {
-    window.location.replace('/pdf/Guidelines-on-Public-Disclosure-by-HEIs-MD.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/Guidelines-on-Public-Disclosure-by-HEIs-MD.pdf" />;
 }

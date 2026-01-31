@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function CrossCuttingIssues() {
-  useEffect(() => {
-    window.location.replace('/pdf/cross-cutting-issues.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/cross-cutting-issues.pdf" />;
 }

@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function ActStatutes() {
-  useEffect(() => {
-    window.location.replace('/pdf/acts-and-statutes.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/acts-and-statutes.pdf" />;
 }

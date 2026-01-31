@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function UGCGuidelines() {
-  useEffect(() => {
-    window.location.replace('/pdf/EQUITABLE-OPPORTUNITY-FOR-SEDG-UGC-Guidelines.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/EQUITABLE-OPPORTUNITY-FOR-SEDG-UGC-Guidelines.pdf" />;
 }

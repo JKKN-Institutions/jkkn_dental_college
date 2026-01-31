@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function EquitableOpportunityForSEDGs() {
-  useEffect(() => {
-    window.location.replace('/pdf/Equitable-Opportunity-for-SEDG.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/Equitable-Opportunity-for-SEDG.pdf" />;
 }

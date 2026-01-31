@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function NAAC() {
-  useEffect(() => {
-    window.location.replace('/pdf/NAAC.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/NAAC.pdf" />;
 }

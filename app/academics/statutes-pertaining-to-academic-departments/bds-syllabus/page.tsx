@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function BDSSyllabus() {
-  useEffect(() => {
-    window.location.replace('/pdf/BDS-syllabus.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/BDS-syllabus.pdf" />;
 }

@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function ImplantProgram2025() {
-  useEffect(() => {
-    window.location.replace('/pdf/Add-on-Course-Implant-program-2025.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/Add-on-Course-Implant-program-2025.pdf" />;
 }

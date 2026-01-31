@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function LetterOfUndertaking() {
-  useEffect(() => {
-    window.location.replace('/pdf/Letter-of-Undertaking-MD.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/Letter-of-Undertaking-MD.pdf" />;
 }

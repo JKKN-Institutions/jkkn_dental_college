@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function AlumniRegistrationCertificate() {
-  useEffect(() => {
-    window.location.replace('/pdf/ALUMNI-Registration-Certificate.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/ALUMNI-Registration-Certificate.pdf" />;
 }

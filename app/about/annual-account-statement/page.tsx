@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function AnnualAccountStatement() {
-  useEffect(() => {
-    window.location.replace('/pdf/ANNUAL-ACCOUNTS-STATEMENT.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/ANNUAL-ACCOUNTS-STATEMENT.pdf" />;
 }

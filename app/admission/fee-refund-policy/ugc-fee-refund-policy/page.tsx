@@ -1,11 +1,5 @@
-'use client';
-
-import { useEffect } from 'react';
+import { PdfRedirect } from '@/components/pdf-redirect';
 
 export default function UGCFeeRefundPolicy() {
-  useEffect(() => {
-    window.location.replace('/pdf/UGC-Fee-Refund-Policy.pdf');
-  }, []);
-
-  return null;
+  return <PdfRedirect pdfUrl="/pdf/UGC-Fee-Refund-Policy.pdf" />;
 }
