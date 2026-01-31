@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   title: "JKKN Dental College & Hospital",
   description: "JKKN Dental College & Hospital - Providing quality education in dental surgery. Established in 1987, affiliated with Dr. MGR Medical University, Chennai.",
   keywords: "JKKN, Dental College, Hospital, BDS, MDS, Tamil Nadu, Dental Education",
+  icons: {
+    icon: "/images/dental-logo.png",
+    apple: "/images/dental-logo.png",
+  },
 };
 
 export default function RootLayout({
