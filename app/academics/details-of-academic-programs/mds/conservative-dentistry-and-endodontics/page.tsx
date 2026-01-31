@@ -880,7 +880,8 @@ export default function MDSConservativeDentistry() {
         </div>
       </section>
 
-      {/* Fee Structure Section */}
+      {/* Fee Structure Section - TEMPORARILY HIDDEN */}
+      {false && (
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           {/* Badge */}
@@ -998,6 +999,7 @@ export default function MDSConservativeDentistry() {
           </div>
         </div>
       </section>
+      )}
 
       {/* FAQ Section */}
       <section className="py-16 px-4 bg-gray-50">

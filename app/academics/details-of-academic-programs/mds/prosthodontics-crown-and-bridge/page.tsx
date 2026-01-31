@@ -916,7 +916,8 @@ export default function MDSProsthodontics() {
         </div>
       </section>
 
-      {/* Fee Structure Section */}
+      {/* Fee Structure Section - TEMPORARILY HIDDEN */}
+      {false && (
       <section className="bg-[#FBFBEE] py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-4">
@@ -990,6 +991,7 @@ export default function MDSProsthodontics() {
           </div>
         </div>
       </section>
+      )}
 
       {/* Frequently Asked Questions Section */}
       <section className="bg-gray-50 py-20 px-4">

@@ -972,7 +972,8 @@ export default function MDSOrthodontics() {
         </div>
       </section>
 
-      {/* Fee Structure Section */}
+      {/* Fee Structure Section - TEMPORARILY HIDDEN */}
+      {false && (
       <section className="py-16 px-4 bg-[#FBFBEE]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
@@ -1042,6 +1043,7 @@ export default function MDSOrthodontics() {
           </div>
         </div>
       </section>
+      )}
 
       {/* FAQ Section */}
       <section className="py-16 px-4 bg-gray-50">
