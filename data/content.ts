@@ -447,7 +447,7 @@ Our curriculum emphasizes clinical excellence, research, and community service, 
     contact: {
       title: "CONTACT US",
       phone: " +91 9345855001",
-      email: "Email: dental@jkkn.ac.in",
+      email: "dental@jkkn.ac.in",
       address: `JKKN Dental College and Hospital
 NH-544 Salem to Kochi Highway, Kumarapalayam, Namakkal District, Tamil Nadu - 638183`,
     },
