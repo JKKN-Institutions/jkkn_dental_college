@@ -131,7 +131,7 @@ export default function BDSProgram() {
               </p>
 
               {/* Features Grid */}
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="flex items-start gap-3">
                   <div className="bg-green-50 p-3 rounded-lg">
                     <svg className="w-6 h-6 text-[#7cb983]" fill="currentColor" viewBox="0 0 20 20">
@@ -193,7 +193,7 @@ export default function BDSProgram() {
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-6">
-                  <h3 className="text-4xl font-bold text-white">Modern Dental Lab</h3>
+                  <h3 className="text-2xl md:text-4xl font-bold text-white">Modern Dental Lab</h3>
                 </div>
               </div>
               <div className="relative rounded-2xl h-48 overflow-hidden shadow-lg">

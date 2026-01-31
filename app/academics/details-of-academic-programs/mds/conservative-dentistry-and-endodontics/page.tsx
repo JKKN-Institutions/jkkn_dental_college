@@ -67,19 +67,18 @@ export default function MDSConservativeDentistry() {
                   className="object-cover"
                 />
 
-                {/* Stats Grid - Overlaid on image */}
-                <div className="absolute bottom-0 left-0 right-0 grid grid-cols-3 gap-2 sm:gap-3 p-4">
-                  <div className="bg-[#FBFBEE] rounded-lg p-2 sm:p-4 text-center">
-                    <div className="text-xl sm:text-3xl md:text-4xl font-bold text-[#006837] mb-1">3</div>
-                    <div className="text-[9px] sm:text-xs text-gray-600">Years Duration</div>
-                  </div>
-                  <div className="bg-[#FBFBEE] rounded-lg p-2 sm:p-4 text-center">
-                    <div className="text-xl sm:text-3xl md:text-4xl font-bold text-[#006837] mb-1">5</div>
-                    <div className="text-[9px] sm:text-xs text-gray-600">Seats Available</div>
-                  </div>
-                  <div className="bg-[#FBFBEE] rounded-lg p-2 sm:p-4 text-center">
-                    <div className="text-xl sm:text-3xl md:text-4xl font-bold text-[#006837] mb-1">100%</div>
-                    <div className="text-[9px] sm:text-xs text-gray-600">Placement Rate</div>
+                {/* Stats Badges */}
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <div className="flex flex-wrap justify-center gap-2">
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
+                      3 Years
+                    </span>
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
+                      5 Seats
+                    </span>
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
+                      100% Placement
+                    </span>
                   </div>
                 </div>
               </div>
@@ -91,7 +90,7 @@ export default function MDSConservativeDentistry() {
       {/* Info Bar Section */}
       <section className="bg-white py-8 px-4 border-b border-gray-200">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {/* Duration */}
             <div className="flex items-center gap-4">
               <div className="bg-[#7cb983] rounded-lg p-4 flex-shrink-0">
@@ -557,7 +556,7 @@ export default function MDSConservativeDentistry() {
                 <h3 className="text-2xl font-bold text-gray-800">Required Documents</h3>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex items-center gap-3 bg-white rounded-lg p-4 border border-gray-200">
                   <svg className="w-5 h-5 text-[#7cb983] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clipRule="evenodd" />
@@ -737,45 +736,45 @@ export default function MDSConservativeDentistry() {
           </p>
 
           {/* Gallery Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {/* Campus */}
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-              <h3 className="text-3xl md:text-4xl font-bold text-white">Campus</h3>
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-6 md:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+              <h3 className="text-xl md:text-4xl font-bold text-white">Campus</h3>
             </div>
 
             {/* Clinic */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-              <h3 className="text-3xl md:text-4xl font-bold text-white">Clinic</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-6 md:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+              <h3 className="text-xl md:text-4xl font-bold text-white">Clinic</h3>
             </div>
 
             {/* Library */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-              <h3 className="text-3xl md:text-4xl font-bold text-white">Library</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-6 md:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+              <h3 className="text-xl md:text-4xl font-bold text-white">Library</h3>
             </div>
 
             {/* Conference */}
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-              <h3 className="text-3xl md:text-4xl font-bold text-white">Conference</h3>
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-6 md:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+              <h3 className="text-xl md:text-4xl font-bold text-white">Conference</h3>
             </div>
 
             {/* Hostel */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-              <h3 className="text-3xl md:text-4xl font-bold text-white">Hostel</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-6 md:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+              <h3 className="text-xl md:text-4xl font-bold text-white">Hostel</h3>
             </div>
 
             {/* Sports */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-              <h3 className="text-3xl md:text-4xl font-bold text-white">Sports</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-6 md:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+              <h3 className="text-xl md:text-4xl font-bold text-white">Sports</h3>
             </div>
 
             {/* Lab */}
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-              <h3 className="text-3xl md:text-4xl font-bold text-white">Lab</h3>
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-6 md:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+              <h3 className="text-xl md:text-4xl font-bold text-white">Lab</h3>
             </div>
 
             {/* Cafeteria */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
-              <h3 className="text-3xl md:text-4xl font-bold text-white">Cafeteria</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-6 md:p-12 flex items-center justify-center aspect-square hover:shadow-2xl transition-shadow duration-300 cursor-pointer">
+              <h3 className="text-xl md:text-4xl font-bold text-white">Cafeteria</h3>
             </div>
           </div>
         </div>
@@ -899,86 +898,88 @@ export default function MDSConservativeDentistry() {
           </p>
 
           {/* Fee Table */}
-          <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden">
-            {/* Table Header */}
-            <div className="grid grid-cols-4 bg-gradient-to-br from-[#006837] to-[#002309]">
-              <div className="p-6 border-r border-white/20">
-                <h3 className="text-white font-bold text-lg uppercase">Fee Component</h3>
-              </div>
-              <div className="p-6 border-r border-white/20">
-                <h3 className="text-white font-bold text-lg uppercase">Government Quota</h3>
-              </div>
-              <div className="p-6 border-r border-white/20">
-                <h3 className="text-white font-bold text-lg uppercase">Management Quota</h3>
-              </div>
-              <div className="p-6">
-                <h3 className="text-white font-bold text-lg uppercase">NRI Quota</h3>
-              </div>
-            </div>
-
-            {/* Table Body */}
-            <div className="divide-y divide-gray-200">
-              {/* Row 1 */}
-              <div className="grid grid-cols-4 hover:bg-gray-50 transition-colors duration-200">
-                <div className="p-6 border-r border-gray-200">
-                  <p className="text-gray-700 font-medium">Tuition Fee (Per Annum)</p>
+          <div className="overflow-x-auto">
+            <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden min-w-[640px]">
+              {/* Table Header */}
+              <div className="grid grid-cols-4 bg-gradient-to-br from-[#006837] to-[#002309]">
+                <div className="p-4 md:p-6 border-r border-white/20">
+                  <h3 className="text-white font-bold text-sm md:text-lg uppercase">Fee Component</h3>
                 </div>
-                <div className="p-6 border-r border-gray-200">
-                  <p className="text-gray-800 font-bold text-lg">₹3,00,000</p>
+                <div className="p-4 md:p-6 border-r border-white/20">
+                  <h3 className="text-white font-bold text-sm md:text-lg uppercase">Government Quota</h3>
                 </div>
-                <div className="p-6 border-r border-gray-200">
-                  <p className="text-gray-800 font-bold text-lg">₹12,00,000</p>
+                <div className="p-4 md:p-6 border-r border-white/20">
+                  <h3 className="text-white font-bold text-sm md:text-lg uppercase">Management Quota</h3>
                 </div>
-                <div className="p-6">
-                  <p className="text-gray-800 font-bold text-lg">$15,000</p>
+                <div className="p-4 md:p-6">
+                  <h3 className="text-white font-bold text-sm md:text-lg uppercase">NRI Quota</h3>
                 </div>
               </div>
 
-              {/* Row 2 */}
-              <div className="grid grid-cols-4 hover:bg-gray-50 transition-colors duration-200">
-                <div className="p-6 border-r border-gray-200">
-                  <p className="text-gray-700 font-medium">Admission Fee (One-time)</p>
+              {/* Table Body */}
+              <div className="divide-y divide-gray-200">
+                {/* Row 1 */}
+                <div className="grid grid-cols-4 hover:bg-gray-50 transition-colors duration-200">
+                  <div className="p-4 md:p-6 border-r border-gray-200">
+                    <p className="text-gray-700 font-medium text-sm md:text-base">Tuition Fee (Per Annum)</p>
+                  </div>
+                  <div className="p-4 md:p-6 border-r border-gray-200">
+                    <p className="text-gray-800 font-bold text-base md:text-lg">₹3,00,000</p>
+                  </div>
+                  <div className="p-4 md:p-6 border-r border-gray-200">
+                    <p className="text-gray-800 font-bold text-base md:text-lg">₹12,00,000</p>
+                  </div>
+                  <div className="p-4 md:p-6">
+                    <p className="text-gray-800 font-bold text-base md:text-lg">$15,000</p>
+                  </div>
                 </div>
-                <div className="p-6 border-r border-gray-200">
-                  <p className="text-gray-800 font-bold text-lg">₹50,000</p>
-                </div>
-                <div className="p-6 border-r border-gray-200">
-                  <p className="text-gray-800 font-bold text-lg">₹1,00,000</p>
-                </div>
-                <div className="p-6">
-                  <p className="text-gray-800 font-bold text-lg">$2,000</p>
-                </div>
-              </div>
 
-              {/* Row 3 */}
-              <div className="grid grid-cols-4 hover:bg-gray-50 transition-colors duration-200">
-                <div className="p-6 border-r border-gray-200">
-                  <p className="text-gray-700 font-medium">Caution Deposit (Refundable)</p>
+                {/* Row 2 */}
+                <div className="grid grid-cols-4 hover:bg-gray-50 transition-colors duration-200">
+                  <div className="p-4 md:p-6 border-r border-gray-200">
+                    <p className="text-gray-700 font-medium text-sm md:text-base">Admission Fee (One-time)</p>
+                  </div>
+                  <div className="p-4 md:p-6 border-r border-gray-200">
+                    <p className="text-gray-800 font-bold text-base md:text-lg">₹50,000</p>
+                  </div>
+                  <div className="p-4 md:p-6 border-r border-gray-200">
+                    <p className="text-gray-800 font-bold text-base md:text-lg">₹1,00,000</p>
+                  </div>
+                  <div className="p-4 md:p-6">
+                    <p className="text-gray-800 font-bold text-base md:text-lg">$2,000</p>
+                  </div>
                 </div>
-                <div className="p-6 border-r border-gray-200">
-                  <p className="text-gray-800 font-bold text-lg">₹25,000</p>
-                </div>
-                <div className="p-6 border-r border-gray-200">
-                  <p className="text-gray-800 font-bold text-lg">₹25,000</p>
-                </div>
-                <div className="p-6">
-                  <p className="text-gray-800 font-bold text-lg">$500</p>
-                </div>
-              </div>
 
-              {/* Row 4 */}
-              <div className="grid grid-cols-4 hover:bg-gray-50 transition-colors duration-200">
-                <div className="p-6 border-r border-gray-200">
-                  <p className="text-gray-700 font-medium">Hostel Fee (Per Annum)</p>
+                {/* Row 3 */}
+                <div className="grid grid-cols-4 hover:bg-gray-50 transition-colors duration-200">
+                  <div className="p-4 md:p-6 border-r border-gray-200">
+                    <p className="text-gray-700 font-medium text-sm md:text-base">Caution Deposit (Refundable)</p>
+                  </div>
+                  <div className="p-4 md:p-6 border-r border-gray-200">
+                    <p className="text-gray-800 font-bold text-base md:text-lg">₹25,000</p>
+                  </div>
+                  <div className="p-4 md:p-6 border-r border-gray-200">
+                    <p className="text-gray-800 font-bold text-base md:text-lg">₹25,000</p>
+                  </div>
+                  <div className="p-4 md:p-6">
+                    <p className="text-gray-800 font-bold text-base md:text-lg">$500</p>
+                  </div>
                 </div>
-                <div className="p-6 border-r border-gray-200">
-                  <p className="text-gray-800 font-bold text-lg">₹60,000</p>
-                </div>
-                <div className="p-6 border-r border-gray-200">
-                  <p className="text-gray-800 font-bold text-lg">₹60,000</p>
-                </div>
-                <div className="p-6">
-                  <p className="text-gray-800 font-bold text-lg">$1,200</p>
+
+                {/* Row 4 */}
+                <div className="grid grid-cols-4 hover:bg-gray-50 transition-colors duration-200">
+                  <div className="p-4 md:p-6 border-r border-gray-200">
+                    <p className="text-gray-700 font-medium text-sm md:text-base">Hostel Fee (Per Annum)</p>
+                  </div>
+                  <div className="p-4 md:p-6 border-r border-gray-200">
+                    <p className="text-gray-800 font-bold text-base md:text-lg">₹60,000</p>
+                  </div>
+                  <div className="p-4 md:p-6 border-r border-gray-200">
+                    <p className="text-gray-800 font-bold text-base md:text-lg">₹60,000</p>
+                  </div>
+                  <div className="p-4 md:p-6">
+                    <p className="text-gray-800 font-bold text-base md:text-lg">$1,200</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1129,37 +1130,37 @@ export default function MDSConservativeDentistry() {
           </p>
 
           {/* Accreditation Cards Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto">
             {/* DCI */}
-            <div className="bg-white rounded-2xl p-8 border border-gray-200 hover:shadow-2xl transition-shadow duration-300">
-              <div className="bg-[#006837] w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <h3 className="text-3xl font-bold text-white">DCI</h3>
+            <div className="bg-white rounded-2xl p-4 sm:p-8 border border-gray-200 hover:shadow-2xl transition-shadow duration-300">
+              <div className="bg-[#006837] w-16 h-16 sm:w-20 sm:h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <h3 className="text-2xl sm:text-3xl font-bold text-white">DCI</h3>
               </div>
-              <h4 className="text-center text-gray-800 font-bold text-lg mb-2">Dental Council of India</h4>
+              <h4 className="text-center text-gray-800 font-bold text-base sm:text-lg mb-2">Dental Council of India</h4>
             </div>
 
             {/* NAAC */}
-            <div className="bg-white rounded-2xl p-8 border border-gray-200 hover:shadow-2xl transition-shadow duration-300">
-              <div className="bg-[#7cb983] w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <h3 className="text-3xl font-bold text-white">NAAC</h3>
+            <div className="bg-white rounded-2xl p-4 sm:p-8 border border-gray-200 hover:shadow-2xl transition-shadow duration-300">
+              <div className="bg-[#7cb983] w-16 h-16 sm:w-20 sm:h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <h3 className="text-2xl sm:text-3xl font-bold text-white">NAAC</h3>
               </div>
-              <h4 className="text-center text-gray-800 font-bold text-lg mb-2">NAAC Accredited</h4>
+              <h4 className="text-center text-gray-800 font-bold text-base sm:text-lg mb-2">NAAC Accredited</h4>
             </div>
 
             {/* MGR */}
-            <div className="bg-white rounded-2xl p-8 border border-gray-200 hover:shadow-2xl transition-shadow duration-300">
-              <div className="bg-[#7cb983] w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <h3 className="text-2xl font-bold text-white">MGR</h3>
+            <div className="bg-white rounded-2xl p-4 sm:p-8 border border-gray-200 hover:shadow-2xl transition-shadow duration-300">
+              <div className="bg-[#7cb983] w-16 h-16 sm:w-20 sm:h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <h3 className="text-xl sm:text-2xl font-bold text-white">MGR</h3>
               </div>
-              <h4 className="text-center text-gray-800 font-bold text-lg mb-2">TN Dr. MGR Medical University</h4>
+              <h4 className="text-center text-gray-800 font-bold text-base sm:text-lg mb-2">TN Dr. MGR Medical University</h4>
             </div>
 
             {/* IDA */}
-            <div className="bg-white rounded-2xl p-8 border border-gray-200 hover:shadow-2xl transition-shadow duration-300">
-              <div className="bg-[#006837] w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <h3 className="text-3xl font-bold text-white">IDA</h3>
+            <div className="bg-white rounded-2xl p-4 sm:p-8 border border-gray-200 hover:shadow-2xl transition-shadow duration-300">
+              <div className="bg-[#006837] w-16 h-16 sm:w-20 sm:h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <h3 className="text-2xl sm:text-3xl font-bold text-white">IDA</h3>
               </div>
-              <h4 className="text-center text-gray-800 font-bold text-lg mb-2">Indian Dental Association</h4>
+              <h4 className="text-center text-gray-800 font-bold text-base sm:text-lg mb-2">Indian Dental Association</h4>
             </div>
           </div>
         </div>

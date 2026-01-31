@@ -37,41 +37,41 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="py-16 md:py-24 px-4 bg-[#FBFBEE]">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 bg-[#FBFBEE]">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 md:mb-16">
-          <h3 className="text-[#7cb983] text-sm md:text-base font-bold uppercase tracking-wider mb-4">FAQS</h3>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#006837] mb-6">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16">
+          <h3 className="text-[#7cb983] text-xs sm:text-sm md:text-base font-bold uppercase tracking-wider mb-3 sm:mb-4">FAQS</h3>
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold text-[#006837] mb-4 sm:mb-6 leading-tight">
             Frequently Asked Questions
           </h2>
-          <p className="text-gray-600 text-base md:text-lg">
+          <p className="text-gray-600 text-sm sm:text-base md:text-lg leading-relaxed">
             Find answers to common questions about admissions, programs, and campus life.
           </p>
         </div>
 
         {/* FAQ Accordion */}
-        <div className="space-y-4">
+        <div className="space-y-3 sm:space-y-4">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow duration-300"
+              className="bg-white border border-gray-200 rounded-lg sm:rounded-xl overflow-hidden hover:shadow-md transition-shadow duration-300"
             >
               {/* Question */}
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors duration-200"
+                className="w-full flex items-center justify-between p-4 sm:p-5 md:p-6 text-left hover:bg-gray-50 active:bg-gray-100 transition-colors duration-200 min-h-[56px] sm:min-h-[64px] touch-manipulation"
               >
-                <h4 className="text-lg font-bold text-[#006837] pr-4">
+                <h4 className="text-sm sm:text-base md:text-lg font-bold text-[#006837] pr-3 sm:pr-4 leading-snug">
                   {faq.question}
                 </h4>
                 <div className="flex-shrink-0">
                   {openIndex === index ? (
-                    <svg className="w-6 h-6 text-[#7cb983]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
                     </svg>
                   ) : (
-                    <svg className="w-6 h-6 text-[#7cb983]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#7cb983]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
                   )}
@@ -80,8 +80,8 @@ export default function FAQSection() {
 
               {/* Answer */}
               {openIndex === index && (
-                <div className="px-6 pb-6">
-                  <p className="text-gray-600 leading-relaxed">
+                <div className="px-4 sm:px-5 md:px-6 pb-4 sm:pb-5 md:pb-6">
+                  <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
                     {faq.answer}
                   </p>
                 </div>

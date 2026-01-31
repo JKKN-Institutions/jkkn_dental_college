@@ -67,23 +67,20 @@ export default function MDSPeriodontics() {
                   height={400}
                   className="w-full h-auto object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-8">
-                  <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-8">Periodontics Lab</h2>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex flex-col justify-end p-4 sm:p-6">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-4">Periodontics Lab</h2>
 
-                  {/* Stats Grid */}
-                  <div className="grid grid-cols-3 gap-2 sm:gap-4">
-                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-2 sm:p-4 text-center">
-                      <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#7cb983] mb-1">3</div>
-                      <div className="text-[10px] sm:text-xs text-gray-200">Years Duration</div>
-                    </div>
-                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-2 sm:p-4 text-center">
-                      <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#7cb983] mb-1">4</div>
-                      <div className="text-[10px] sm:text-xs text-gray-200">Seats Available</div>
-                    </div>
-                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-2 sm:p-4 text-center">
-                      <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#7cb983] mb-1">100%</div>
-                      <div className="text-[10px] sm:text-xs text-gray-200">Placement Rate</div>
-                    </div>
+                  {/* Stats Badges */}
+                  <div className="flex flex-wrap justify-center gap-2">
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
+                      3 Years
+                    </span>
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
+                      4 Seats
+                    </span>
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
+                      100% Placement
+                    </span>
                   </div>
                 </div>
               </div>
@@ -95,7 +92,7 @@ export default function MDSPeriodontics() {
       {/* Info Bar Section */}
       <section className="bg-white py-8 px-4 border-b border-gray-200">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {/* Duration */}
             <div className="flex items-center gap-4">
               <div className="bg-[#7cb983] rounded-lg p-4 flex-shrink-0">
@@ -239,7 +236,7 @@ export default function MDSPeriodontics() {
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-12">
-                  <h3 className="text-5xl md:text-6xl font-bold text-white text-center">Periodontal Surgery</h3>
+                  <h3 className="text-2xl md:text-4xl font-bold text-white text-center">Periodontal Surgery</h3>
                 </div>
               </div>
             </div>
@@ -593,7 +590,7 @@ export default function MDSPeriodontics() {
                 <h3 className="text-2xl font-bold text-gray-900">Required Documents</h3>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg">
                   <svg className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clipRule="evenodd" />
@@ -713,7 +710,7 @@ export default function MDSPeriodontics() {
             {/* Perio Clinic */}
             <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl overflow-hidden">
               <div className="p-8 h-64 flex items-center justify-center">
-                <h3 className="text-5xl font-bold text-white text-center">Perio Clinic</h3>
+                <h3 className="text-3xl md:text-5xl font-bold text-white text-center">Perio Clinic</h3>
               </div>
               <div className="bg-white p-6">
                 <h4 className="text-xl font-bold text-gray-900 mb-3">Periodontics Clinical Area</h4>
@@ -726,7 +723,7 @@ export default function MDSPeriodontics() {
             {/* Simulation Lab */}
             <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl overflow-hidden">
               <div className="p-8 h-64 flex items-center justify-center">
-                <h3 className="text-5xl font-bold text-white text-center">Simulation Lab</h3>
+                <h3 className="text-3xl md:text-5xl font-bold text-white text-center">Simulation Lab</h3>
               </div>
               <div className="bg-white p-6">
                 <h4 className="text-xl font-bold text-gray-900 mb-3">Simulation Laboratory</h4>
@@ -739,7 +736,7 @@ export default function MDSPeriodontics() {
             {/* Research Lab */}
             <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl overflow-hidden">
               <div className="p-8 h-64 flex items-center justify-center">
-                <h3 className="text-5xl font-bold text-white text-center">Research Lab</h3>
+                <h3 className="text-3xl md:text-5xl font-bold text-white text-center">Research Lab</h3>
               </div>
               <div className="bg-white p-6">
                 <h4 className="text-xl font-bold text-gray-900 mb-3">Research Laboratory</h4>
@@ -765,29 +762,29 @@ export default function MDSPeriodontics() {
 
           {/* Photo Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-xl p-12 flex items-center justify-center h-64">
-              <h3 className="text-4xl font-bold text-white text-center">Campus</h3>
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-xl p-6 md:p-12 flex items-center justify-center h-48 md:h-64">
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Campus</h3>
             </div>
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl p-12 flex items-center justify-center h-64">
-              <h3 className="text-4xl font-bold text-white text-center">Clinic</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl p-6 md:p-12 flex items-center justify-center h-48 md:h-64">
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Clinic</h3>
             </div>
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl p-12 flex items-center justify-center h-64">
-              <h3 className="text-4xl font-bold text-white text-center">Library</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl p-6 md:p-12 flex items-center justify-center h-48 md:h-64">
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Library</h3>
             </div>
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-xl p-12 flex items-center justify-center h-64">
-              <h3 className="text-4xl font-bold text-white text-center">Conference</h3>
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-xl p-6 md:p-12 flex items-center justify-center h-48 md:h-64">
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Conference</h3>
             </div>
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl p-12 flex items-center justify-center h-64">
-              <h3 className="text-4xl font-bold text-white text-center">Hostel</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl p-6 md:p-12 flex items-center justify-center h-48 md:h-64">
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Hostel</h3>
             </div>
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl p-12 flex items-center justify-center h-64">
-              <h3 className="text-4xl font-bold text-white text-center">Sports</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl p-6 md:p-12 flex items-center justify-center h-48 md:h-64">
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Sports</h3>
             </div>
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-xl p-12 flex items-center justify-center h-64">
-              <h3 className="text-4xl font-bold text-white text-center">Surgery</h3>
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-xl p-6 md:p-12 flex items-center justify-center h-48 md:h-64">
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Surgery</h3>
             </div>
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl p-12 flex items-center justify-center h-64">
-              <h3 className="text-4xl font-bold text-white text-center">Cafeteria</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl p-6 md:p-12 flex items-center justify-center h-48 md:h-64">
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Cafeteria</h3>
             </div>
           </div>
         </div>
@@ -901,39 +898,39 @@ export default function MDSPeriodontics() {
           {/* Fee Table */}
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
             <div className="overflow-x-auto">
-              <table className="w-full">
+              <table className="w-full min-w-[640px]">
                 <thead>
                   <tr className="bg-gradient-to-r from-[#006837] to-[#002309]">
-                    <th className="px-6 py-4 text-left text-white font-bold text-lg">FEE COMPONENT</th>
-                    <th className="px-6 py-4 text-left text-white font-bold text-lg">GOVERNMENT QUOTA</th>
-                    <th className="px-6 py-4 text-left text-white font-bold text-lg">MANAGEMENT QUOTA</th>
-                    <th className="px-6 py-4 text-left text-white font-bold text-lg">NRI QUOTA</th>
+                    <th className="px-4 md:px-6 py-4 text-left text-white font-bold text-sm md:text-lg">FEE COMPONENT</th>
+                    <th className="px-4 md:px-6 py-4 text-left text-white font-bold text-sm md:text-lg">GOVERNMENT QUOTA</th>
+                    <th className="px-4 md:px-6 py-4 text-left text-white font-bold text-sm md:text-lg">MANAGEMENT QUOTA</th>
+                    <th className="px-4 md:px-6 py-4 text-left text-white font-bold text-sm md:text-lg">NRI QUOTA</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
                   <tr className="bg-white hover:bg-gray-50">
-                    <td className="px-6 py-4 text-gray-700 font-medium">Tuition Fee (Per Annum)</td>
-                    <td className="px-6 py-4 text-gray-900 font-bold">₹3,00,000</td>
-                    <td className="px-6 py-4 text-gray-900 font-bold">₹12,00,000</td>
-                    <td className="px-6 py-4 text-gray-900 font-bold">$15,000</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-700 font-medium text-sm md:text-base">Tuition Fee (Per Annum)</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">₹3,00,000</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">₹12,00,000</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">$15,000</td>
                   </tr>
                   <tr className="bg-gray-50 hover:bg-gray-100">
-                    <td className="px-6 py-4 text-gray-700 font-medium">Admission Fee (One-time)</td>
-                    <td className="px-6 py-4 text-gray-900 font-bold">₹50,000</td>
-                    <td className="px-6 py-4 text-gray-900 font-bold">₹1,00,000</td>
-                    <td className="px-6 py-4 text-gray-900 font-bold">$2,000</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-700 font-medium text-sm md:text-base">Admission Fee (One-time)</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">₹50,000</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">₹1,00,000</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">$2,000</td>
                   </tr>
                   <tr className="bg-white hover:bg-gray-50">
-                    <td className="px-6 py-4 text-gray-700 font-medium">Caution Deposit (Refundable)</td>
-                    <td className="px-6 py-4 text-gray-900 font-bold">₹25,000</td>
-                    <td className="px-6 py-4 text-gray-900 font-bold">₹25,000</td>
-                    <td className="px-6 py-4 text-gray-900 font-bold">$500</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-700 font-medium text-sm md:text-base">Caution Deposit (Refundable)</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">₹25,000</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">₹25,000</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">$500</td>
                   </tr>
                   <tr className="bg-gray-50 hover:bg-gray-100">
-                    <td className="px-6 py-4 text-gray-700 font-medium">Hostel Fee (Per Annum)</td>
-                    <td className="px-6 py-4 text-gray-900 font-bold">₹60,000</td>
-                    <td className="px-6 py-4 text-gray-900 font-bold">₹60,000</td>
-                    <td className="px-6 py-4 text-gray-900 font-bold">$1,200</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-700 font-medium text-sm md:text-base">Hostel Fee (Per Annum)</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">₹60,000</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">₹60,000</td>
+                    <td className="px-4 md:px-6 py-4 text-gray-900 font-bold text-sm md:text-base">$1,200</td>
                   </tr>
                 </tbody>
               </table>
@@ -1087,37 +1084,37 @@ export default function MDSPeriodontics() {
           </div>
 
           {/* Accreditation Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {/* DCI */}
-            <div className="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-[#006837] transition-all duration-300 text-center">
-              <div className="bg-[#006837] rounded-2xl w-24 h-24 flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl font-bold text-white">DCI</span>
+            <div className="bg-white rounded-2xl p-4 sm:p-8 border-2 border-gray-200 hover:border-[#006837] transition-all duration-300 text-center">
+              <div className="bg-[#006837] rounded-2xl w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <span className="text-2xl sm:text-3xl font-bold text-white">DCI</span>
               </div>
-              <h3 className="text-lg font-bold text-gray-900">Dental Council of India</h3>
+              <h3 className="text-base sm:text-lg font-bold text-gray-900">Dental Council of India</h3>
             </div>
 
             {/* NAAC */}
-            <div className="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-[#7cb983] transition-all duration-300 text-center">
-              <div className="bg-[#7cb983] rounded-2xl w-24 h-24 flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl font-bold text-white">NAAC</span>
+            <div className="bg-white rounded-2xl p-4 sm:p-8 border-2 border-gray-200 hover:border-[#7cb983] transition-all duration-300 text-center">
+              <div className="bg-[#7cb983] rounded-2xl w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <span className="text-2xl sm:text-3xl font-bold text-white">NAAC</span>
               </div>
-              <h3 className="text-lg font-bold text-gray-900">NAAC Accredited</h3>
+              <h3 className="text-base sm:text-lg font-bold text-gray-900">NAAC Accredited</h3>
             </div>
 
             {/* MGR */}
-            <div className="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-[#7cb983] transition-all duration-300 text-center">
-              <div className="bg-[#7cb983] rounded-2xl w-24 h-24 flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl font-bold text-white">MGR</span>
+            <div className="bg-white rounded-2xl p-4 sm:p-8 border-2 border-gray-200 hover:border-[#7cb983] transition-all duration-300 text-center">
+              <div className="bg-[#7cb983] rounded-2xl w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <span className="text-2xl sm:text-3xl font-bold text-white">MGR</span>
               </div>
-              <h3 className="text-lg font-bold text-gray-900">TN Dr. MGR Medical University</h3>
+              <h3 className="text-base sm:text-lg font-bold text-gray-900">TN Dr. MGR Medical University</h3>
             </div>
 
             {/* IDA */}
-            <div className="bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-[#006837] transition-all duration-300 text-center">
-              <div className="bg-[#006837] rounded-2xl w-24 h-24 flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl font-bold text-white">IDA</span>
+            <div className="bg-white rounded-2xl p-4 sm:p-8 border-2 border-gray-200 hover:border-[#006837] transition-all duration-300 text-center">
+              <div className="bg-[#006837] rounded-2xl w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mx-auto mb-4 sm:mb-6">
+                <span className="text-2xl sm:text-3xl font-bold text-white">IDA</span>
               </div>
-              <h3 className="text-lg font-bold text-gray-900">Indian Dental Association</h3>
+              <h3 className="text-base sm:text-lg font-bold text-gray-900">Indian Dental Association</h3>
             </div>
           </div>
         </div>

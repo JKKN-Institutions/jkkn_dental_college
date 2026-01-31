@@ -152,15 +152,6 @@
     @apply w-full h-auto max-w-full object-contain;
   }
 
-  /* Aspect Ratio Utilities */
-  .aspect-video-responsive {
-    @apply aspect-video w-full object-cover;
-  }
-
-  .aspect-square-responsive {
-    @apply aspect-square w-full object-cover;
-  }
-
   /* Grid Utilities - Mobile First */
   .grid-responsive {
     @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8;
@@ -223,91 +214,5 @@
   .fluid-container {
     width: min(100% - 2rem, 1600px);
     margin-inline: auto;
-  }
-
-  /* Responsive Table Wrapper - prevents table overflow */
-  .table-responsive {
-    @apply w-full overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0;
-  }
-
-  .table-responsive table {
-    @apply min-w-full;
-  }
-
-  /* Responsive Iframe/Embed Wrapper */
-  .embed-responsive {
-    @apply relative w-full;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  }
-
-  .embed-responsive iframe,
-  .embed-responsive embed,
-  .embed-responsive object,
-  .embed-responsive video {
-    @apply absolute top-0 left-0 w-full h-full;
-  }
-
-  .embed-responsive-4x3 {
-    padding-bottom: 75%; /* 4:3 aspect ratio */
-  }
-
-  .embed-responsive-1x1 {
-    padding-bottom: 100%; /* 1:1 aspect ratio */
-  }
-
-  /* Responsive PDF Viewer */
-  .pdf-responsive {
-    @apply w-full min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[80vh];
-  }
-
-  /* Prevent text overflow */
-  .text-break {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    word-break: break-word;
-  }
-
-  /* Full-bleed section (extends to edge on mobile) */
-  .full-bleed {
-    @apply -mx-4 px-4 sm:mx-0 sm:px-0;
-  }
-
-  /* Responsive spacing that collapses on mobile */
-  .responsive-gap {
-    @apply gap-3 xs:gap-4 sm:gap-6 md:gap-8;
-  }
-
-  /* Hide on specific breakpoints */
-  .hide-xs {
-    @apply hidden xs:block;
-  }
-
-  .show-xs-only {
-    @apply block xs:hidden;
-  }
-
-  /* Responsive border radius */
-  .rounded-responsive {
-    @apply rounded-lg sm:rounded-xl md:rounded-2xl;
-  }
-
-  /* Responsive padding for sections */
-  .section-p {
-    @apply px-4 py-8 sm:px-6 sm:py-12 md:py-16 lg:py-20;
-  }
-
-  /* Clamp utility for long text */
-  .line-clamp-responsive {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .line-clamp-2 {
-    -webkit-line-clamp: 2;
-  }
-
-  .line-clamp-3 {
-    -webkit-line-clamp: 3;
   }
 }

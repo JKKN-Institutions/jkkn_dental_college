@@ -68,19 +68,18 @@ export default function MDSOralMedicine() {
                   className="object-cover object-right"
                 />
 
-                {/* Stats Grid - Overlaid on image */}
-                <div className="absolute bottom-0 left-0 right-0 grid grid-cols-3 gap-2 sm:gap-3 p-4">
-                  <div className="bg-[#FBFBEE] rounded-lg p-2 sm:p-4 text-center">
-                    <div className="text-xl sm:text-3xl md:text-4xl font-bold text-[#006837] mb-1">3</div>
-                    <div className="text-[9px] sm:text-xs text-gray-600">Years Duration</div>
-                  </div>
-                  <div className="bg-[#FBFBEE] rounded-lg p-2 sm:p-4 text-center">
-                    <div className="text-xl sm:text-3xl md:text-4xl font-bold text-[#006837] mb-1">4</div>
-                    <div className="text-[9px] sm:text-xs text-gray-600">Seats Available</div>
-                  </div>
-                  <div className="bg-[#FBFBEE] rounded-lg p-2 sm:p-4 text-center">
-                    <div className="text-xl sm:text-3xl md:text-4xl font-bold text-[#006837] mb-1">100%</div>
-                    <div className="text-[9px] sm:text-xs text-gray-600">Placement Rate</div>
+                {/* Stats Badges */}
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <div className="flex flex-wrap justify-center gap-2">
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
+                      3 Years
+                    </span>
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
+                      4 Seats
+                    </span>
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
+                      100% Placement
+                    </span>
                   </div>
                 </div>
               </div>
@@ -92,7 +91,7 @@ export default function MDSOralMedicine() {
       {/* Info Bar Section */}
       <section className="bg-[#FBFBEE] py-8 px-4 border-b border-gray-200">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {/* Duration */}
             <div className="flex items-center gap-4">
               <div className="bg-[#7cb983] rounded-lg p-4 flex-shrink-0">
@@ -665,45 +664,45 @@ export default function MDSOralMedicine() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {/* Campus */}
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-12 flex items-center justify-center h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-4xl font-bold text-white text-center">Campus</h3>
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Campus</h3>
             </div>
 
             {/* Radiology */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-12 flex items-center justify-center h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-4xl font-bold text-white text-center">Radiology</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Radiology</h3>
             </div>
 
             {/* Library */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#0199c7] rounded-2xl p-12 flex items-center justify-center h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-4xl font-bold text-white text-center">Library</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#0199c7] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Library</h3>
             </div>
 
             {/* Conference */}
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-12 flex items-center justify-center h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-4xl font-bold text-white text-center">Conference</h3>
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Conference</h3>
             </div>
 
             {/* Hostel */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-12 flex items-center justify-center h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-4xl font-bold text-white text-center">Hostel</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Hostel</h3>
             </div>
 
             {/* Sports */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#0199c7] rounded-2xl p-12 flex items-center justify-center h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-4xl font-bold text-white text-center">Sports</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#0199c7] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Sports</h3>
             </div>
 
             {/* Lab */}
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-12 flex items-center justify-center h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-4xl font-bold text-white text-center">Lab</h3>
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Lab</h3>
             </div>
 
             {/* Cafeteria */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-12 flex items-center justify-center h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-4xl font-bold text-white text-center">Cafeteria</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl p-6 md:p-12 flex items-center justify-center h-40 md:h-64 cursor-pointer hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-xl md:text-4xl font-bold text-white text-center">Cafeteria</h3>
             </div>
           </div>
         </div>
@@ -813,55 +812,57 @@ export default function MDSOralMedicine() {
             </p>
           </div>
 
-          <div className="bg-[#FBFBEE] rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-            {/* Table Header */}
-            <div className="bg-gradient-to-r from-[#006837] to-[#002309] grid grid-cols-4 gap-4 p-6 text-white font-bold">
-              <div>FEE COMPONENT</div>
-              <div className="text-center">YEAR 1</div>
-              <div className="text-center">YEAR 2</div>
-              <div className="text-center">YEAR 3</div>
-            </div>
-
-            {/* Table Body */}
-            <div className="divide-y divide-gray-200">
-              {/* Tuition Fee */}
-              <div className="grid grid-cols-4 gap-4 p-6 hover:bg-gray-50">
-                <div className="text-gray-700 font-medium">Tuition Fee</div>
-                <div className="text-center text-gray-800 font-semibold">₹8,00,000</div>
-                <div className="text-center text-gray-800 font-semibold">₹8,00,000</div>
-                <div className="text-center text-gray-800 font-semibold">₹8,00,000</div>
+          <div className="overflow-x-auto">
+            <div className="bg-[#FBFBEE] rounded-2xl shadow-lg overflow-hidden border border-gray-200 min-w-[640px]">
+              {/* Table Header */}
+              <div className="bg-gradient-to-r from-[#006837] to-[#002309] grid grid-cols-4 gap-4 p-4 md:p-6 text-white font-bold">
+                <div className="text-sm md:text-base">FEE COMPONENT</div>
+                <div className="text-center text-sm md:text-base">YEAR 1</div>
+                <div className="text-center text-sm md:text-base">YEAR 2</div>
+                <div className="text-center text-sm md:text-base">YEAR 3</div>
               </div>
 
-              {/* Laboratory & Equipment Fee */}
-              <div className="grid grid-cols-4 gap-4 p-6 hover:bg-gray-50">
-                <div className="text-gray-700 font-medium">Laboratory & Equipment Fee</div>
-                <div className="text-center text-gray-800 font-semibold">₹75,000</div>
-                <div className="text-center text-gray-800 font-semibold">₹75,000</div>
-                <div className="text-center text-gray-800 font-semibold">₹75,000</div>
-              </div>
+              {/* Table Body */}
+              <div className="divide-y divide-gray-200">
+                {/* Tuition Fee */}
+                <div className="grid grid-cols-4 gap-4 p-4 md:p-6 hover:bg-gray-50">
+                  <div className="text-gray-700 font-medium text-sm md:text-base">Tuition Fee</div>
+                  <div className="text-center text-gray-800 font-semibold text-sm md:text-base">₹8,00,000</div>
+                  <div className="text-center text-gray-800 font-semibold text-sm md:text-base">₹8,00,000</div>
+                  <div className="text-center text-gray-800 font-semibold text-sm md:text-base">₹8,00,000</div>
+                </div>
 
-              {/* Library & E-Resources */}
-              <div className="grid grid-cols-4 gap-4 p-6 hover:bg-gray-50">
-                <div className="text-gray-700 font-medium">Library & E-Resources</div>
-                <div className="text-center text-gray-800 font-semibold">₹25,000</div>
-                <div className="text-center text-gray-800 font-semibold">₹25,000</div>
-                <div className="text-center text-gray-800 font-semibold">₹25,000</div>
-              </div>
+                {/* Laboratory & Equipment Fee */}
+                <div className="grid grid-cols-4 gap-4 p-4 md:p-6 hover:bg-gray-50">
+                  <div className="text-gray-700 font-medium text-sm md:text-base">Laboratory & Equipment Fee</div>
+                  <div className="text-center text-gray-800 font-semibold text-sm md:text-base">₹75,000</div>
+                  <div className="text-center text-gray-800 font-semibold text-sm md:text-base">₹75,000</div>
+                  <div className="text-center text-gray-800 font-semibold text-sm md:text-base">₹75,000</div>
+                </div>
 
-              {/* University & Examination Fee */}
-              <div className="grid grid-cols-4 gap-4 p-6 hover:bg-gray-50">
-                <div className="text-gray-700 font-medium">University & Examination Fee</div>
-                <div className="text-center text-gray-800 font-semibold">₹50,000</div>
-                <div className="text-center text-gray-800 font-semibold">₹50,000</div>
-                <div className="text-center text-gray-800 font-semibold">₹50,000</div>
-              </div>
+                {/* Library & E-Resources */}
+                <div className="grid grid-cols-4 gap-4 p-4 md:p-6 hover:bg-gray-50">
+                  <div className="text-gray-700 font-medium text-sm md:text-base">Library & E-Resources</div>
+                  <div className="text-center text-gray-800 font-semibold text-sm md:text-base">₹25,000</div>
+                  <div className="text-center text-gray-800 font-semibold text-sm md:text-base">₹25,000</div>
+                  <div className="text-center text-gray-800 font-semibold text-sm md:text-base">₹25,000</div>
+                </div>
 
-              {/* Total Annual Fee */}
-              <div className="grid grid-cols-4 gap-4 p-6 bg-gray-50">
-                <div className="text-gray-800 font-bold">Total Annual Fee</div>
-                <div className="text-center text-gray-800 font-bold text-lg">₹9,50,000</div>
-                <div className="text-center text-gray-800 font-bold text-lg">₹9,50,000</div>
-                <div className="text-center text-gray-800 font-bold text-lg">₹9,50,000</div>
+                {/* University & Examination Fee */}
+                <div className="grid grid-cols-4 gap-4 p-4 md:p-6 hover:bg-gray-50">
+                  <div className="text-gray-700 font-medium text-sm md:text-base">University & Examination Fee</div>
+                  <div className="text-center text-gray-800 font-semibold text-sm md:text-base">₹50,000</div>
+                  <div className="text-center text-gray-800 font-semibold text-sm md:text-base">₹50,000</div>
+                  <div className="text-center text-gray-800 font-semibold text-sm md:text-base">₹50,000</div>
+                </div>
+
+                {/* Total Annual Fee */}
+                <div className="grid grid-cols-4 gap-4 p-4 md:p-6 bg-gray-50">
+                  <div className="text-gray-800 font-bold text-sm md:text-base">Total Annual Fee</div>
+                  <div className="text-center text-gray-800 font-bold text-base md:text-lg">₹9,50,000</div>
+                  <div className="text-center text-gray-800 font-bold text-base md:text-lg">₹9,50,000</div>
+                  <div className="text-center text-gray-800 font-bold text-base md:text-lg">₹9,50,000</div>
+                </div>
               </div>
             </div>
           </div>
@@ -996,37 +997,37 @@ export default function MDSOralMedicine() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
             {/* DCI */}
             <div className="flex flex-col items-center">
-              <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-xl p-8 mb-4 w-32 h-32 flex items-center justify-center">
-                <span className="text-4xl font-bold text-white">DCI</span>
+              <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-xl p-4 sm:p-8 mb-4 w-20 h-20 sm:w-32 sm:h-32 flex items-center justify-center">
+                <span className="text-2xl sm:text-4xl font-bold text-white">DCI</span>
               </div>
-              <h3 className="text-center font-bold text-gray-800">Dental Council of India</h3>
+              <h3 className="text-center font-bold text-gray-800 text-sm sm:text-base">Dental Council of India</h3>
             </div>
 
             {/* NAAC */}
             <div className="flex flex-col items-center">
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl p-8 mb-4 w-32 h-32 flex items-center justify-center">
-                <span className="text-4xl font-bold text-white">NAAC</span>
+              <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-xl p-4 sm:p-8 mb-4 w-20 h-20 sm:w-32 sm:h-32 flex items-center justify-center">
+                <span className="text-2xl sm:text-4xl font-bold text-white">NAAC</span>
               </div>
-              <h3 className="text-center font-bold text-gray-800">NAAC Accredited</h3>
+              <h3 className="text-center font-bold text-gray-800 text-sm sm:text-base">NAAC Accredited</h3>
             </div>
 
             {/* MGR */}
             <div className="flex flex-col items-center">
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#0199c7] rounded-xl p-8 mb-4 w-32 h-32 flex items-center justify-center">
-                <span className="text-4xl font-bold text-white">MGR</span>
+              <div className="bg-gradient-to-br from-[#7cb983] to-[#0199c7] rounded-xl p-4 sm:p-8 mb-4 w-20 h-20 sm:w-32 sm:h-32 flex items-center justify-center">
+                <span className="text-2xl sm:text-4xl font-bold text-white">MGR</span>
               </div>
-              <h3 className="text-center font-bold text-gray-800">TN Dr. MGR Medical University</h3>
+              <h3 className="text-center font-bold text-gray-800 text-sm sm:text-base">TN Dr. MGR Medical University</h3>
             </div>
 
             {/* IDA */}
             <div className="flex flex-col items-center">
-              <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-xl p-8 mb-4 w-32 h-32 flex items-center justify-center">
-                <span className="text-4xl font-bold text-white">IDA</span>
+              <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-xl p-4 sm:p-8 mb-4 w-20 h-20 sm:w-32 sm:h-32 flex items-center justify-center">
+                <span className="text-2xl sm:text-4xl font-bold text-white">IDA</span>
               </div>
-              <h3 className="text-center font-bold text-gray-800">Indian Dental Association</h3>
+              <h3 className="text-center font-bold text-gray-800 text-sm sm:text-base">Indian Dental Association</h3>
             </div>
           </div>
         </div>

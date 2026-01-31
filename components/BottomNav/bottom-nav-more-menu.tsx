@@ -92,9 +92,6 @@ export function BottomNavMoreMenu({
                       <span className="font-medium text-sm">
                         {group.groupLabel}
                       </span>
-                      <span className="text-xs text-muted-foreground ml-auto mr-2">
-                        {group.menus.length}
-                      </span>
                     </div>
                   </AccordionTrigger>
 

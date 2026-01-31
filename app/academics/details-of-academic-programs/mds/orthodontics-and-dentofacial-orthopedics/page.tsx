@@ -67,23 +67,20 @@ export default function MDSOrthodontics() {
                   height={400}
                   className="w-full h-auto object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-8">
-                  <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-8">Orthodontics Excellence</h2>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex flex-col justify-end p-4 sm:p-6">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-4">Orthodontics Excellence</h2>
 
-                  {/* Stats Grid */}
-                  <div className="grid grid-cols-3 gap-2 sm:gap-4">
-                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-2 sm:p-4 text-center">
-                      <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#7cb983] mb-1">3</div>
-                      <div className="text-[10px] sm:text-xs text-gray-200">Year Program</div>
-                    </div>
-                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-2 sm:p-4 text-center">
-                      <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#7cb983] mb-1">100%</div>
-                      <div className="text-[10px] sm:text-xs text-gray-200">Placement Support</div>
-                    </div>
-                    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-2 sm:p-4 text-center">
-                      <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#7cb983] mb-1">25+</div>
-                      <div className="text-[10px] sm:text-xs text-gray-200">Years Legacy</div>
-                    </div>
+                  {/* Stats Badges */}
+                  <div className="flex flex-wrap justify-center gap-2">
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
+                      3 Years
+                    </span>
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
+                      100% Placement
+                    </span>
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full">
+                      25+ Years Legacy
+                    </span>
                   </div>
                 </div>
               </div>
@@ -95,7 +92,7 @@ export default function MDSOrthodontics() {
       {/* Info Bar Section */}
       <section className="bg-[#FBFBEE] py-8 px-4 border-b border-gray-200">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {/* Duration */}
             <div className="flex items-center gap-4">
               <div className="bg-[#7cb983] rounded-lg p-4 flex-shrink-0">
@@ -635,7 +632,7 @@ export default function MDSOrthodontics() {
                 <h3 className="text-2xl font-bold text-gray-900">Required Documents</h3>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="bg-[#FBFBEE] rounded-lg p-4 flex items-start gap-3">
                   <svg className="w-5 h-5 text-cyan-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clipRule="evenodd" />
@@ -833,50 +830,50 @@ export default function MDSOrthodontics() {
           </div>
 
           {/* Gallery Grid */}
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {/* Clinical Setup */}
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl aspect-square flex items-center justify-center p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-3xl font-bold text-white text-center">Clinical Setup</h3>
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Clinical Setup</h3>
             </div>
 
             {/* Digital Lab */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl aspect-square flex items-center justify-center p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-3xl font-bold text-white text-center">Digital Lab</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Digital Lab</h3>
             </div>
 
             {/* CBCT Center */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] rounded-2xl aspect-square flex items-center justify-center p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-3xl font-bold text-white text-center">CBCT Center</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-lg md:text-3xl font-bold text-white text-center">CBCT Center</h3>
             </div>
 
             {/* Wire Lab */}
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl aspect-square flex items-center justify-center p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-3xl font-bold text-white text-center">Wire Lab</h3>
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Wire Lab</h3>
             </div>
 
             {/* Seminar Hall */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl aspect-square flex items-center justify-center p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-3xl font-bold text-white text-center">Seminar Hall</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Seminar Hall</h3>
             </div>
 
             {/* Patient Care */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] rounded-2xl aspect-square flex items-center justify-center p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-3xl font-bold text-white text-center">Patient Care</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#006837] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Patient Care</h3>
             </div>
 
             {/* Research Lab */}
-            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl aspect-square flex items-center justify-center p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-3xl font-bold text-white text-center">Research Lab</h3>
+            <div className="bg-gradient-to-br from-[#006837] to-[#002309] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Research Lab</h3>
             </div>
 
             {/* Library */}
-            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl aspect-square flex items-center justify-center p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-3xl font-bold text-white text-center">Library</h3>
+            <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-lg md:text-3xl font-bold text-white text-center">Library</h3>
             </div>
 
               {/* JKKN Align Studio */}
-              <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl aspect-square flex items-center justify-center p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 className="text-3xl font-bold text-white text-center">JKKN Align Studio</h3>
+              <div className="bg-gradient-to-br from-[#7cb983] to-[#6ba872] rounded-2xl aspect-square flex items-center justify-center p-4 md:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-lg md:text-3xl font-bold text-white text-center">JKKN Align Studio</h3>
             </div>
           </div>
         </div>
@@ -988,45 +985,45 @@ export default function MDSOrthodontics() {
 
           {/* Fee Table */}
           <div className="overflow-x-auto">
-            <table className="w-full bg-[#FBFBEE] rounded-2xl overflow-hidden shadow-lg">
+            <table className="w-full bg-[#FBFBEE] rounded-2xl overflow-hidden shadow-lg min-w-[640px]">
               <thead>
                 <tr className="bg-gradient-to-r from-[#006837] to-[#7cb983] text-white">
-                  <th className="px-8 py-6 text-left text-lg font-bold">FEE COMPONENT</th>
-                  <th className="px-8 py-6 text-center text-lg font-bold">YEAR 1</th>
-                  <th className="px-8 py-6 text-center text-lg font-bold">YEAR 2</th>
-                  <th className="px-8 py-6 text-center text-lg font-bold">YEAR 3</th>
+                  <th className="px-4 md:px-8 py-4 md:py-6 text-left text-sm md:text-lg font-bold">FEE COMPONENT</th>
+                  <th className="px-4 md:px-8 py-4 md:py-6 text-center text-sm md:text-lg font-bold">YEAR 1</th>
+                  <th className="px-4 md:px-8 py-4 md:py-6 text-center text-sm md:text-lg font-bold">YEAR 2</th>
+                  <th className="px-4 md:px-8 py-4 md:py-6 text-center text-sm md:text-lg font-bold">YEAR 3</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
                 <tr className="hover:bg-gray-50 transition-colors duration-200">
-                  <td className="px-8 py-6 text-gray-700 font-medium">Tuition Fee</td>
-                  <td className="px-8 py-6 text-center text-gray-900 font-semibold">₹8,00,000</td>
-                  <td className="px-8 py-6 text-center text-gray-900 font-semibold">₹8,00,000</td>
-                  <td className="px-8 py-6 text-center text-gray-900 font-semibold">₹8,00,000</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-gray-700 font-medium text-sm md:text-base">Tuition Fee</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-center text-gray-900 font-semibold text-sm md:text-base">₹8,00,000</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-center text-gray-900 font-semibold text-sm md:text-base">₹8,00,000</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-center text-gray-900 font-semibold text-sm md:text-base">₹8,00,000</td>
                 </tr>
                 <tr className="hover:bg-gray-50 transition-colors duration-200">
-                  <td className="px-8 py-6 text-gray-700 font-medium">Admission Fee (One-time)</td>
-                  <td className="px-8 py-6 text-center text-gray-900 font-semibold">₹50,000</td>
-                  <td className="px-8 py-6 text-center text-gray-600">-</td>
-                  <td className="px-8 py-6 text-center text-gray-600">-</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-gray-700 font-medium text-sm md:text-base">Admission Fee (One-time)</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-center text-gray-900 font-semibold text-sm md:text-base">₹50,000</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-center text-gray-600 text-sm md:text-base">-</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-center text-gray-600 text-sm md:text-base">-</td>
                 </tr>
                 <tr className="hover:bg-gray-50 transition-colors duration-200">
-                  <td className="px-8 py-6 text-gray-700 font-medium">Laboratory & Clinical Fee</td>
-                  <td className="px-8 py-6 text-center text-gray-900 font-semibold">₹75,000</td>
-                  <td className="px-8 py-6 text-center text-gray-900 font-semibold">₹75,000</td>
-                  <td className="px-8 py-6 text-center text-gray-900 font-semibold">₹75,000</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-gray-700 font-medium text-sm md:text-base">Laboratory & Clinical Fee</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-center text-gray-900 font-semibold text-sm md:text-base">₹75,000</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-center text-gray-900 font-semibold text-sm md:text-base">₹75,000</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-center text-gray-900 font-semibold text-sm md:text-base">₹75,000</td>
                 </tr>
                 <tr className="hover:bg-gray-50 transition-colors duration-200">
-                  <td className="px-8 py-6 text-gray-700 font-medium">Library & Digital Resources</td>
-                  <td className="px-8 py-6 text-center text-gray-900 font-semibold">₹25,000</td>
-                  <td className="px-8 py-6 text-center text-gray-900 font-semibold">₹25,000</td>
-                  <td className="px-8 py-6 text-center text-gray-900 font-semibold">₹25,000</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-gray-700 font-medium text-sm md:text-base">Library & Digital Resources</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-center text-gray-900 font-semibold text-sm md:text-base">₹25,000</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-center text-gray-900 font-semibold text-sm md:text-base">₹25,000</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-center text-gray-900 font-semibold text-sm md:text-base">₹25,000</td>
                 </tr>
                 <tr className="hover:bg-gray-50 transition-colors duration-200">
-                  <td className="px-8 py-6 text-gray-700 font-medium">Examination Fee</td>
-                  <td className="px-8 py-6 text-center text-gray-900 font-semibold">₹15,000</td>
-                  <td className="px-8 py-6 text-center text-gray-900 font-semibold">₹15,000</td>
-                  <td className="px-8 py-6 text-center text-gray-900 font-semibold">₹15,000</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-gray-700 font-medium text-sm md:text-base">Examination Fee</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-center text-gray-900 font-semibold text-sm md:text-base">₹15,000</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-center text-gray-900 font-semibold text-sm md:text-base">₹15,000</td>
+                  <td className="px-4 md:px-8 py-4 md:py-6 text-center text-gray-900 font-semibold text-sm md:text-base">₹15,000</td>
                 </tr>
               </tbody>
             </table>
@@ -1152,45 +1149,45 @@ export default function MDSOrthodontics() {
           </div>
 
           {/* Accreditation Badges */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
             {/* DCI */}
             <div className="flex flex-col items-center">
-              <div className="bg-[#006837] rounded-xl w-24 h-24 flex items-center justify-center mb-4 shadow-lg">
-                <span className="text-3xl font-bold text-white">DCI</span>
+              <div className="bg-[#006837] rounded-xl w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mb-4 shadow-lg">
+                <span className="text-2xl sm:text-3xl font-bold text-white">DCI</span>
               </div>
-              <h3 className="text-center font-bold text-gray-900">Dental Council of India</h3>
+              <h3 className="text-center font-bold text-gray-900 text-sm sm:text-base">Dental Council of India</h3>
             </div>
 
             {/* NAAC */}
             <div className="flex flex-col items-center">
-              <div className="bg-[#7cb983] rounded-xl w-24 h-24 flex items-center justify-center mb-4 shadow-lg">
-                <span className="text-3xl font-bold text-white">NAAC</span>
+              <div className="bg-[#7cb983] rounded-xl w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mb-4 shadow-lg">
+                <span className="text-2xl sm:text-3xl font-bold text-white">NAAC</span>
               </div>
-              <h3 className="text-center font-bold text-gray-900">NAAC Accredited</h3>
+              <h3 className="text-center font-bold text-gray-900 text-sm sm:text-base">NAAC Accredited</h3>
             </div>
 
             {/* MGR */}
             <div className="flex flex-col items-center">
-              <div className="bg-[#7cb983] rounded-xl w-24 h-24 flex items-center justify-center mb-4 shadow-lg">
-                <span className="text-3xl font-bold text-white">MGR</span>
+              <div className="bg-[#7cb983] rounded-xl w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mb-4 shadow-lg">
+                <span className="text-2xl sm:text-3xl font-bold text-white">MGR</span>
               </div>
-              <h3 className="text-center font-bold text-gray-900">TN Dr. MGR Medical University</h3>
+              <h3 className="text-center font-bold text-gray-900 text-sm sm:text-base">TN Dr. MGR Medical University</h3>
             </div>
 
             {/* IDA */}
             <div className="flex flex-col items-center">
-              <div className="bg-[#006837] rounded-xl w-24 h-24 flex items-center justify-center mb-4 shadow-lg">
-                <span className="text-3xl font-bold text-white">IDA</span>
+              <div className="bg-[#006837] rounded-xl w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mb-4 shadow-lg">
+                <span className="text-2xl sm:text-3xl font-bold text-white">IDA</span>
               </div>
-              <h3 className="text-center font-bold text-gray-900">Indian Dental Association</h3>
+              <h3 className="text-center font-bold text-gray-900 text-sm sm:text-base">Indian Dental Association</h3>
             </div>
 
             {/* IOS */}
             <div className="flex flex-col items-center">
-              <div className="bg-[#006837] rounded-xl w-24 h-24 flex items-center justify-center mb-4 shadow-lg">
-                <span className="text-3xl font-bold text-white">IOS</span>
+              <div className="bg-[#006837] rounded-xl w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mb-4 shadow-lg">
+                <span className="text-2xl sm:text-3xl font-bold text-white">IOS</span>
               </div>
-              <h3 className="text-center font-bold text-gray-900">Indian Orthodontic Society</h3>
+              <h3 className="text-center font-bold text-gray-900 text-sm sm:text-base">Indian Orthodontic Society</h3>
             </div>
           </div>
         </div>

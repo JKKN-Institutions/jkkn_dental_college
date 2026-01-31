@@ -12,16 +12,16 @@ export default function Footer() {
               JKKN DENTAL COLLEGE AND HOSPITAL
             </h3>
             <div className="mb-4">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62567.82001557531!2d77.730985!3d11.444606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9681d0e14f271%3A0x811ca6d2df6b69f9!2sJKKN%20Dental%20College%20and%20Hospital!5e0!3m2!1sen!2sin!4v1769697898203!5m2!1sen!2sin"
-                width="100%"
-                height="200"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="rounded-md"
-              ></iframe>
+              <div className="relative w-full aspect-video sm:aspect-[16/10] max-h-[200px] sm:max-h-[220px]">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62567.82001557531!2d77.730985!3d11.444606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9681d0e14f271%3A0x811ca6d2df6b69f9!2sJKKN%20Dental%20College%20and%20Hospital!5e0!3m2!1sen!2sin!4v1769697898203!5m2!1sen!2sin"
+                  className="absolute inset-0 w-full h-full rounded-md"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
             </div>
             <p className="text-sm sm:text-base font-semibold">
               Best Innovation Focused<br />Multi-Disciplinary Campus
